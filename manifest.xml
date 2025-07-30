@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.fladd.ChopSample</Id>
+  <Name>Chop Sample</Name>
+  <Version>0.2</Version>
+  <Description>Chop a sample into equal slices.
+  </Description>
+  <Author>Florian Krause (fladd) [siebenhundertzehn@gmail.com]</Author>
+  <Category>Sample,Editing,Slicing</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/43642-new-tool-30-chop-sample/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
