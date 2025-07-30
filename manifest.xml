@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.ClearJunkData</Id>
+  <Name>Clear Junk Data</Name>
+  <Version>1.33</Version>
+  <Description>Clears unattached note meta-data and note-offs, the two processes are separated in the GUI as sometimes unattached meta-data is not junk and should be saved </Description>
+  <Author>Ledger</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/28233-new-tool-clear-junk-data/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
