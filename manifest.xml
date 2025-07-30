@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.elmex.ClipComposingLanguage</Id>
+  <Name>Clip Composing Language</Name>
+  <Version>1.08</Version>
+  <Description>A tool that allows defining clips of pattern data and composing new arrangements from a template given in the Clip Composing (Scripting) Language.</Description>
+  <Author>elmex [elmex@ta-sa.org]</Author>
+  <Category>Pattern,Editing,Coding,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37205-new-tool-28-clip-composing-language</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
