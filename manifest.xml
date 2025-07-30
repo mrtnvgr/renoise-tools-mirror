@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.cornbeast.JXProgrammer</Id>
+  <Name>JX Programmer</Name>
+  <Version>1.1</Version>
+  <Description>Renoise reincarnation of the PG-800 programmer for Roland synthesizers JX-8P, MKS-70, and JX-10.</Description>
+  <Author>Cornbeast [cornbeast@cornbeast.com]</Author>
+  <Category>MIDI,Hardware</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34521-new-tool-28-jx-programmer/</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
