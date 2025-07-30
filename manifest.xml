@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.InstrumentShortcuts</Id>
+  <Name>Instrument Shortcuts Additions</Name>
+  <Version>1.0</Version>
+  <Description>Adds a few extra shortcuts to the instrument and sample slots area. The new shortcuts are by default not mapped to anything, but can be mapped manually in Renoises Preferences/Keys/Instrument Box settings.</Description>
+  <Author>Vincent Voois [ http://tinyurl.com/vvrns ]</Author>
+  <Category>Instrument</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
