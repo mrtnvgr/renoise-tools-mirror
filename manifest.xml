@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>AS.Beatslaughter.CopyAutomation</Id>
+  <Name>Copy Automation</Name>
+  <Version>1.12</Version>
+  <Description>Copy and paste automation data song wide.</Description>
+  <Author>Alexander Stoica | Beatslaughter (info@beatslaughter.de)</Author>
+  <Category>Automation,Editing</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/31707-new-tool-27-28-copy-automation</Discussion>
+  <ApiVersion>2.0</ApiVersion>
+  <Homepage>http://www.beatslaughter.de</Homepage>
+</RenoiseScriptingTool>

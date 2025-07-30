@@ -1,0 +1,49 @@
+Problems? Mail: info@beatslaughter.de                             * Version 1.12
+
+--[ @@Manual@@ ]--------------------------------------------------------------------
+
+This tool makes it easy to copy and paste automation data for the complete song
+between different device parameters.
+
+To access this tool, open the automation editor and do a right click on one of
+the automated parameters in the list. Once copied find your target parameter
+and do a right click again for pasting the data.
+
+You can copy the automation envelopes or pattern command automation or both at
+once. Pasting works for all types the same, but pasting pattern commands can be
+done with a conversion to an envelope too. The tool also takes care to convert
+pattern command automation for panning, volume and width to their proper effect
+commands. In a rare case that the effect columns contain multiple pattern
+commands for the same parameter, only the last found one will be copied.
+
+In some cases pasting pattern command automation may be disabled. This can
+happen when you have no empty effect column left in the target channel or when
+the target parameter is out of bounds, which is limited by the internal pattern
+command resolution. The status bar will give you a notice then.
+
+The aim of writing this small tool is to make replacing already automated
+devices easier by having a quick way to copy and paste their automation data.
+
+If you have found a bug or otherwise need help with this tool, then feel free to
+mail me at the address given above.
+
+--[ @@History@@ ]-------------------------------------------------------------------
+
+Version 1.12
+ - minor code optimizations
+ - fixed notifiers after a new song was loaded
+
+Version 1.11
+ - fixed menu lagging with pattern command automation in clipboard
+ - fixed typo in pattern command to envelope conversion, values were incorrect
+ - various minor bugfixes
+
+Version 1.10
+ - support for pattern command automation
+ - convert pattern command automation to envelopes
+
+Version 1.01
+ - copy and paste with different polarity possible
+
+Version 1.0
+ - initial release
