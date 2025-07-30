@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.Laffik.Processor</Id>
+  <Name>Processor</Name>
+  <Version>0.6</Version>
+  <Description>Script continues riff/bassline/arpeggio along changing chords.</Description>
+  <Author>Laffik</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49959-new-tool-31-processor/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
