@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>dk.atte.GotoNextFxOnOff</Id>
+  <Name>GotoNextFxOnOff</Name>
+  <Version>0.12</Version>
+  <Description>Seek to next instance of turning a device on/off with effect command</Description>
+  <Author>Atte André Jensen | atte.jensen@gmail.com</Author>
+  <Category>Workflow</Category>
+  <Repository>http://github.com/attejensen/xrnx</Repository>
+  <Discussion>http://forum.renoise.com/index.php/topic/42973-new-tool-gotonextfxonoff/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
