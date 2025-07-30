@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FilterDevicePreset doc_version="13">
+  <DeviceSlot type="DooferDevice">
+    <IsMaximized>true</IsMaximized>
+    <Macro0>
+      <Value>0.0</Value>
+      <Name>Set Markers</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>6</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro0>
+    <Macro1>
+      <Value>0.0</Value>
+      <Name>Interaction</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>11</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro1>
+    <Macro2>
+      <Value>50</Value>
+      <Name>Slice Anchor</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>16</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro2>
+    <Macro3>
+      <Value>0</Value>
+      <Name>Slice Size</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>21</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro3>
+    <Macro4>
+      <Value>0</Value>
+      <Name>Min Slice Size</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>26</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro4>
+    <Macro5>
+      <Value>0.0</Value>
+      <Name>Snap</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>31</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro5>
+    <Macro6>
+      <Value>0.0</Value>
+      <Name>Tolerance</Name>
+      <Mappings>
+        <Mapping>
+          <DestDeviceIndex>0</DestDeviceIndex>
+          <DestParameterIndex>36</DestParameterIndex>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+          <Scaling>Linear</Scaling>
+        </Mapping>
+      </Mappings>
+    </Macro6>
+    <Macro7>
+      <Value>50</Value>
+      <Name>Macro 8</Name>
+    </Macro7>
+    <NumActiveMacros>7</NumActiveMacros>
+    <ShowDevices>false</ShowDevices>
+    <DeviceChain>
+      <SelectedPresetName>Init</SelectedPresetName>
+      <SelectedPresetLibrary>Bundled Content</SelectedPresetLibrary>
+      <SelectedPresetIsModified>true</SelectedPresetIsModified>
+      <Devices>
+        <HydraDevice type="HydraDevice">
+          <CustomDeviceName>Dummy Device</CustomDeviceName>
+          <IsMaximized>true</IsMaximized>
+          <IsSelected>true</IsSelected>
+          <SelectedPresetName>Init</SelectedPresetName>
+          <SelectedPresetLibrary>Bundled Content</SelectedPresetLibrary>
+          <SelectedPresetIsModified>true</SelectedPresetIsModified>
+          <IsActive>
+            <Value>1.0</Value>
+            <Visualization>Device only</Visualization>
+          </IsActive>
+          <VisiblePages>2</VisiblePages>
+          <InputValue>
+            <Value>0.5</Value>
+            <Visualization>Mixer and Device</Visualization>
+          </InputValue>
+          <Out1DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out1DestTrack>
+          <Out1DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out1DestEffect>
+          <Out1DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out1DestParameter>
+          <Out1Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out1Min>
+          <Out1Max>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out1Max>
+          <Out1Scaling>Linear</Out1Scaling>
+          <Out2DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out2DestTrack>
+          <Out2DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out2DestEffect>
+          <Out2DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out2DestParameter>
+          <Out2Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out2Min>
+          <Out2Max>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out2Max>
+          <Out2Scaling>Linear</Out2Scaling>
+          <Out3DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out3DestTrack>
+          <Out3DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out3DestEffect>
+          <Out3DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out3DestParameter>
+          <Out3Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out3Min>
+          <Out3Max>
+            <Value>0.5</Value>
+            <Visualization>Device only</Visualization>
+          </Out3Max>
+          <Out3Scaling>Linear</Out3Scaling>
+          <Out4DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out4DestTrack>
+          <Out4DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out4DestEffect>
+          <Out4DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out4DestParameter>
+          <Out4Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out4Min>
+          <Out4Max>
+            <Value>0.000370782363</Value>
+            <Visualization>Device only</Visualization>
+          </Out4Max>
+          <Out4Scaling>Linear</Out4Scaling>
+          <Out5DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out5DestTrack>
+          <Out5DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out5DestEffect>
+          <Out5DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out5DestParameter>
+          <Out5Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out5Min>
+          <Out5Max>
+            <Value>0.000370782363</Value>
+            <Visualization>Device only</Visualization>
+          </Out5Max>
+          <Out5Scaling>Linear</Out5Scaling>
+          <Out6DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out6DestTrack>
+          <Out6DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out6DestEffect>
+          <Out6DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out6DestParameter>
+          <Out6Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out6Min>
+          <Out6Max>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out6Max>
+          <Out6Scaling>Linear</Out6Scaling>
+          <Out7DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out7DestTrack>
+          <Out7DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out7DestEffect>
+          <Out7DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out7DestParameter>
+          <Out7Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out7Min>
+          <Out7Max>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out7Max>
+          <Out7Scaling>Linear</Out7Scaling>
+          <Out8DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out8DestTrack>
+          <Out8DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out8DestEffect>
+          <Out8DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out8DestParameter>
+          <Out8Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out8Min>
+          <Out8Max>
+            <Value>0.5</Value>
+            <Visualization>Device only</Visualization>
+          </Out8Max>
+          <Out8Scaling>Linear</Out8Scaling>
+          <Out9DestTrack>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out9DestTrack>
+          <Out9DestEffect>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out9DestEffect>
+          <Out9DestParameter>
+            <Value>-1</Value>
+            <Visualization>Device only</Visualization>
+          </Out9DestParameter>
+          <Out9Min>
+            <Value>0.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out9Min>
+          <Out9Max>
+            <Value>1.0</Value>
+            <Visualization>Device only</Visualization>
+          </Out9Max>
+          <Out9Scaling>Linear</Out9Scaling>
+        </HydraDevice>
+      </Devices>
+    </DeviceChain>
+  </DeviceSlot>
+</FilterDevicePreset>

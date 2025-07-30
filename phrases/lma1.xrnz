@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<InstrumentPhrase doc_version="2">
+  <SelectedPresetLibrary>Bundled Content</SelectedPresetLibrary>
+  <Lines>
+    <Line index="0">
+      <NoteColumns>
+        <NoteColumn>
+          <Note>C-4</Note>
+          <Instrument>01</Instrument>
+          <Volume>R1</Volume>
+        </NoteColumn>
+      </NoteColumns>
+    </Line>
+    <Line index="1">
+      <NoteColumns>
+        <NoteColumn>
+          <Volume>R1</Volume>
+        </NoteColumn>
+      </NoteColumns>
+    </Line>
+  </Lines>
+  <Name>Retrigger (Start&amp;End Respond)</Name>
+  <Autoseek>true</Autoseek>
+  <LinesPerBeat>4</LinesPerBeat>
+  <ShuffleIsActive>false</ShuffleIsActive>
+  <ShuffleAmounts>
+    <ShuffleAmount>0</ShuffleAmount>
+    <ShuffleAmount>0</ShuffleAmount>
+    <ShuffleAmount>0</ShuffleAmount>
+    <ShuffleAmount>0</ShuffleAmount>
+  </ShuffleAmounts>
+  <NumberOfLines>2</NumberOfLines>
+  <VisibleNoteColumns>1</VisibleNoteColumns>
+  <VisibleEffectColumns>1</VisibleEffectColumns>
+  <NoteColumnNames>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+    <NoteColumnName/>
+  </NoteColumnNames>
+  <NoteColumnStates>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+    <NoteColumnState>Active</NoteColumnState>
+  </NoteColumnStates>
+  <InstrumentColumnIsVisible>true</InstrumentColumnIsVisible>
+  <VolumeColumnIsVisible>true</VolumeColumnIsVisible>
+  <PanningColumnIsVisible>true</PanningColumnIsVisible>
+  <DelayColumnIsVisible>true</DelayColumnIsVisible>
+  <SampleEffectsColumnIsVisible>true</SampleEffectsColumnIsVisible>
+  <TriggerOptions>
+    <BaseNote>48</BaseNote>
+    <KeyTracking>Transpose</KeyTracking>
+    <Loop>true</Loop>
+    <LoopStart>1</LoopStart>
+    <LoopEnd>2</LoopEnd>
+  </TriggerOptions>
+</InstrumentPhrase>

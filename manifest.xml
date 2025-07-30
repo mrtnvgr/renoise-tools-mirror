@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.duncanhemingway.LoopMarkerAutomation</Id>
+  <Name>Loop Marker Automation</Name>
+  <Version>1.01</Version>
+  <Description>This tool allows you to change how a sample is being looped by controlling the movement of two slice markers. Loop playback responds to both start and end marker movement.</Description>
+  <Author>Achenar</Author>
+  <Category>Sample,Automation,Live</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-loop-marker-automation/61188</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>https://forum.renoise.com/t/new-tool-3-3-loop-marker-automation/61188</Homepage>
+</RenoiseScriptingTool>
