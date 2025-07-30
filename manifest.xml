@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.QuickVolAhdsr</Id>
+  <Name>Quick Vol AHDSR</Name>
+  <Version>1.51</Version>
+  <Description>Adds and or gives quick access to AHDSR envelope for instruments with samples</Description>
+  <Author>scripts</Author>
+  <Category>Instrument,Modulation</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/45091-new-tool-30-quick-vol-ahdsr/</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
