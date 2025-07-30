@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.CreateTool</Id>
+  <Name>Create Tool</Name>
+  <Version>9</Version>
+  <Description>A wizard to help you setup the basic structure for a new Tool. There is also an Export to XRNX file feature.
+
+Look in the File menu of the Scripting Editor.</Description>
+  <Author>Bantai</Author>
+  <Category>Development</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/27745-create-tool-tool-export-tool-tool-27</Discussion>
+  <ApiVersion>2</ApiVersion>
+  <Homepage>http://tools.renoise.com/tools/create-tool</Homepage>
+</RenoiseScriptingTool>
