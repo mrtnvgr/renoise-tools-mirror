@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.cie-online.LiveDive</Id>
+  <Name>Live Dive</Name>
+  <Version>2.05</Version>
+  <Description>Live Dive</Description>
+  <Author>Cie | cie@cie-online.de</Author>
+  <Category>Sequencer, Control, Pattern, Live</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37417-new-tool-28-live-dive/</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://www.stepsequencer.net/livedive</Homepage>
+</RenoiseScriptingTool>
