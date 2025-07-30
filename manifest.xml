@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.lwpss.Akaizer</Id>
+  <Name>Akaizer</Name>
+  <Version>1.01</Version>
+  <Description>A wrapper for Akaizer timestretch tool.</Description>
+  <Author>lwpss [lw.pss.mail@gmail.com]</Author>
+  <Category>Sample,Editing,Integration</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/43649-new-tool-akaizer/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://soundcloud.com/lwpss</Homepage>
+</RenoiseScriptingTool>
