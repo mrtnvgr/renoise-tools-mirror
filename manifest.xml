@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>cz.martblek.AlmostDrums</Id>
+  <Name>Almost Drums</Name>
+  <Version>0.08</Version>
+  <Description>Simple drum and glitch generator</Description>
+  <Author>martblek (martblek)</Author>
+  <Category>Instrument,Sample,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-almost-drums/68439</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
