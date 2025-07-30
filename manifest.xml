@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.SirDancealot</Id>
+  <Name>Sir Dancealot</Name>
+  <Version>2.2</Version>
+  <Description>Tell me, sir Lancelot, do you... dance a lot? This tool is very good at quick insertion of FX in the chain of the currently selected track. Forget the mouse, use the keyboard.</Description>
+  <Author>Cas | Cas Marrav | casmarrav@gmail.com</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
