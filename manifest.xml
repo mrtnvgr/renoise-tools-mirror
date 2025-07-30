@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.Laffik.Premier</Id>
+  <Name>Premier</Name>
+  <Version>0.3</Version>
+  <Description>Script sets up line of cadences of evolving quality within a scale.</Description>
+  <Author>Laffik</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49880-new-tool-31-premier/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
