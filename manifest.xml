@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>AS.Beatslaughter.MixerShowAutomatedSliders</Id>
+  <Name>Show Automated Sliders In The Mixer</Name>
+  <Version>1.4</Version>
+  <Description>Display automated, modulated and midi mapped sliders in the mixer view for all tracks or only the currently selected one.</Description>
+  <Author>Alexander Stoica | Beatslaughter (info@beatslaughter.de)</Author>
+  <Category>Mixing,Automation</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/26041-new-tool-26-to-28-show-automated-and-modulated-sliders/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.beatslaughter.de</Homepage>
+</RenoiseScriptingTool>

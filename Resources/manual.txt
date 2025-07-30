@@ -1,0 +1,56 @@
+Problems? Mail: info@beatslaughter.de                              * Version 1.4
+
+--[ @@Manual@@ ]--------------------------------------------------------------------
+
+This small tool adds a few menu entries to the mixer and allows you to show all
+automated, modulated and midi mapped sliders and also to hide them all. This can
+be applied to the complete mixer or just single tracks.
+
+With modulated sliders the ones automated by the Meta Devices from Renoise are
+meant, which also takes crosstrack routing into account.
+
+Switch to the mixer view in Renoise, open the context menu and look for
+"Mixer ->" and "Track ->" to find the new menu entries.
+
+Keybinds can be found in the Renoise preferences under "Mixer -> Mixer ->" and
+"Mixer -> Track ->".
+
+If you have found a bug or otherwise need help with this tool, then feel free to
+mail me at the address given above.
+
+--[ @@History@@ ]-------------------------------------------------------------------
+
+Version 1.4:
+
+- small fix for modulated parameters
+
+Version 1.3:
+
+- compatibility for Renoise 2.7 and 2.8
+- included manual
+- other stuff i don't remember anymore
+
+Version 1.21:
+
+- compatibility for Renoise 2.6 Beta 7 and newer versions
+
+Version 1.20:
+
+- added new menu entry to show only modulated sliders
+- hopefully foolproof check now for a modulated parameter
+
+Version 1.11:
+
+- fixed a bug in the parameter search, which could fail with missing plugins
+
+Version 1.10:
+
+- it's now possible to apply everything either to the complete mixer chain or or
+  only to the currently selected track.
+- menus are enabled / disabled as needed and also renamed to better sounding
+  names
+- a few small code changes here and there
+
+Version 1.0
+
+- initial release
