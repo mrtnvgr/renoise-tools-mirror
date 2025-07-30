@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.vvoois.Getdeviceparams</Id>
+  <Name>GetPluginParams</Name>
+  <Version>1.31</Version>
+  <Description>Displays the exact parameter name that you trigger in a VST plugin interface. (VST-instruments and VST fx)</Description>
+  <Author>v.voois | your-name@your-domain.tld</Author>
+  <Category>Plugin</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37306-tool-idea-param-predictor-working-prototypes-attached/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
