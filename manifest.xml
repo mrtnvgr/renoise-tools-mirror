@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.NoteOffTool</Id>
+  <Name>Note Off  Tool</Name>
+  <Version>1.04</Version>
+  <Description>Allows control multiple note-length values in a renoise pattern selection or track via the tools GUI.  Also adds some extra note-off shortcuts to renoise: &quot;Add Note-Offs To Empty Cells in Row&quot; and &quot;Add Note-Offs To Empty Cells in [Whole Pattern Row]&quot; </Description>
+  <Author>Ledger</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/28321-new-tool-note-off-note-length-tool</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
