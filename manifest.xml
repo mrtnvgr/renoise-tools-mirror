@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>cz.martblek.Harmoniks</Id>
+  <Name>Harmoniks</Name>
+  <Version>0.02</Version>
+  <Description>Sample generator based on the composition of harmonic parts</Description>
+  <Author>martblek</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-harmoniks/68033</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
