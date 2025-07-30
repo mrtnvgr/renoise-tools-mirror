@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+from urllib.error import ContentTooShortError
 from urllib.request import urlretrieve
 from dataclasses import dataclass
 from bs4 import BeautifulSoup
@@ -9,6 +10,17 @@ import requests
 import json
 import re
 import os
+
+MAX_RETRIES = 5
+def download(url, file):
+    retry = 0
+    while retry < MAX_RETRIES:
+        try:
+            urlretrieve(url, file)
+            break
+        except ContentTooShortError:
+            print("Connection interrupted, retrying...")
+            retry += 1
 
 @dataclass
 class Tool:
@@ -66,7 +78,7 @@ for tool in tools:
     else:
         repo.git.switch(orphan=tool_id)
 
-    urlretrieve(tool.url, tool_file)
+    download(tool.url, tool_file)
 
     with ZipFile(tool_file) as f:
         f.extractall()
