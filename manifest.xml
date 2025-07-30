@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.elmex.Pianolol</Id>
+  <Name>Pianolol Melody Editor</Name>
+  <Version>0.20</Version>
+  <Description>A tool that allows editing the pitch of notes in the pattern editor.</Description>
+  <Author>elmex [elmex@ta-sa.org]</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34532-new-tool-28-pianolol-melody-editor</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
