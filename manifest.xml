@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.SysExLibrarian</Id>
+  <Name>SysEx Librarian</Name>
+  <Version>1.1</Version>
+  <Description>This tool implements additional MIDI SysEx (System Exclusive) message handling and librarian functionality to Renoise.</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>MIDI</Category>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
