@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.InstrMixer</Id>
+  <Name>Instrument Mixer</Name>
+  <Version>1.14</Version>
+  <Description>Simple window to modify sample specifics in real-time</Description>
+  <Author>Cas | casmarrav@gmail.com</Author>
+  <Category>Instrument,Sample,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/36308-new-tool-28-instrmixer/</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
