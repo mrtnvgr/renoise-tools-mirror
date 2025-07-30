@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.nisanmol.IQ</Id>
+  <Name>Iterative Quantize</Name>
+  <Version>1.01</Version>
+  <Description>&apos;Iterative&apos; or &apos;Partial&apos; quantization</Description>
+  <Author>Nisan Mol [nisanmol@gmail.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/26692-new-tools-iterative-quantize-and-groove-tool</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>

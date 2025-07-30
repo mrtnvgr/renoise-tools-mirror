@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptingToolPreferences doc_version="0">
+  <shift_value>-16</shift_value>
+  <quant_value>34.526315789473685</quant_value>
+  <close_dialog>true</close_dialog>
+  <keep_columns>true</keep_columns>
+  <which_columns>1.0</which_columns>
+  <quant_lines>1.0</quant_lines>
+  <delete_note_off>true</delete_note_off>
+</ScriptingToolPreferences>
