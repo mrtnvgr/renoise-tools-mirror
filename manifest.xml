@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.duncanhemingway.ZeroPointStereo</Id>
+  <Name>Zero Point Stereo</Name>
+  <Version>1.0</Version>
+  <Description>Places and moves markers to the best zero point on a waveform.</Description>
+  <Author>Achenar</Author>
+  <Category>Slicing</Category>
+  <Discussion>https://forum.renoise.com/t/zero-point-stereo/69780</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://renoise.com/tools/ZeroPointStereo</Homepage>
+</RenoiseScriptingTool>
