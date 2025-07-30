@@ -1,0 +1,7 @@
+Version 2.1
+  - Reverse pads mode (start lower left and work upwards)
+  - Disabled LCD overwrite for sample selecting notifier in INST mode and manual update on change
+  - Pad root and scale mapping options
+
+Version 2.0
+  - Complete redesign and rewrite :)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.pKing</Id>
+  <Name>pKing</Name>
+  <Version>2.1</Version>
+  <Description>MPC Style interface for the Korg padKontrol</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>Control,MIDI,Hardware</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35747-new-tool-28-pking/</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
