@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.EQHelper</Id>
+  <Name>EQ Helper</Name>
+  <Version>1.15</Version>
+  <Description>Provides transpose functionality for various EQs/filters and some context stuff</Description>
+  <Author>jurekraben@googlemail.com</Author>
+  <Category>Workflow,DSP</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-2-eq-helper-tool-transpose-eqs-filters-by-semitones/64998</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://www.virtualcreations.de</Homepage>
+</RenoiseScriptingTool>
