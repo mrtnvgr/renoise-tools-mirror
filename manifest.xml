@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.SliceImporter</Id>
+  <Name>Slice Importer</Name>
+  <Version>1.1</Version>
+  <Description>This double function allows copying or pasting the slice markers of the first sample between instruments. Remember that it is necessary to always work on the first sample!
+
+If you copy more slice markers than those allowed by the target sample, they will only be pasted until the last allowed marker.
+
+Access: &quot;Sample Editor/Slices/~Copy Markers... (or ~Paste Markers)&quot;..</Description>
+  <Author>ulneiz</Author>
+  <Category>Slicing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-1-slice-importer-v1-0-february-2019/56534</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
