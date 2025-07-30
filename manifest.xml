@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.AdvancedStepComposer</Id>
+  <Name>Advanced Step Composer</Name>
+  <Version>1.0</Version>
+  <Description>The Advanced Step Composer is a step note editor tool. It allows you to insert note parameters and their effects easily, focused for various musical styles.</Description>
+  <Author>ulneiz [go to https://forum.renoise.com/ and contact him there]</Author>
+  <Category>Pattern,Editing,Sequencer</Category>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
