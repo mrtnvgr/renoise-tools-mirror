@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>cz.martblek.Macuilxochitl</Id>
+  <Name>Macuilxochitl</Name>
+  <Version>0.018</Version>
+  <Description>Simple wave creator and deformer</Description>
+  <Author>martblek (martblek)</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-experimental-build-maciulxochitl/66844</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
