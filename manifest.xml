@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.fladd.SplitIntoSeparateTracks</Id>
+  <Name>Split into separate Tracks</Name>
+  <Version>1.3</Version>
+  <Description>This tool splits the notes of one single track into separate tracks according to either the note columns, note values, instrument values or volume values.
+Normal note-offs as well as (optionally) &quot;implicit&quot; note-offs (when a note stops a former one) are set in the newly created tracks. The new tracks are named according to the track they were split from and (optionally) put into a group, together with the original track. Volume, panning, delay and (optionally) effect column values as well as (optionally) track volume (pre and post), panning (pre and post), width, output delay, output routing, devices and automation are copied as well (when tracks are put into a group, effect columns as well as track volume (pre and post), panning (pre and post), width, output routing, devices and automation will be copied to the group track only). This tool will process the whole track or optionally just a selection.
+  </Description>
+  <Author>Florian Krause (fladd) [siebenhundertzehn@gmail.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/36109-tool-discussion-split-into-separate-tracks/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
