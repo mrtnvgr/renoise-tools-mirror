@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.DeviceSergeant</Id>
+  <Name>Device Sergeant</Name>
+  <Version>0.7</Version>
+  <Description>Uses the values of a single `master` DSP device to control all others with the same name</Description>
+  <Author>scripts</Author>
+  <Category>Workflow,DSP</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49838-new-tool-31-device-sergeant-june-2017/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
