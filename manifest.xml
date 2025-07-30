@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>org.drakmaniso.Padsynth</Id>
+  <Name>PadSynth</Name>
+  <Version>1.4</Version>
+  <Description>PADsynth waveform generator</Description>
+  <Author>drakmaniso | moussault.laurent@gmail.com</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34672-new-tool-padsynth/</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://www.renoise.com/tools/padsynth</Homepage>
+</RenoiseScriptingTool>
