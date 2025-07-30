@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.ReSynth</Id>
+  <Name>ReSynth</Name>
+  <Version>4.00</Version>
+  <Description>Fourth generation native Renoise synthesiser.
+
+Features include:
+
+  - Four oscillators
+  - Selectable oscillator types:
+    - Virtual analog
+    - FM Synthesis (3 operator)
+    - User waveform
+    - SuperSaw (oscillator 1 only)
+  - Independant oscillator settings for:
+    - Transpose
+    - Tuning
+    - Volume
+    - Panning
+  - AHDBDSR volume envelope
+  - Volume LFO (tremelo)
+  - Filter type selector
+  - AHBDBSR filter cutoff envelope
+  - Filter cutoff LFO
+  - Filter resonance LFO
+  - Filter resonance control
+  - Velocity to filter cutoff control
+  - Programming arpeggiator:
+      - Up to 16 steps in length
+      - Variable sequence length 
+      - Variable sequence step length
+      - Independant pitch per step
+      - Independant controls to apply to volume, pitch and filter
+  </Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34651-new-tool-28-resynth-4/</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
