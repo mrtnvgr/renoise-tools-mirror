@@ -1,0 +1,5 @@
+* test retrigger 
+* remove mappings as well
+* de-cripple
+* note-off layers?????
+* also: delete unused samples in only elected instrument

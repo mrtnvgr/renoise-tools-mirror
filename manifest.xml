@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>dk.atte.DeleteUnusedSamples</Id>
+  <Name>DeleteUnusedSamples</Name>
+  <Version>0.14</Version>
+  <Description>Delete unused samples from song</Description>
+  <Author>Atte André Jensen | atte.jensen@gmail.com</Author>
+  <Category>Sample,Workflow</Category>
+  <Repository>http://github.com/attejensen/xrnx</Repository>
+  <Discussion>http://forum.renoise.com/index.php/topic/43015-new-tool-deleteunusedsamples/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
