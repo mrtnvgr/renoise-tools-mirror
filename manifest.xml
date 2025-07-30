@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>re.dread.dAnushri</Id>
+  <Name>dAnushri</Name>
+  <Version>0.1</Version>
+  <Description>dAnushri drum pattern generator ...</Description>
+  <Author>re.dread</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/38805-new-tool-danushri-drum-pattern-generator/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
