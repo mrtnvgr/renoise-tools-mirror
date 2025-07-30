@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.ChangeSampleProperties</Id>
+  <Name>Change Sample Properties</Name>
+  <Version>1.24</Version>
+  <Description>Batch change sample properties (like the base-note, sample volume and so on) for more than one sample or instrument at once.
+Can be found in the instrument list&apos;s context menu (right-click on an instrument).
+</Description>
+  <Author>Vincent Voois [ http://tinyurl.com/vvrns ]</Author>
+  <Category>Instrument,Sample,Editing</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
