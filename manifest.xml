@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.duncanhemingway.NarrationSong</Id>
+  <Name>Narration Song</Name>
+  <Version>1.41</Version>
+  <Description>Builds a song for narration instruments by automatically creating patterns that match each sample&apos;s length.</Description>
+  <Author>Achenar</Author>
+  <Category>Pattern, Generator, Instrument</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-2-narration-song/61242</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://renoise.com/tools/NarrationSong</Homepage>
+</RenoiseScriptingTool>
