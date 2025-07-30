@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>joule.no0b.AliasIdenticalTracks</Id>
+  <Name>Alias identical tracks</Name>
+  <Version>1.1</Version>
+  <Description>Alias identical tracks in the selected slots in the pattern matrix.</Description>
+  <Author>joule</Author>
+  <Category>Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/33186-new-tool-28-alias-identical-tracks/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.100kb.de</Homepage>
+</RenoiseScriptingTool>
