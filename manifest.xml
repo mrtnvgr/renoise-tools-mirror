@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.tesselode.PartialQuantize</Id>
+  <Name>Partial Quantize</Name>
+  <Version>1.2</Version>
+  <Description>Partial quantization for Renoise.</Description>
+  <Author>tesselode [aminnich3@gmail.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Repository>https://github.com/tesselode/partial-quantize</Repository>
+  <Discussion>http://forum.renoise.com/index.php/topic/51778-new-tool-31-partial-quantize/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
