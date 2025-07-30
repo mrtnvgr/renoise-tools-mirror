@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.clay.ModuleSplitter</Id>
+  <Name>Module Splitter</Name>
+  <Version>2.02</Version>
+  <Description>This tool splits old style Modules into a separate Track for each Instrument.
+Ideal for converting retro module formats (mutiple instruments / track) into a more usable (single instrument / track) layout for further editing in Renoise.
+
+Can be found in the &apos;Tools&apos; menu as &apos;Module Splitter&apos;.</Description>
+  <Author>Clayton Hydes (clayton.hydes@me.com)</Author>
+  <Category>Pattern,Editing</Category>
+  <ApiVersion>2</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
