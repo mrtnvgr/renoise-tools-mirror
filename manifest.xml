@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.NativeDSPContextMenu</Id>
+  <Name>Native DSP Context Menu</Name>
+  <Version>1.02</Version>
+  <Description>Provides a context menu for adding native or hidden renoise dsp effects, sorted in submenus. Based on gova&apos;s insert_native_dsp tool.</Description>
+  <Author>jurekraben@googlemail.com</Author>
+  <Category>Workflow,DSP</Category>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>https://virtualcreations.de</Homepage>
+</RenoiseScriptingTool>
