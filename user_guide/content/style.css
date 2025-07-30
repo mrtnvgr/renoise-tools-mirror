@@ -1,0 +1,141 @@
+
+body {
+    display: block;
+	margin: 0 auto;
+    padding: 0 64px;
+    width: 950px;
+	background-color:#000;
+	color:#FFF;
+}
+
+#main {
+}
+
+a {
+	text-decoration: none;
+	color:#BBB;
+}
+hr {
+    margin-left: 0;
+    width: 950px;
+    color: #3ABEFF;
+}
+
+p {
+    width: 950px;
+    line-height: 22px;
+    font-family: 'Helvetica';
+    text-align: justify;
+}
+
+ul li {
+    font-family: 'Helvetica';
+    list-style: disc;
+}
+
+ol li {
+    font-family: 'Helvetica';
+    list-style: decimal;
+}
+
+.none {
+    list-style: none;
+}
+
+li {
+	padding-bottom: 10px;
+}
+
+ol {
+	padding-top: 5px;
+}
+
+.width {
+    width: 950px;    
+}
+
+.high {
+    margin-bottom: 0;
+    font-size: 48px;
+    font-family: 'Helvetica';    
+}
+
+.center {
+    text-align: center;
+}
+
+.block_center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+h2 {
+    margin-bottom: -10px;
+	color: #E5A017; /*gold*/
+    line-height: 36px;
+    font-size: 34px;
+    text-decoration: underline;
+}
+h3 {
+    margin-bottom: -10px;
+	color: #3ABEFF; /*sky blue*/
+    line-height: 24px;
+	font-size: 22px;
+}
+
+h2, h3 {
+    padding-top: 40px;
+    font-family: 'Helvetica';
+}
+
+li {
+    line-height: 22px;
+}
+
+ol li a {
+	font-size: 18px;
+	text-decoration: underline;
+    font-family: 'Helvetica';
+}
+ol li a:hover {
+	color: #E5A017; /*gold*/	
+}
+
+ol li ol li a {
+	text-decoration: none;
+	font-size: 16px;
+}
+
+ol li ol li a:hover {
+	color: #3ABEFF; /*sky blue*/
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: fixed;
+	top: 0;
+    left: 8px;
+	height: 100%;
+	width:48px;
+	height: 462px;
+	margin-top: 10px;
+    font-family: 'Helvetica';	
+}
+
+.navbar div a {
+	display: block;
+	padding: 10px;
+	height: 22px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: #f2f2f2;
+}
+
+.navbar div a:hover {
+	color: #000000;
+	background-color: #E5A017;
+}

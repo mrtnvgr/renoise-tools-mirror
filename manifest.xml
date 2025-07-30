@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.PhraseTouch</Id>
+  <Name>PhraseTouch</Name>
+  <Version>1.3</Version>
+  <Description>Play/record multiple instruments, multiple notes, multiple phrases, chords... Read the User Guide integrated in the tool for more information.</Description>
+  <Author>ulneiz</Author>
+  <Category>Pattern,Phrase,Editing,Recording</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/51593-new-tool-311-phrasetouch-v10-build-084/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
