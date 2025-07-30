@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.AwesomeSawce</Id>
+  <Name>AwesomeSawce</Name>
+  <Version>1.2</Version>
+  <Description>Generate (de)tuned Supersaw waves etc. (v1.1beta)</Description>
+  <Author>Cas Marrav | Casper</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34793-new-tool-28-awesome-sawce/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://music.jeweett.nl</Homepage>
+</RenoiseScriptingTool>
