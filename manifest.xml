@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Author>unless</Author>
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <License>GPL</License>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-value-stepper</Discussion>
+  <Id>com.unlessgames.value_stepper</Id>
+  <Version>0.6</Version>
+  <Name>value_stepper</Name>
+  <Category>Pattern, Phrase, Editing</Category>
+  <Description>
+    Step pattern values up and down with the keyboard inside the Patttern and Phrase Editor.
+  </Description>
+</RenoiseScriptingTool>
