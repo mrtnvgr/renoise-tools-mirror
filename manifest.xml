@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.dlt.TheDeliverer</Id>
+  <Name>The Deliverer</Name>
+  <Version>1.0</Version>
+  <Description>Batch rendering and archival tool for collecting mixdowns, stems, Renoise instruments, and raw samples, with customizable destination folders, export formats, and flexible naming for stems and mixdowns.</Description>
+  <Author>dltfm | dave.tichy@gmail.com</Author>
+  <Category>Rendering,Export</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-2-the-deliverer/60731</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://dlt.fm</Homepage>
+</RenoiseScriptingTool>
