@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.airmann.FaderPort</Id>
+  <Name>Airmann&apos;s FaderPort Driver</Name>
+  <Version>1.1</Version>
+  <Description>A Renoise driver for Presonus FaderPort DAW controller</Description>
+  <Author>Matthias Ehrmann [airmann_pub@online.de]</Author>
+  <Category>MIDI,Control,Hardware</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/26515-new-tool-278-presonus-faderport-implementation/page-3#entry318038</Discussion>
+  <ApiVersion>4.0</ApiVersion>
+  <Homepage>http://code.google.com/p/airmann-faderport-driver</Homepage>
+</RenoiseScriptingTool>
