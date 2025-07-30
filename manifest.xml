@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.cie-online.StepSequencer</Id>
+  <Name>Step Sequencer</Name>
+  <Version>3.11</Version>
+  <Description>A Step Sequencer is an intuitive, fast and fun possibility of editing a song. It is especially for live purposes and beat creation an excellent tool. 
+
+The &quot;Lauflicht Sequencer&quot; is a moving light, multitrack and multitimbral step sequencer. You can either begin to create a new pattern on scratch or even load the notes of a given pattern into the sequencer automatically. 
+
+For more information, the latest (beta) version, feedback, bugreports, ideas etc. please have a look at the forum or visit http://www.stepsequencer.net.
+  </Description>
+  <Author>Cie [cie@cie-online.de]</Author>
+  <Category>Sequencer</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37327-new-tool-28-step-sequencer-3/</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://www.stepsequencer.net</Homepage>
+</RenoiseScriptingTool>

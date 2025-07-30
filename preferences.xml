@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StepSequencerOptions doc_version="0">
+  <cm_set_type_31>3</cm_set_type_31>
+  <cm_set_device_33>Note Column: 3</cm_set_device_33>
+  <cm_set_device_23>Filter: Resonance</cm_set_device_23>
+  <cm_set_type_43>1.0</cm_set_type_43>
+  <cm_set_device_28>TrackVolPan: Panning</cm_set_device_28>
+  <cm_set_type_18>1.0</cm_set_type_18>
+  <cm_set_device_43>Filter: Resonance</cm_set_device_43>
+  <cm_set_device_16>TrackVolPan: Volume</cm_set_device_16>
+  <cm_set_device_24>Delay: Send</cm_set_device_24>
+  <cm_set_type_32>3</cm_set_type_32>
+  <cm_set_device_35>Velocity: Velocity</cm_set_device_35>
+  <cm_set_type_15>2</cm_set_type_15>
+  <cm_set_device_21>Note Column: 1</cm_set_device_21>
+  <cm_set_type_13>1.0</cm_set_type_13>
+  <cm_set_type_23>1.0</cm_set_type_23>
+  <cm_set_type_42>1.0</cm_set_type_42>
+  <cm_set_device_31>Note Column: 1</cm_set_device_31>
+  <cm_set_type_48>1.0</cm_set_type_48>
+  <instrument_change_no_notes>true</instrument_change_no_notes>
+  <cm_set_device_17>TrackVolPan: Volume</cm_set_device_17>
+  <cm_set_type_46>3</cm_set_type_46>
+  <cm_set_type_44>1.0</cm_set_type_44>
+  <cm_set_type_16>1.0</cm_set_type_16>
+  <cm_set_device_13>Filter: Resonance</cm_set_device_13>
+  <cm_set_type_14>1.0</cm_set_type_14>
+  <cm_set_device_27>Note Column: 3</cm_set_device_27>
+  <cm_set_type_25>2</cm_set_type_25>
+  <cm_set_type_11>3</cm_set_type_11>
+  <cm_set_type_22>1.0</cm_set_type_22>
+  <cm_set_device_36>Filter: Cutoff</cm_set_device_36>
+  <cm_set_device_18>TrackVolPan: Volume</cm_set_device_18>
+  <cm_set_device_37>Filter: Resonance</cm_set_device_37>
+  <cm_set_type_12>1.0</cm_set_type_12>
+  <cm_set_type_47>3</cm_set_type_47>
+  <cm_set_type_28>1.0</cm_set_type_28>
+  <cm_set_type_36>1.0</cm_set_type_36>
+  <cm_set_type_27>3</cm_set_type_27>
+  <step_amount>16</step_amount>
+  <cm_set_device_47>Note Column: 3</cm_set_device_47>
+  <cm_set_type_17>1.0</cm_set_type_17>
+  <cm_set_type_33>3</cm_set_type_33>
+  <cm_set_device_25>Velocity: Velocity</cm_set_device_25>
+  <cm_set_device_45>Velocity: Velocity</cm_set_device_45>
+  <cm_set_device_42>Filter: Cutoff</cm_set_device_42>
+  <cm_set_device_26>Note Column: 2</cm_set_device_26>
+  <cm_set_device_22>Filter: Cutoff</cm_set_device_22>
+  <cm_set_device_41>Note Column: 1</cm_set_device_41>
+  <cm_set_device_12>Filter: Cutoff</cm_set_device_12>
+  <cm_set_device_48>TrackVolPan: Panning</cm_set_device_48>
+  <cm_set_device_46>Note Column: 2</cm_set_device_46>
+  <cm_set_type_45>2</cm_set_type_45>
+  <cm_set_type_38>1.0</cm_set_type_38>
+  <cm_set_device_44>Delay: Send</cm_set_device_44>
+  <cm_set_device_38>TrackVolPan: Panning</cm_set_device_38>
+  <cm_set_type_35>2</cm_set_type_35>
+  <cm_set_type_41>3</cm_set_type_41>
+  <show_debug_prints>false</show_debug_prints>
+  <cm_set_type_37>1.0</cm_set_type_37>
+  <cm_set_device_14>Delay: Send</cm_set_device_14>
+  <cm_set_device_34>Delay: Send</cm_set_device_34>
+  <cm_set_device_32>Note Column: 2</cm_set_device_32>
+  <cm_set_type_21>3</cm_set_type_21>
+  <cm_set_type_26>3</cm_set_type_26>
+  <cm_set_device_15>Velocity: Velocity</cm_set_device_15>
+  <cm_set_type_24>1.0</cm_set_type_24>
+  <cm_set_device_11>Note Column: 1</cm_set_device_11>
+  <cm_set_type_34>1.0</cm_set_type_34>
+</StepSequencerOptions>
