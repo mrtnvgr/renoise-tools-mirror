@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.yinxs.ClearTrack</Id>
+  <Name>Clear Track</Name>
+  <Version>1.0</Version>
+  <Description>Clears all entries below, or above the current cursor position in current track, or column</Description>
+  <Author>yiNXs [me@yinxs.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
