@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.EasyTune</Id>
+  <Name>Easy Tune</Name>
+  <Version>1.5</Version>
+  <Description>Tune samples to C</Description>
+  <Author>afta8 | fathand@gmail.com</Author>
+  <Category>Tuning,Sample</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37402-new-tool-28-easy-tune/</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://afta8.tumblr.com</Homepage>
+</RenoiseScriptingTool>
