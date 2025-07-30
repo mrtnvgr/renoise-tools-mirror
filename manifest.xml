@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.Nibbles</Id>
+  <Name>Nibbles</Name>
+  <Version>2.21</Version>
+  <Description>Nibbles, what else?</Description>
+  <Author>4Tey, KMaki, Dac Chartrand [dac@renoise.com]</Author>
+  <Category>Game</Category>
+  <Discussion>http://www.renoise.com/board/index.php?showtopic=25978</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>

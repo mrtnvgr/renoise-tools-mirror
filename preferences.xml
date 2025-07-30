@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScriptingToolPreferences doc_version="0">
+  <update_frequency>0.10000000000000001</update_frequency>
+  <time>false</time>
+  <high_score>15</high_score>
+  <wrap>false</wrap>
+  <grid>true</grid>
+</ScriptingToolPreferences>
