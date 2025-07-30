@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.GrooveControl</Id>
+  <Name>Groove Control</Name>
+  <Version>1.1</Version>
+  <Description>Gives a GUI to control all groove sliders at once.</Description>
+  <Author>scripts</Author>
+  <Category>Workflow, Control</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/43625-new-tool-30-groove-control/</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
