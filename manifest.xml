@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Author>unless</Author>
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <License>GPL</License>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-chunk-chops</Discussion>
+  <Id>com.unlessgames.chunk_chops</Id>
+  <Version>0.2</Version>
+  <Name>chunk_chops</Name>
+  <Category>Pattern,Editing,Generator</Category>
+  <Description>
+    Generate new patterns by chopping your song via chunk selecting pseudo pattern commands
+  </Description>
+</RenoiseScriptingTool>
