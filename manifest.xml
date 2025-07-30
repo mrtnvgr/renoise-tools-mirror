@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.ZeroCrossings</Id>
+  <Name>ZeroCrossings</Name>
+  <Version>1.01</Version>
+  <Description>Automatically create slices for each zero crossing. Launch the tool by right-clicking in the waveform editor, or assigning a keyboard shortcut</Description>
+  <Author>danoise [bjorn.nesby@gmail.com]</Author>
+  <Category>Sample,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/44383-new-tool-30-zerocrossings/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.renoise.com/tools/zerocrossings</Homepage>
+</RenoiseScriptingTool>
