@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.AddRemoveSilence</Id>
+  <Name>Add/Remove silence</Name>
+  <Version>0.50</Version>
+  <Description>Adds the ability to either destructively remove silent parts of a sample (sounds that fall below a threshold), and the ability to add silence to the end or beginning of a sample. The latter can often be useful for FX processing. Shows up as &apos;Add Silence...&apos; and &apos;Remove Silence...&apos; in the Sample Editor&apos;s &apos;Process&apos; context menu. Does not work with sliced instruments.</Description>
+  <Author>Fabio Napodano | It-Alien (it-alien@renoise.com)</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>2.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
