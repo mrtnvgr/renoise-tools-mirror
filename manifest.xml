@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>hack.dpp.hwsampler</Id>
+  <Name>Midi Hardware Sampler Helper</Name>
+  <Version>1.7</Version>
+  <Description>Automate the process of collecting, mapping, and tweaking samples from a hardware synthesizer connected via MIDI.</Description>
+  <Author>dogsplusplus [@dogsplusplus], Jugwine [@jugwine1]</Author>
+  <Category>MIDI, Hardware, Sample, Instrument</Category>
+  <Repository>https://github.com/verdog/renoise-hardware-sampler</Repository>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-0-automated-sample-recording-from-midi-enabled-hardware/62947</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
