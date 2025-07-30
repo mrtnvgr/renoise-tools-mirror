@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Author>unless</Author>
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <License>GPL</License>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-launch-lanes</Discussion>
+  <Id>com.unlessgames.launch_lanes</Id>
+  <Version>0.1</Version>
+  <Name>launch_lanes</Name>
+  <Category>Live,Pattern,Sequencer</Category>
+  <Description>
+     Jam live with your keyboard by launching patterns clip-style inside the Pattern Matrix.
+  </Description>
+</RenoiseScriptingTool>
