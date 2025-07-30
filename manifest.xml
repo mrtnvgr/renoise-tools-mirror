@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>dec.ultradian7.ModulationDevicePresets</Id>
+  <Name>Modulation Device Presets</Name>
+  <Version>0.2</Version>
+  <Description>Preset handler for sample modulation devices allowing to save and load presets outside of Modulation Sets. Save indvidual devices, device chains or a complete filter section.</Description>
+  <Author>Declan Whitfield [ultradian7.github.io]</Author>
+  <Category>Modulation</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-modulation-device-presets/72720</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>https://ultradian7.github.io</Homepage>
+</RenoiseScriptingTool>
