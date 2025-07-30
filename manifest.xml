@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.RandomRangeTrack</Id>
+  <Name>Random Range Track</Name>
+  <Version>2.0</Version>
+  <Description>This double function randomizes the notes or values of the selected range within the selected track.
+  
+First it is necessary to select an area in the pattern editor. The first line and the last line selected must have different notes/values, which define the minimum and maximum notes/values of the range to randomize. Use &quot;ALT + mouse select&quot; to the precise selection...
+
+Access: &quot;Pattern Editor/Selection/Randomize Notes... (or Randomize Effects...)&quot;.</Description>
+  <Author>ulneiz</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-1-randomrangetrack-january-2019/56472</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
