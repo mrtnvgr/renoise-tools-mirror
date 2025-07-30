@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.BestViews</Id>
+  <Name>Best Views</Name>
+  <Version>1.1</Version>
+  <Description>Best views.</Description>
+  <Author>Cas | casmarrav@gmail.com</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
