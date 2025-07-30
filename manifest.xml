@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.softknobs.VolumeScale</Id>
+  <Name>Volume Scale</Name>
+  <Version>1.3</Version>
+  <Description>Volume scale (suggested shortcut Alt-V)
+  This recreates a simple version of the classic &quot;Volume Scale&quot; function available in Fasttracker 2.
+  Useful to create fade in/out volume, quickly reduce/amplify volume by certain amount on a selection.
+  The volume is modified in a relative way so the dynamic is kept within the selection.
+  
+  Usage:
+  Select data from one or more tracks and select &quot;Volume Scale&quot; from the Tools menu.
+  Choose start and end volume percentile and press &quot;OK&quot;.
+  
+  Preset shortcuts:
+  1 &quot;Fade In&quot; and close dialog
+  2 &quot;Fade Out&quot; and close dialog
+  3 &quot;Halve&quot; and close dialog
+  4 &quot;Double&quot; and close dialog
+  
+  Ctrl 1 Fade In
+  Ctrl 2 Fade Out
+  Ctrl 3 Halve
+  Ctrl 4 Double  
+  
+  Examples (applies to selection):
+  Fade out: Start: 100% End 0%
+  Fade in : Start: 0%   End 100%
+  Halve : Start: 50%   End 50%
+  Amplify from 0% to 20%: Start: 100% End 120%
+  
+  </Description>
+  <Author>Softknobs | info@softknobs.com</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/33580-new-tool-28-volume-scale</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com/tools/volume-scale</Homepage>
+</RenoiseScriptingTool>
