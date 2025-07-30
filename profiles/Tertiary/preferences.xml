@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xRulesAppPrefs doc_version="0">
+  <autorun_enabled>true</autorun_enabled>
+  <show_on_startup>true</show_on_startup>
+  <show_minimized>false</show_minimized>
+  <ruleset_folder>C:\Users\Bjørn\AppData\Roaming\Renoise\V3.1.0\Scripts\Tools\com.renoise.xRules.xrnx\/rulesets/</ruleset_folder>
+  <midi_multibyte_enabled>true</midi_multibyte_enabled>
+  <midi_nrpn_enabled>true</midi_nrpn_enabled>
+  <midi_terminate_nrpns>false</midi_terminate_nrpns>
+  <osc_client_host>127.0.0.1</osc_client_host>
+  <osc_client_port>8000</osc_client_port>
+  <active_rulesets/>
+  <midi_inputs/>
+  <midi_outputs/>
+  <osc_devices/>
+</xRulesAppPrefs>
