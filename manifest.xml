@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.kmaki.Colormate</Id>
+  <Name>Colormate</Name>
+  <Version>1.2</Version>
+  <Description>A tool for setting and managing track colors using keyboard.</Description>
+  <Author>KMaki</Author>
+  <Category>Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35830-new-tool-28-colormate/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
