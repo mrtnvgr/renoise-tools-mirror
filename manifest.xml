@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.EpicArpeggiator</Id>
+  <Name>Epic Arpeggiator</Name>
+  <Version>2</Version>
+  <Description>Create new note sequences with a note matrix GUI and a lot of other very powerful arpeggiator features. Can be found in the &apos;Tools&apos; menu as &apos;Epic Arpegiator...&apos;.
+</Description>
+  <Author>Vincent Voois [ http://tinyurl.com/vvrns ]</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34593-tool-28-epic-arpeggiator-30/</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
