@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.SAI&amp;PhrasesImporter</Id>
+  <Name>SAI &amp; Phrases Importer</Name>
+  <Version>1</Version>
+  <Description>Provides two separate panels for:
+  - &quot;Save all instruments&quot;: save all XRNI instruments of the current song in a folder of your choice (use coroutines).
+  - &quot;Phrases Importer&quot;: import all XRNZ phrases between selected instruments. Select a origin and a destiny instrument index to import.
+
+Access: Instrument box: &quot;~Save All Instruments...&quot; or &quot;~Phrases Importer...&quot;</Description>
+  <Author>ulneiz</Author>
+  <Category>Instrument,Import,Phrase</Category>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
