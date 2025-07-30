@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.CustomWave</Id>
+  <Name>Custom Wave Synth</Name>
+  <Version>0.92</Version>
+  <Description>A sample generator which allows you to create complex new short, looped samples, using up 
+  to 6 oscillators and oscillator modulation. 
+  
+  A note range can be defined in order to create multisampled instruments.
+  
+  Creates a menu entry &apos;Generate Custom Wave&apos; in the sample editor&apos;s context menu (right click on an empty sample wave form).</Description>
+  <Author>Fabio Napodano | It-Alien (it-alien@renoise.com)</Author>
+  <Category>Sample,Generator</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
