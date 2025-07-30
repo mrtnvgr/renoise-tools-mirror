@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.Laffik.SelectionToBPM</Id>
+  <Name>SelectionToBPM</Name>
+  <Version>0.6</Version>
+  <Description>Script converts length of selection into BPM value. Select full length of beat in sample and press value button in the tool. Detected tempo may be sent to Renoise by &quot;Set song BPM&quot; button. x2 and :2 are two buttons for tempo division adjustment. Also tempo of sample may be adjusted to tempo of the song.</Description>
+  <Author>Laffik</Author>
+  <Category>Workflow,Pattern</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/51587-new-tool-31-selection-to-bpm/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
