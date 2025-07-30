@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.QuickTemplate</Id>
+  <Name>Quick Template</Name>
+  <Version>0.10000000000000001</Version>
+  <Description>Shows a list of template songs in file menu</Description>
+  <Author>Jurek | jr@virtualcreations.de</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.renoise.com</Homepage>
+</RenoiseScriptingTool>
