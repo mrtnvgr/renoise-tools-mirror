@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.SendMixer</Id>
+  <Name>Send mixer</Name>
+  <Version>1</Version>
+  <Description>provides a mixer to deal with send levels </Description>
+  <Author>scripts</Author>
+  <Category>Mixing,DSP</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49386-new-tool-31-send-mixer-feb-2017/</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
