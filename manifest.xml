@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Id>com.duftetools.SimplePianoroll</Id>
+  <Version>5.1</Version>
+  <Author>dufte (toimp)</Author>
+  <Name>Simple Pianoroll</Name>
+  <Category>Editing,Pattern</Category>
+  <Description>Simple piano roll for Renoise</Description>
+  <Discussion
+    >https://forum.renoise.com/t/simple-pianoroll-com-duftetools-simplepianoroll-xrnx/63034</Discussion>
+  <Repository
+    >https://github.com/ryrun/com.dufte.SimplePianoroll.xrnx</Repository>
+  <Documentation
+    >https://github.com/ryrun/com.dufte.SimplePianoroll.xrnx/blob/master/readme.md</Documentation>
+</RenoiseScriptingTool>
