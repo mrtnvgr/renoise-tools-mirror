@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.tesselode.ExpandSong</Id>
+  <Name>Expand Song</Name>
+  <Version>1.01</Version>
+  <Description>Quickly increase the resolution of Renoise songs.</Description>
+  <Author>tesselode [aminnich3@gmail.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Repository>https://github.com/tesselode/expand-song.xrnx</Repository>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-2-expand-song/59386</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
