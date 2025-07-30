@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.noisebeuter.ZynZilla</Id>
+  <Name>ZynZilla</Name>
+  <Version>0.21</Version>
+  <Description>A sample generator which allows you to generate oscillators with harmonic overtones. It is inspired by ZynAddSubFx&apos;s oscillator editor and based on It-Alien&apos;s wave generator.</Description>
+  <Author>Marco Süß | noisebeuter (noisebeuter@gmx.de) + Fabio Napodano | It-Alien (it-alien@renoise.com)</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
