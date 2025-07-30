@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.AutoAddNewInstrument</Id>
+  <Name>Auto Add New Instrument</Name>
+  <Version>1.3</Version>
+  <Description>If you NumPad+ across the boundary of existing instruments, this tool will add an empty instrument. Samples too! Find the 4 shortcuts by typing &apos;select or&apos; in the search box.</Description>
+  <Author>Cas | casmarrav@gmail.com</Author>
+  <Category>Instrument</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35978-new-tool-28-auto-add-new-instrument/</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
