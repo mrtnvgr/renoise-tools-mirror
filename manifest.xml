@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Author>unless</Author>
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <License>GPL</License>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-tint</Discussion>
+  <Id>com.unlessgames.tint</Id>
+  <Version>0.4</Version>
+  <Name>tint</Name>
+  <Category>Pattern,Workflow</Category>
+  <Description>
+    Highlights the track at the cursor with its color, batch tint tracks by a parametric spectrum.
+  </Description>
+</RenoiseScriptingTool>
