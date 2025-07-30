@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.kibiger.ReNoam</Id>
+  <Name>ReNoam</Name>
+  <Version>0.8</Version>
+  <Description>Based on a formal grammar, ReNoam generates a sequence of patterns from existing patterns.</Description>
+  <Author>Ralf Kibiger | f+d+k (fdk@kibiger.com)</Author>
+  <Category>Pattern, Sequencer, Generator</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/33439-new-tool-28-renoam</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>

@@ -1,0 +1,22 @@
+#
+# A very simple PCFG (probabilistic context free grammar)
+# 
+
+# The grammar type
+ReNoamGrammarType = pcfg
+
+# Start symbol
+Song
+
+# Rules to expand the start symbol and on and on...
+Song -> A   A     <0.8>
+Song -> A   B     <0.2>
+
+# Song -> B  B     <0.5>
+
+
+# Rules to translate to pattern numbers
+# As long as there's only one rule per left hand side, you may omit the probability!
+A -> 0
+B -> 1
+

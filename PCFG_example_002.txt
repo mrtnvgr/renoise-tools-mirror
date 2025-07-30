@@ -1,0 +1,31 @@
+#
+# A very simple PCFG (probabilistic context free grammar)
+# 
+
+# The grammar type
+ReNoamGrammarType = pcfg
+
+# Start symbol
+Song
+
+# Rules to expand the start symbol and on and on...
+Song -> Intro Mid Outro           <0.8>
+Song -> Intro A B B A Outro     <0.2>
+
+
+# Probabilities for alternative rules may be set to any positive number.
+# (The probabilities will be normalized to 1.0)
+Mid -> C Mid D <3>
+Mid -> C D        <1>
+Mid -> 1 Mid      <2>
+
+Intro -> 0 1          <0.3>
+Intro -> 0 1 0 1    <0.7>
+
+A -> 2
+B -> 3
+
+C -> 4
+D -> 2 5
+
+Outro -> 6 7

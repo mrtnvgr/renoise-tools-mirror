@@ -1,0 +1,32 @@
+#
+# A very simple CFG (context free grammar)
+# 
+
+# The grammar type -- you may leave this away if you use a CFG
+ReNoamGrammarType = cfg
+
+# Start symbol
+Song
+
+# Rules to expand the start symbol and on and on...
+Song -> Struct1
+Song -> Struct2
+Song -> Struct3
+
+Struct1 -> Intro   V V C V C Out
+Struct2 -> V C V C Bridge C C
+Struct3 -> Intro Mid Out2
+
+Mid -> V V C V C C
+
+# Rules to translate to pattern numbers
+
+Intro -> 0 1
+
+V -> 3
+C -> 4
+Bridge -> 2
+
+Out -> 6 7
+Out2 -> 7 6
+
