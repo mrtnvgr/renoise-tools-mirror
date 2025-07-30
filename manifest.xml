@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.GoToSendTrack</Id>
+  <Name>Go To Send Track</Name>
+  <Version>1.21</Version>
+  <Description>Allow Navigation to and from send tracks via right-click menus in the mixer and DSP lanes. </Description>
+  <Author>Ledger</Author>
+  <Category>Workflow,DSP</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/38647-new-tool-go-to-send-track/#entry297776</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
