@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.soundgasmdesign.Playplus</Id>
+  <Name>PlayPlus</Name>
+  <Version>1</Version>
+  <Description>Adds hotkey combinations for play from pattern loop sequence start, and play entire song.</Description>
+  <Author>Rick Christy (grymmjack) | rick@soundgasmdesign.com</Author>
+  <Category>Workflow,Live</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/33984-new-tool-28-playplus/</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://www.soundgasmdesign.com</Homepage>
+</RenoiseScriptingTool>
