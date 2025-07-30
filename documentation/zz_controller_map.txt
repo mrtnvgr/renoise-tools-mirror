@@ -1,0 +1,95 @@
+Controller Mapping Assignments
+------------------------------
+
+Common Assignments (unshifted)
+C RecArm      : Toggle record fader automation              [s:clear automation]
+C Fader       : Track volume (or pan if flipped)
+C TouchStrip  : Move up/down in pattern
+C Solo        : Solo toggle
+C Mute        : Mute toggle
+C Rew         : Move to previous pattern in sequence        [s:undo]
+C FFwd        : Move to next pattern in sequence            [s:redo]
+C Stop        : Stop playback or return to start of pattern [s:jump to start]
+C Play        : Continue playback from current position
+C Record      : Toggle editmode
+C TrackL      : Previous track  (LED on if not send track)  [s:delete track]
+C TrackR      : Next track      (LED on if not seq track)   [s:add new track]
+C Loop        : Loop pattern
+C Flip        : Fader = pan                                 [s:view selection mode]
+
+View Selection Mode
+C F1          : View preset 1
+C F2          : View preset 2
+C F3          : View preset 3
+C F4          : View preset 4
+C F5          : View preset 5
+C F6          : View preset 6
+C F7          : View preset 7
+C F8          : View preset 8
+
+Mode 1 (Mixer)                        [pan]
+C Enc 1       : Set BPM
+C Enc 2       : Track delay
+C Enc 3       : Track Pan (or volume if flipped)
+C F1          : Pattern wrap toggle
+C F2          : Chord mode toggle
+C F3          : Quantize toggle
+C F4          : Toggle metronome
+
+Mode 2 (Pattern edit)                 [send]
+C Enc 1       : Select instrument                           [s:select pattern]
+C Enc 2       : Set record quantize amount                  [s:set pattern length in beats]
+C Enc 3       : Select octave                               [s:set bpm]
+C F1          : Pattern wrap toggle
+C F2          : Chord mode toggle
+C F3          : Quantize toggle
+C F4          : Toggle metronome
+
+Mode 3 (DSP edit)                     [eq]
+C Enc 1       : Select DSP
+C Enc 2       : Select Parameter
+C Enc 3       : Set value
+C F1          : Enable toggle
+C F2          : View external editor if available
+C F3          : No action (but illuminates if first in chain)
+C F4          : No action (but illuminates if last in chain)
+
+Mode 4 (Sample Instrument edit)       [plugin]
+C Enc 1       : Select instrument                           [s: transpose]
+C Enc 2       : Select sample                               [s: fine tune]
+C Enc 3       : Sample volume                               [s: pan]
+C F1          : Autoseek toggle 
+C F2          : Beat sync
+C F3          : Toggle sample record dialog
+C F4          : Start/stop sample record dialog
+
+Mode 5 (Sequencer edit)               [auto]
+  Enc 1       : 
+  Enc 2       : 
+  Enc 3       : 
+  F1          : 
+  F2          : 
+  F3          : 
+  F4          : 
+
+
+
+
+Stuff to look at incorporating:
+  Instrument edit:
+    loop mode cycle
+    nna cycle
+    interpolate cycle
+    sync
+    vol
+    pan
+    transpose
+    finetune
+    vel->vol toggle
+    env toggle
+    autoseek toggle
+    autofade toggle
+  Sequence edit:
+    clone pattern
+    add pattern
+    toggle track playback in pattern sequence slot

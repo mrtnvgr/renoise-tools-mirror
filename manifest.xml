@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.AlphaTrack</Id>
+  <Name>Frontier AlphaTrack Support</Name>
+  <Version>2.0</Version>
+  <Description>A native Renoise driver for the Frontier Alphatrack Device.</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>MIDI,Control,Hardware</Category>
+  <ApiVersion>2</ApiVersion>
+</RenoiseScriptingTool>
