@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.MashUp</Id>
+  <Name>Mash Up</Name>
+  <Version>1.6</Version>
+  <Description>Mash up samples like potatoes.</Description>
+  <Author>Cas Marrav | Casper</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://music.jeweett.nl</Homepage>
+</RenoiseScriptingTool>
