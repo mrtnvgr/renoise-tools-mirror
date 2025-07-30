@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.CdpInterface</Id>
+  <Name>CDP Interface</Name>
+  <Version>0.68</Version>
+  <Description>CDP Interface for Renoise</Description>
+  <Author>afta8 | fathand@gmail.com  </Author>
+  <Category>Sample,Editing,Integration</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/41882-new-tool-30-cdp-lua-tool/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
