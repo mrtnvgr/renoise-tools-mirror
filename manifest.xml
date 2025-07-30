@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.AutoMaxSelectedDevice</Id>
+  <Name>Auto Maximize Selected DSP Device</Name>
+  <Version>1.1</Version>
+  <Description>When enabled via the right-click menu on a DSP, this script will keep the currently selected DSP maximized and the rest of the DSPs in the chain minimized  </Description>
+  <Author>Ledger</Author>
+  <Category>Workflow,DSP</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/26313-new-tool-auto-maximize-selected-device-in-dsp-chain/</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
