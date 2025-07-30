@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-5-cycler/</Discussion>
+  <License>GPL</License>
+  <ApiVersion>6.2</ApiVersion>
+  <Id>com.unlessgames.cycler</Id>
+  <Version>0.3</Version>
+  <Author>unless</Author>
+  <Name>cycler</Name>
+  <Category>Pattern,Generator,Coding</Category>
+  <Description>Provides a fast way to generate regular Patterns using cycle notation</Description>
+</RenoiseScriptingTool>
