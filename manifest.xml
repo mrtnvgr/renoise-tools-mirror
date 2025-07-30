@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.ToggleDSPs</Id>
+  <Name>Toggle DSPs</Name>
+  <Version>9.01</Version>
+  <Description>Provides menu items and keybindings to toggle DSPs in the current track or in the whole song.</Description>
+  <Author>Marvin Tjon | Bantai</Author>
+  <Category>Workflow,DSP</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com/tools/toggle-dsps</Homepage>
+</RenoiseScriptingTool>
