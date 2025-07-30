@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.JumpToFromSendMod</Id>
+  <Name>Multijump From/To Send</Name>
+  <Version>1.3</Version>
+  <Description>&quot;multi-jump&quot; from a source send track to a target track, with support for multiple sends and sends in serial. Based on joule&apos;s jump from/to send tool.</Description>
+  <Author>ffx</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://forum.renoise.com/index.php/topic/48440-new-tool-multi-jump-fromto-send-31/</Homepage>
+</RenoiseScriptingTool>
