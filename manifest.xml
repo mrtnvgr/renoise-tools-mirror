@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.kmaki.Editsteptweaks</Id>
+  <Name>EditStepTweaks</Name>
+  <Version>1.4</Version>
+  <Description>This tools adds options to finetune native Editstep. Usage: Access settings from Tools-menu. For some options you need to rebind keys you use for moving with editstep.</Description>
+  <Author>KMaki</Author>
+  <Category>Pattern,Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35374-new-tool-28-editstep-tweaks/</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
