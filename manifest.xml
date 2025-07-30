@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.kmaki.PhaseInvertSample</Id>
+  <Name>Phase invert sample</Name>
+  <Version>1.2</Version>
+  <Description>Inverts sample phase. Works via keybinding (Sample Editor:Process) and Sample Editor context menu (under &quot;Process&quot;). If selection is made, only the selected part is inverted. If no selection exists, the whole sample is inverted.</Description>
+  <Author>KMaki</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>2</ApiVersion>
+</RenoiseScriptingTool>
