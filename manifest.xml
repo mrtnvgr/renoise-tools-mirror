@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.PatternRotate</Id>
+  <Name>Rotate Pattern</Name>
+  <Version>1.2</Version>
+  <Description>Rotates pattern content (shift and wrap content around the pattern start and end) and automation points for the current pattern.
+
+Creates a new menu entry &apos;Rotate...&apos; in the Pattern Editor&apos;s context menu. Also adds Pattern Editor shortcuts to quickly rotate selection content up and down.</Description>
+  <Author>Taktik (taktik@renoise.com)</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/26560-new-tool-pattern-rotate</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
