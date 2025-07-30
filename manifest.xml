@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.AutomationMultiplier</Id>
+  <Name>Automation multiplier</Name>
+  <Version>1.1</Version>
+  <Description>This script adds a context menu entry to multiply the current automation curve by a given value.</Description>
+  <Author>It-Alien (Fabio Napodano) | napodano@napodano.com</Author>
+  <Category>Automation,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/36096-automation-multiplier/</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
