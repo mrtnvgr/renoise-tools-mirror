@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>AS.Beatslaughter.SyncModDSPs</Id>
+  <Name>Synchronize Modulation DSPs</Name>
+  <Version>1.4</Version>
+  <Description>Set the Renoise internal Chorus, Flanger and Phaser effect rates in lines per cycle and the LFO frequency in Hz.</Description>
+  <Author>Alexander Stoica | Beatslaughter (info@beatslaughter.de)</Author>
+  <Category>Workflow,DSP</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/29821-new-tool-27-synchronize-modulation-dsps</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.beatslaughter.de</Homepage>
+</RenoiseScriptingTool>

@@ -1,0 +1,39 @@
+Problems? Mail: info@beatslaughter.de                              * Version 1.4
+
+--[ @@Manual@@ ]--------------------------------------------------------------------
+
+This tool allows you to set the rate parameter of the Chorus, Flanger and Phaser
+effects in lines per cycle and the frequency of the LFO device in Hz. Tempo
+synced modulation is now much easier possible. Do a right click on one of the
+supported DSPs in the device chain or mixer to access the menu.
+
+Keyboard shortcuts:
+
+NUMPAD 0 = set input value to current pattern length
+ARROW UP/DOWN = adjust input value in small steps
+PAGE UP/DOWN = adjust input value in bigger steps
+HOME/END = min/max input value
+ENTER = set input value
+ESC = close dialog
+
+If you have found a bug or otherwise need help with this tool, then feel free to
+mail me at the address given above.
+
+--[ @@History@@ ]-------------------------------------------------------------------
+
+Version 1.4
+ - small fix for Renoise 3.1 only, Phaser rate parameter name changed
+
+Version 1.3
+ - compatibility with Renoise 3 (requires Renoise 3.0.1)
+ - menu works now for effects used in the sampler
+
+Version 1.2
+ - menu can now be accessed from the mixer view too
+ - included manual
+
+Version 1.1
+- LFO device can be set in Hz now
+
+Version 1.0
+- initial release
