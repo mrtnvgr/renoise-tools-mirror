@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.lneheb.CombineInstruments</Id>
+  <Name>Combine Instruments</Name>
+  <Version>0.5</Version>
+  <Description>Copy samples from several instruments into one.</Description>
+  <Author>Lneheb</Author>
+  <Category>Instrument,Sample</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-combine-instruments/69167</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>https://soundcloud.com/lneheb</Homepage>
+</RenoiseScriptingTool>
