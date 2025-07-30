@@ -1,0 +1,50 @@
+FEATURES
+
+The RubberBand-Aid Time Stretch utility allows you to expand or contract the duration of a sample or any selection thereof. 
+
+This can be an incredibly powerful way to tighten up a loose instrumental performance or to alter the feel of any given piece of music. Speed up a held note or slow down a rushed passage to make your music do what you want it to do.
+
+________________________________________________________________
+
+USAGE
+
+1. Select the portion of the sample to be stretched. With nothing selected, the entire sample will be stretched to fit the desired duration.
+
+2. Using "Stretch Settings", choose how long you want the segment to become.
+
+3. Choose a "Crispness" setting that describes the type of sound being stretched. Most of the time, the default value sounds the best, but choosing a different crispness value may give you the best results for the sound you are using. Once you find a crispness that sounds the best, you can simply use that for the rest of the session on that particular sample.
+
+4. Press "Process Time Stretch" or press Shift+Return to run the Rubber Band process. Your resized sample will appear in the sample window. Press Return to preview it, or use your keyboard to hear the stretched audio in context. 
+
+You can easily undo your changes to experiment with different setting to find what works best.
+
+________________________________________________________________
+
+KEYBOARD SHORTCUTS
+
+Tab — Focus the stretch interval box for editing.
+Left / Right — Cycle through units of time
+Up / Down — Cycle through crispness values
+Shift + Return — Run the processor
+
+________________________________________________________________
+
+ADVANCED VIEW
+
+While the default settings usually provide great results, switching to Advanced View allows you to tweak how samples are processed.
+
+ADVANCED VIEW — TWEAKS
+
+■ Lock loop points — Forces loop points to be locked in time. With this setting off, loop points are adjusted forward or back automatically as the audio is stretched. Default: OFF
+
+■ Lock slice markers - Forces slice markers to be locked in time. With this setting off, slice markers are adjusted forward or back automatically as the audio is stretched. Default: OFF
+
+■ Loose — Same as "rubberband --loose" — Relaxes timing in order to better preserve transients. Depending on the nature of the sound being processed and the extent of the time stretch, you may get better results one way or the other. Default: ON
+
+■ Use multithreading — Same as "rubberband --threads" — Tells Rubber Band to use multithreading when processing. Default: ON
+
+ADVANCED VIEW - EXPERIMENTAL
+
+■ Center focus – Same as "rubberband --centre-focus" – Only applicable for stereo samples. From rubberband: "Preserve focus of center material in stereo (at a cost in width and individual channel quality)". Though documentation is sparse for this Rubber Band option, it appears to use mid-side processing when pitch shifting. Default: OFF
+
+■ Smoothing – Same as "rubberband --smoothing" – From rubberband: "Apply window presum and time-domain smoothing". Can be useful for extreme time stretching, but can often introduce unwanted clicks and artifacts at the end of the sample. Your mileage may vary. Default: OFF

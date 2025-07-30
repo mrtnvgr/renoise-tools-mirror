@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.dlt.RubberBandAid</Id>
+  <Name>RubberBand-Aid: Time Stretch, Pitch Correction, and Multisample Builder</Name>
+  <Version>0.7</Version>
+  <Description>A full-featured frontend for the Rubber Band time stretching and pitch manipulation library that provides the ability to timeshift or pitch correct any sample or selection thereof, and includes a multisample generator for building sample-based instruments that maintain attack, decay, and vibrato across the entire keyboard. Well-documented, with intuitive keyboard shortcuts for making edits FAST. Supports experimental rubberband options for deep dives into customizing the sound you want. Windows and Mac binaries are included, with the option to point to your own compiled/installed version.
+  </Description>
+  <Author>DLT [dave.tichy@gmail.com]</Author>
+  <Category>Sample,Editing,Instrument</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-rubberband-aid/60491</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>

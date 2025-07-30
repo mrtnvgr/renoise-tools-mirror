@@ -1,0 +1,58 @@
+FEATURES
+
+The RubberBand-Aid Multisample Generator allows you to build a multisampled instrument out of a single sample, utilizing the pitch shifting capabilities of Rubber Band to create samples that match the length, feel, and vibrato of the original sample. It supports any range desired, and distributes samples into keyzones automatically.
+
+If using more than one layered base sample, you can process them individually to spread them across the keyboard as you wish. For example, one sample might be repitched every octave while the other is repitched every semitone. This allows you to optimize the resulting instrument size and sound.
+
+Any Loop Points are copied from the original sample to all new samples (since they will all have the same length). This will very seldom result in perfect sounding loops, but it makes the process of setting loop points later much easier.
+
+________________________________________________________________
+
+USAGE
+
+1. Select a sample in the Samples list that you want to turn into a multisampled instrument.
+
+2. Choose a sampling interval using the Left/Right arrow keys. Sampling more often increases the file size of the resulting instrument, but provides better results.
+
+3. Choose a mapping extent for the samples across the instrument. Samples will be filled in between the start and end notes you specify here. Click the "All" button to quickly select Renoise's entire note range of 120 keys (notes 0-119).
+
+4. Choose a "Crispness" setting that describes the type of sound of your original sample. Depending on your source audio and your goals for the sound, you might get the best results with one or another. Give the different values a shot with wider sampling intervals to get a feel for how they will affect the sound across the keyboard.
+
+5. With the desired sample chosen in the instrument's sample list, press "Generate Multisample" or press Shift+Return to run the generator. This process may take a long time.
+
+6. Play your newly created multisampled instrument. Pay attention to the vibrato, tremolo, attack, and release as you play up and down the keys, and compare with a simple sample-based version of your instrument (as when you drag a sample into the Instruments list).  
+
+You can easily undo your changes to experiment with different setting to find what works best.
+
+Now, If you started with a layered instrument, select the next sound in the instrument and repeat the process. You can use different settings for each layer to craft the exact sound you desire.
+
+
+________________________________________________________________
+
+KEYBOARD SHORTCUTS
+
+Left / Right — Cycle through sampling intervals
+Up / Down — Cycle through crispness values
+Shift + Return — Run the processor
+
+________________________________________________________________
+
+ADVANCED VIEW
+
+While the default settings usually provide great results, switching to Advanced View allows you to tweak how samples are processed.
+
+ADVANCED VIEW — TWEAKS
+
+■ Apply microfades — Applies microscopic fade-ins and fade-outs on each newly generated sample. Helps avoid pops and clicks in repitched samples.
+
+■ Enable formant preservation — Same as "rubberband --formant" — Tries to preserve formants when pitch shifting. For most purposes, and especially for vocals, keeping this enabled results in the most natural sound.
+
+■ Use multithreading — Same as "rubberband --threads" — Tells Rubber Band to use multithreading when processing.
+
+ADVANCED VIEW — EXPERIMENTAL
+
+■ Progressive Resample – This causes each new sample to be pitch-shifted based on the previously shifted sample, instead of basing all repitches on the original sample). This process can dramatically alter or mangle the character of the original sound the further out the resampler gets. This can be useful for sound design, as it allows you to generate many interesting timbres.
+
+■ Center focus – Same as "rubberband --centre-focus" – Only applicable for stereo samples. From rubberband: "Preserve focus of center material in stereo (at a cost in width and individual channel quality)". Though documentation is sparse for this Rubber Band option, it appears to use mid-side processing when pitch shifting.
+
+■ Smoothing – Same as "rubberband --smoothing" – From rubberband: "Apply window presum and time-domain smoothing".

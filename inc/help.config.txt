@@ -1,0 +1,11 @@
+This tool requires a working installation of the Rubber Band audio time-stretching and pitch-shifting program (available at https://breakfastquay.com/rubberband/, linked below). For most Windows and Mac users, the binaries included with this plugin (and set by default) should work right out of the box.
+
+MAC USERS
+If the included binary doesn't work on your system, a rubberband package is available through Homebrew. Once you have Homebrew installed, install rubberband using the following command:
+		$ brew install -s rubberband
+
+LINUX USERS
+Various distributions have packages available for rubberband, although you may see performance benefits if you compile your own binaries. Check your distro's package manager to see if packages are available.
+
+TECHNICAL TROUBLESHOOTING
+If you're getting errors when trying to use the RubberBand-Aid tool, make sure the plugin is set to the correct path to your Rubber Band binary. Also make sure the file is executable and that all its own dependencies are installed (which may include libsndfile if you've compiled your own rubberband binary). You can try this by running the executable in a terminal. If everything is installed correctly, it should show you the usage help for the rubberband command.

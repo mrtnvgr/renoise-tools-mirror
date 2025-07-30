@@ -1,0 +1,48 @@
+FEATURES
+
+The RubberBand-Aid Pitch Shift utility allows you to change the pitch of a sample or any selection thereof. 
+
+Focusing on a time selection, you can easily fix syllables sung out of key or correct wrong notes in an instrumental performance. Or, bring a detuned instrument sample back into line by pitching the entire sample.
+
+________________________________________________________________
+
+USAGE
+
+1. Select the portion of the sample to be repitched. With nothing selected, the entire sample will be repitched by the amount you choose.
+
+2. Using the "Pitch Shift" box or the buttons underneath, choose how much you want the pitch to be shifted.
+
+3. Choose a "Crispness" setting that describes the type of sound being stretched. Most of the time, the default value sounds the best, but choosing a different crispness value may give you the best results for the sound you are using. Once you find a crispness that sounds the best, you can simply use that for the rest of the session on that particular sample.
+
+4. Press "Process Pitch Shift" or press Shift+Return to run the Rubber Band process. Your repitched sample will appear in the sample window. Press Return to preview it, or use your keyboard to hear the pitched audio in context. 
+
+You can easily undo your changes to experiment with different setting to find what works best.
+
+________________________________________________________________
+
+KEYBOARD SHORTCUTS
+
+Left — Decrease the pitch amount by 10 cents
+Shift + Left — Decrease the pitch amount by 1 semitone
+Right — Increase the pitch amount by 10 cents
+Shift + Right — Increase the pitch amount by 1 semitone
+Up / Down — Cycle through crispness values
+Shift + Return — Run the processor
+
+________________________________________________________________
+
+ADVANCED VIEW
+
+While the default settings usually provide great results, switching to Advanced View allows you to tweak how samples are processed.
+
+ADVANCED VIEW — TWEAKS
+
+■ Enable formant preservation — Same as "rubberband --formant" — Tries to preserve formants when pitch shifting. For most purposes, and especially for vocals, keeping this enabled results in the most natural sound.
+
+■ Use multithreading — Same as "rubberband --threads" — Tells Rubber Band to use multithreading when processing.
+
+ADVANCED VIEW - EXPERIMENTAL
+
+■ Center focus – Same as "rubberband --centre-focus" – Only applicable for stereo samples. From rubberband: "Preserve focus of center material in stereo (at a cost in width and individual channel quality)". Though documentation is sparse for this Rubber Band option, it appears to use mid-side processing when pitch shifting.
+
+■ Smoothing – Same as "rubberband --smoothing" – From rubberband: "Apply window presum and time-domain smoothing".
