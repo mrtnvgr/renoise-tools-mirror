@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.2</ApiVersion>
+  <Author>unless</Author>
+  <Homepage>https://unlessgames.com/</Homepage>
+  <Donate>https://ko-fi.com/unlessgames</Donate>
+  <Repository>https://gitlab.com/unlessgames/unless_renoise</Repository>
+  <License>GPL</License>
+  <Id>com.unlessgames.genpad</Id>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-genpad</Discussion>
+  <Version>0.5</Version>
+  <Name>genpad</Name>
+  <Category>Pattern,Phrase,Editing,Generator</Category>
+  <Description>
+    A collection of editor popups that can be controlled by the keyboard. Create chords, bars, rhythms and more.
+  </Description>
+</RenoiseScriptingTool>
