@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.ConvertInstrumentNumber</Id>
+  <Name>Convert Instrument Number</Name>
+  <Version>1.12</Version>
+  <Description>This tool will take all the current notes instrument numbers, for the chosen range and convert them to the currently selected instrument.  Accessed via the right-click menu of the instrument box and available user shortcuts:   
+&quot;Convert (Track in Pattern) Instruments to Currently Selected&quot;,   &quot;Convert (Whole Track) Instruments to Currently Selected&quot;   and   &quot;Convert (Selection in Pattern) Instruments to Currently Selected&quot;
+  </Description>
+  <Author>Ledger</Author>
+  <Category>Pattern,Editing,Instrument</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/28206-new-tool-convert-instrument-numbers/</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
