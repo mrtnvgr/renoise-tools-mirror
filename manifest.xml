@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.neurogami.SwapChop</Id>
+  <Name>Neurogami SwapChop</Name>
+  <Version>0.3</Version>
+  <Description>Inserts alternating volume fx values</Description>
+  <Author>Neurogami | james@neurogami.com  </Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49860-new-tool-310-swapchop/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://neurogami.com</Homepage>
+</RenoiseScriptingTool>
