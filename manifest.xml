@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.VoiceRunner</Id>
+  <Name>VoiceRunner</Name>
+  <Version>1.03</Version>
+  <Description>A tool for advanced sorting of notes in pattern-tracks and phrases</Description>
+  <Author>danoise [bjorn.nesby@gmail.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Repository>https://github.com/renoise/tools/tree/master/Tools/com.renoise.VoiceRunner.xrnx</Repository>
+  <Discussion>http://forum.renoise.com/index.php/topic/48372-new-tool-31-voicerunner/</Discussion>
+  <Documentation>https://github.com/renoise/tools/tree/master/Tools/com.renoise.VoiceRunner.xrnx/README.md</Documentation>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
