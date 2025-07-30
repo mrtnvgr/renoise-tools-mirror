@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.Laffik.Progressor</Id>
+  <Name>Progressor</Name>
+  <Version>1.1</Version>
+  <Description>Script matches chords progression to a monophonic lead on selected track. Script uses selected instrument for sequencing chords. For each note in lead Progressor matches chord that is tonally most propper.</Description>
+  <Author>Laffik</Author>
+  <Category>Tuning,Pattern,Generator</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/26705-new-tool-progressor</Discussion>
+  <ApiVersion>1.0</ApiVersion>
+</RenoiseScriptingTool>
