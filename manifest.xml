@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.Op-1Export</Id>
+  <Name>OP-1 Export</Name>
+  <Version>1</Version>
+  <Description>Export sliced samples to OP-1 compatible AIF format</Description>
+  <Author>afta8 | fathand@gmail.com  </Author>
+  <Category>Sample,Export,Hardware</Category>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
