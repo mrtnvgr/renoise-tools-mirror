@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.bleego.PatternSplitPlus</Id>
+  <Name>Pattern Split Plus</Name>
+  <Version>0.93</Version>
+  <Description>Splits the current pattern into a given number of equal parts.</Description>
+  <Author>Mark Fleschler | bleego (mark@bleego.com) and Fabio Napodano | It-Alien (it-alien@renoise.com)</Author>
+  <Category>Pattern,Editing</Category>
+  <ApiVersion>1.0</ApiVersion>
+</RenoiseScriptingTool>
