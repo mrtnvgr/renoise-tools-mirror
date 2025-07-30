@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.PasteSampleSelection</Id>
+  <Name>Paste Sample Selection</Name>
+  <Version>1.0</Version>
+  <Description>Includes three key command functions to clone/paste the sample selection continuously, behind the selection, or at the end of the audio waveform. Simply select part of the audio waveform and use the associated key command. You can also combine it with [CTRL+C] and [CTRL+V].</Description>
+  <Author>ulneiz</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
