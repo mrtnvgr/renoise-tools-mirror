@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.DecHexConverter</Id>
+  <Name>Dec-Hex Converter</Name>
+  <Version>1.1</Version>
+  <Description>Opens a dialog which lets rapidly convert numbers from and to headecimal base.</Description>
+  <Author>It-Alien (Fabio Napodano)</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com/tools/hex-dec-converter</Homepage>
+</RenoiseScriptingTool>
