@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.nisanmol.AutomationCleaner</Id>
+  <Name>AutomationCleaner</Name>
+  <Version>1.01</Version>
+  <Description> Deletes automation points whith values that lie between those of the preceding and following points, and sets playmode to cubic. The tool can be found in the context menu of the automation editor (right click on either the parameter list or the ruler)</Description>
+  <Author>Nisan Mol [nisanmol@gmail.com]</Author>
+  <Category>Automation</Category>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
