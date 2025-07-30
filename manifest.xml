@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.Overtune</Id>
+  <Name>Overtune 2</Name>
+  <Version>2.5</Version>
+  <Description>Generate &apos;custom&apos; harmonic waves etc.</Description>
+  <Author>Cas Marrav | Casper</Author>
+  <Category>Sample, Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35012-new-tool-28-overtune/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://music.jeweett.nl</Homepage>
+</RenoiseScriptingTool>

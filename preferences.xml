@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OvertunePreferences doc_version="0">
+  <stereo>false</stereo>
+  <times>1.0</times>
+  <steps>1.0</steps>
+  <step1>sin(X)</step1>
+  <stepn>0</stepn>
+  <power>true</power>
+</OvertunePreferences>
