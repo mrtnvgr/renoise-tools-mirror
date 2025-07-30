@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Name>Sample BPM detector</Name>
+  <Id>com.vvoois.BpmDetector</Id>
+  <Version>1.00</Version>
+  <ApiVersion>6.1</ApiVersion>
+  <Author>Vincent Voois [ https://tinyurl.com/vvxrns ]</Author>
+  <AutoUpgraded>false</AutoUpgraded>
+  <Category>Workflow</Category>
+  <Description>A simple transient method to attempt to detect BPM rates in samples.
+  You can use four default detection profiles to assist you in detecting the proper 
+  BPM rate of your sample loop, if all else fails, you can manually count the highest transients
+  (bass and snare drums) and manually set the "Beats in Sample", click the check box and let it
+  calculate the BPM rate for the time-span your sample runs.
+  Feel free to improve/adjust the routine to your needs.
+</Description>
+  <Homepage>http://tools.renoise.com</Homepage>
+  <Platform/>
+  <Icon/>
+</RenoiseScriptingTool>
