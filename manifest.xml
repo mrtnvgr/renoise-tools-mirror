@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.duncanhemingway.RepeaterNotation</Id>
+  <Name>Repeater Notation</Name>
+  <Version>1.0</Version>
+  <Description>Inserts notes into a pattern that match the timing of a Repeater device. This can be done either manually or using the automation of a linked Repeater.</Description>
+  <Author>Achenar</Author>
+  <Category>Pattern,Editing,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-3-repeater-notation/71663</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://renoise.com/tools/RepeaterNotation</Homepage>
+</RenoiseScriptingTool>
