@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.Pdub</Id>
+  <Name>PDub</Name>
+  <Version>1.1</Version>
+  <Description>In-Pattern Pattern Duplicator shortcut.</Description>
+  <Author>Cas | Cas Marrav | casmarrav@gmail.com</Author>
+  <Category>Pattern,Workflow,MIDI</Category>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
