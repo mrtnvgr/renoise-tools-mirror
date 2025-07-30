@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>org.lackluster.PakettiPtirex</Id>
+  <Name>Paketti PTIREX</Name>
+  <Version>1.03</Version>
+  <Description>.PTI + .REX import, isolated from Paketti</Description>
+  <Author>Lackluster | esaruoho@icloud.com</Author>
+  <Category>Import,Sample</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-paketti-rex-pti-import-rex-not-rx2-pti-polyend-tracker-instrument/75843</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://patreon.com/esaruoho</Homepage>
+</RenoiseScriptingTool>
