@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.MultiVolumes</Id>
+  <Name>Multi Volumes</Name>
+  <Version>0.4</Version>
+  <Description>Control multiple track pre/post volumes and maintain relative levels</Description>
+  <Author>afta8 | fathand@gmail.com</Author>
+  <Category>Mixing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/38501-new-tool-28-multi-volumes/#entry297070</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://afta8.tumblr.com</Homepage>
+</RenoiseScriptingTool>
