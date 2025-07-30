@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.taifunbrowser.Transposer</Id>
+  <Name>Transposer</Name>
+  <Version>0.01</Version>
+  <Description>Allows for transposing notes within a scale or key.</Description>
+  <Author>Taif [taifun_browser@yahoo.com]</Author>
+  <Category>Pattern,Editing,Tuning</Category>
+  <ApiVersion>2.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
