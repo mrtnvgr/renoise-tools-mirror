@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.ScaleFinder</Id>
+  <Name>Scale Finder</Name>
+  <Version>0.5</Version>
+  <Description>Provides selection of diatonic chords available in selected scale.</Description>
+  <Author>Cly/Suva [clysuva@gmail.com]</Author>
+  <Category>Pattern,Editing,Tuning</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
