@@ -1,0 +1,270 @@
+Introduction / API
+------------------
+
+To implement controller support for a new device all that is required is to
+create a new class definition and 'require' that file from main.lua in the
+correct section.
+
+All controller classes must implement the following functions:
+
+  Functions:
+    __init(midi_in, midi_out)
+  
+  API Functions:
+    Reset()
+    Tick()
+    SetPlayState(state)
+    SetCellState(channel, cell, state)
+    SetStopState(channel, state)
+    SetMute(channel, state)
+    SetCue(channel, state)
+    SetJam(channel, state)
+    SetSelected(channel)
+    SetRouting(channel, routing)
+    SetBasskill(channel, state)
+    SetFilter(channel, position)
+    SetTranspose(channel, position)
+    SetPanning(channel, position)
+    SetVolume(channel, position)
+    SetCrossfader(position)
+    SetCrossfaderCut(ab, state)
+    SetFXRate(rate)
+    SetFXAmount(amount)
+    SetFXType(type_id)
+    SetFXState(state)
+    SetMasterVolume(value)
+    SetCueVolume(value)
+
+
+Cells! Core Functions
+---------------------
+
+To handle events received from the controller just call the same functions
+within Cells! as the UI would call.  A useful list of these follows:
+
+Functions updated since beta 1.1 are marked with an *
+
+
+cc[i] - Cells! channel 'i' class instances
+
+  cc[]:SelectTrack()
+    Selects the specified track as the current track
+    
+* cc[]:IsSelectedTrack()
+    Returns if the current track is the same as the specified channel
+    Returns true or false
+  
+  cc[]:CueCell(1..#cells)
+    Cues the specified cell (if available)
+    If the cell doesn't exist, the request will silently drop
+  
+  cc[]:CueStop()
+    Cues the stop cell for the specified channel
+  
+* cc[]:GetCue()
+    Returns the cue state for the specified channel
+    Returns true if enabled, false if disabled
+  
+  cc[]:ToggleCue()
+    Toggles the cue state for the specified channel
+  
+* cc[]:GetMute()
+    Returns the mute state for the specified channel
+    Returns true is muted, false if unmuted
+  
+  cc[]:ToggleMute()
+    Toggles the mute state for the specified channel
+
+* cc[]:GetBassKill()
+    Returns the bass kill state for the specified channel
+    Returns true is enabled, false if disabled
+    
+  cc[]:ToggleBassKill()
+    Toggles the bass kill state for the specified channel
+  
+* cc[]:GetLiveJamMode()
+    Returns the current state of live jam mode for the specified channel
+    Return true if enabled, false if disabled
+    
+* cc[]:CanLiveJamMode()
+    Returns if live jam mode can be enabled for the specified channel
+    Returns true if possible, otherwise false
+  
+  cc[]:ToggleLiveJamMode()
+    Toggles the live jam mode for the specified channel if available.
+    Nothing bad will occur if this is called and it is not available.
+  
+* cc[]:GetPanning()
+    Returns a channel panning value
+    Returns 0 to 1 (0 = hard left, 1 = hard right)
+    
+  cc[]:MovePanning(0..1)  
+    Sets a panning value on a channel
+    0 = hard left, 1 = hard right
+    
+* cc[]:GetVolume()
+    Returns the volume for the specified channel
+    Returns from 0 to 1 (0 = -200dB (off), 1 = +3dB)
+    
+  cc[]:MoveVolume(0..1)
+    Sets the volume for the specified channel
+    0 = -200dB (off), 1 = +3dB
+  
+* cc[]:GetRouting()
+    Returns the channel routing setting
+    Returns enum:
+      CELLS_ROUTING_A
+      CELLS_ROUTING_MASTER
+      CELLS_ROUTING_B
+  
+* cc[]:MoveRouting(enum)
+    Sets the channel routing for the specified channel
+      CELLS_ROUTING_A
+      CELLS_ROUTING_MASTER
+      CELLS_ROUTING_B
+
+* cc[]:GetFilter()
+    Returns a channel low pass filter value
+    Returns 0 to 1 (0 = 0hz, 1 = 22.05khz (off))
+  
+  cc[]:MoveFilter(0..1)
+    Sets the low pass filter value on a channel
+    0 = 0hz, 1 = 22.05khz (off)
+  
+* cc[]:GetTranspose()
+    Returns the transpose value for the loaded instrument in the specified channel
+    Return 0 to 1 (= -12 to +12 semitones)
+      
+  cc[]:MoveTranspose(0..1)
+    Sets a transpose value for an instrument loaded into the specified channel
+    0 = -12 semitones, 1 = +12 semitones
+  
+* cc[]:GetInstrument()
+    Returns the selected instrument index for the specified channel
+    0 = none (first instrument) to 1 (last instrument available)
+  
+  cc[]:MoveInstrument(0..1)
+    Sets the selected instrument for the specified channel
+    0 = none (first instrument) to 1 (last instrument available)
+
+
+
+cm - Cells! Mixer FX Unit class instance
+
+* cm:GetCrossfader()
+    Returns the crossfader position
+    Returns 0 = fully A group (left) , 1 = fully B group (right)
+
+  cm:MoveCrossfader(0..1)
+    Moves the crossfader to the specified position
+    0 = fully A group (left) , 1 = fully B group (right)
+  
+* cm:GetCutState(group)
+    Returns the cut state for the specified group
+    group: 0 = A, 1 = B
+  
+  cm:SetCutState(group, state)
+    Sets the cut state for the specified group
+    group: 0 = A, 1 = B
+    state: cut state (boolean)
+  
+* cm:GetMasterVolume()
+    Returns the master volume level
+    Returns 0 (-200dB (off)) to 1 (+3dB)
+      
+  cm:MoveMasterVolume(0..1)
+    Sets the master volume level
+    0 (-200dB (off)) to 1 (+3dB)
+  
+* cm:GetCueVolume()
+    Returns the cue volume level
+    Returns 0 (-200dB (off)) to 1 (+3dB)
+  
+  cm:MoveCueVolume(0..1)
+    Sets the cue volume level
+    0 (-200dB (off)) to 1 (+3dB)
+  
+* cm:GetEffectRate()
+    Returns the current effect rate
+    Returns 0 = slowest rate, 1 = fastest, 5 discrete steps
+  
+  cm:MoveEffectRate(0..1)
+    Sets the effect rate
+    0 = slowest rate, 1 = fastest, 5 discrete steps
+  
+* cm:GetEffectAmount()
+    Returns the current effect amount
+    Returns 0 = least (off), 1 = most
+  
+  cm:MoveEffectAmount(0..1)
+    Sets the effect amount
+    0 = least (off), 1 = most
+  
+* cm:GetEffectState()
+    Returns wether effects are enabled
+    Return true if applied, false if disabled
+  
+  cm:ToggleEffectState()
+    Toggles whether effects are applied
+  
+* cm:GetEffectTarget()
+    Returns the current effect target
+    Returns enum:
+      CELLS_ROUTING_A
+      CELLS_ROUTING_MASTER
+      CELLS_ROUTING_B
+  
+* cm:MoveEffectTarget(enum)
+    Sets the effect target
+      CELLS_ROUTING_A
+      CELLS_ROUTING_MASTER
+      CELLS_ROUTING_B
+  
+* cm:GetEffectType()
+    Returns the effect type
+    Returns enum:
+      CELLS_FX_FILTER
+      CELLS_FX_REPEAT
+      CELLS_FX_DELAY
+      CELLS_FX_FLANGER
+    
+* cm:MoveEffectType(enum)
+    Sets the effect type:
+      CELLS_FX_FILTER
+      CELLS_FX_REPEAT
+      CELLS_FX_DELAY
+      CELLS_FX_FLANGER
+  
+  
+ct - Cells! Transport class instance
+
+  ct:TogglePlayState()
+    Toggles transport playback start/stop
+  
+  ct:SetBpm(bpm, true)
+    Sets the transport BPM from 32 to 999 BPM.
+    Ensure that the second parameter is passed as true
+    Is master node, changes will propegate to slave nodes
+    No effect on slave nodes
+    
+  ct:NudgeBPM(delta, apply)
+    Nudge the bpm by delta amount, apply is a boolean flag
+    delta is usually -1 or +1
+    apply is true when pressed, false when released (non-latching)
+  
+* ct:GetQuantizeValue()
+    Returns the current quantize value
+    Returns enum:
+      CELLS_QUANTIZE_HALFBEAT
+      CELLS_QUANTIZE_1BEAT
+      CELLS_QUANTIZE_2BEATS
+      CELLS_QUANTIZE_4BEATS  
+  
+* ct:MoveQuantizeValue(enum)
+    Set the cell trigger quantize value:
+      CELLS_QUANTIZE_HALFBEAT
+      CELLS_QUANTIZE_1BEAT
+      CELLS_QUANTIZE_2BEATS
+      CELLS_QUANTIZE_4BEATS  
+
+

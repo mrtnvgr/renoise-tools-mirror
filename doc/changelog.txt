@@ -1,0 +1,16 @@
+Cells! 2.0 Changelog
+--------------------
+
+2.0 Beta 2
+  - Updated/Tested on Renoise 2.8 beta 8
+  - Handle closing of song while Cells! is running
+  - Fixed preferences not initialised before rendering patterns bug
+  - Updated the controller API and associated documentation
+  - Updated Ohm64 support for the new controller API
+  - Updated Launchpad support for the new controller API (to be tested)
+
+2.0 Beta 1.1
+  - Quick fix release which fixes a bug making note patterns on Renoise 2.8 beta 7
+
+2.0 Beta 1
+  - Inital public release of Cells! 2.0

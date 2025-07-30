@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.Cells</Id>
+  <Name>Cells!</Name>
+  <Version>2.00</Version>
+  <Description>Clip based live performance tool incorporating a number of advanced features including:
+  
+  * Granular timestretching
+  * Slice based timestretching
+  * MultiFX box
+  * Support for multiple audio outputs
+  * Bidirectional controller framework
+  * Network based multiplayer jamming</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>Workflow,Live</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/33947-cells-20-for-renoise-28-beta/</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
