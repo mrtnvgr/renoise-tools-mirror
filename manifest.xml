@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.duncanhemingway.ExportToUnreal</Id>
+  <Name>Export To Unreal</Name>
+  <Version>0.61</Version>
+  <Description>Exports song data as a .json file to be imported into Unreal Engine 4 as a Data Table.</Description>
+  <Author>Achenar</Author>
+  <Category>Export</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-export-to-unreal/56753</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://renoise.com/tools/ExportToUnreal</Homepage>
+</RenoiseScriptingTool>
