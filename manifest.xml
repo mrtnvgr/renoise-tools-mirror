@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>se.olf.ChordProgressionTool</Id>
+  <Name>Chord Progression tool</Name>
+  <Version>1.2</Version>
+  <Description>The purpose of this tool is to help you get inspired to begin a new masterpiece!
+
+The tool will randomly generate a set of chords with a more natural progression than pure random.</Description>
+  <Author>etromic | etromic@olf.se</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-chord-progression-tool/66730</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
