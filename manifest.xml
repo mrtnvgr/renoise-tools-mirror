@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.bystrano.AutoClonePatterns</Id>
+  <Name>Auto Clone Patterns</Name>
+  <Version>1.01</Version>
+  <Description>This script overrides the looping feature of the pattern matrix. It will clone the loop sequence in the pattern matrix when a pattern in the loop is played and edit mode is on. The edit cursor must be set to follow the playback position. It&apos;s useful to jam over a sequence. Just select the loop you want to record on, and your whole performance will be recorded. The tool can be enabled or disabled via the Tools menu or via keybinding.</Description>
+  <Author>bystrano</Author>
+  <Category>Recording, Pattern, Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?showtopic=26968</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
