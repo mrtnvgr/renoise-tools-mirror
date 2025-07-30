@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.protman.ImpulseOctave</Id>
+  <Name>Impulse Octave</Name>
+  <Version>0.2</Version>
+  <Description>emulates direct access to octave field; similar to IT/ST</Description>
+  <Author>protman</Author>
+  <Category>Pattern,Editing</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://protman.com</Homepage>
+</RenoiseScriptingTool>
