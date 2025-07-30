@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.VstiFromMenu</Id>
+  <Name>Vsti From Menu</Name>
+  <Version>1.7</Version>
+  <Description>Allows loading of vsts directly into instrument menu, or searchboxes acessed via keyboard shortcut</Description>
+  <Author>Ledger</Author>
+  <Category>Plugin,Instrument</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/28343-new-tool-vsti-from-menu/</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
