@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>dot.dotdot.SimpleSlicer</Id>
+  <Name>SimpleSlicer</Name>
+  <Version>1.0</Version>
+  <Description>Create evenly spaced slice markers</Description>
+  <Author>darrell.barrell@gmail.com</Author>
+  <Category>Slicing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35539-simple-slice-marker-creating-script</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
