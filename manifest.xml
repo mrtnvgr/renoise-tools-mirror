@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.AcidStepSequencer</Id>
+  <Name>Acid Step Sequencer</Name>
+  <Version>1.0</Version>
+  <Description>The Acid Step Sequencer is a step note injection tool. It allows you to insert note parameters and their effects easily, focused on the progression of acid steps.</Description>
+  <Author>ulneiz [go to https://forum.renoise.com/ and contact him there]</Author>
+  <Category>Pattern,Sequencer</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-2-1-acid-step-sequencer-v1-0-build-028-may-2020/60566</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
