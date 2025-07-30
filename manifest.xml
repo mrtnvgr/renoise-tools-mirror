@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>dot.dotdot.AutomationMate</Id>
+  <Name>AutomationMate</Name>
+  <Version>1.0</Version>
+  <Description>Automation Keyboard Editor</Description>
+  <Author>darrell.barrell@gmail.com</Author>
+  <Category>Automation,Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35579-new-tool-28-automationmate</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
