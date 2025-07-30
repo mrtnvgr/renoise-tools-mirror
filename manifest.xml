@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.occulkot.Freesound</Id>
+  <Name>Renoise Freesound Integration</Name>
+  <Version>0.69999999999999996</Version>
+  <Description>Ability do download </Description>
+  <Author>Mateusz Ratajski [occulkot@gmail.com]</Author>
+  <Category>Sample,Import,Networking</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35343-new-tool-28-renoise-freesound-integration/</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://scripting.renoise.com</Homepage>
+</RenoiseScriptingTool>
