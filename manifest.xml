@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>nl.jeweett.SliceNExact</Id>
+  <Name>Slice N Exact</Name>
+  <Version>1</Version>
+  <Description>For if you just wanna cut up. In 4 or 8 or 16 or even 32 or 64.</Description>
+  <Author>Cas | Cas Marrav | casmarrav@gmail.com</Author>
+  <Category>Sample,Editing</Category>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
