@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.jahn.request</Id>
+  <Name>ReQuest</Name>
+  <Version>1.0</Version>
+  <Description>Auxiliary code to add HTTP functionality to your tools.</Description>
+  <Author>jahn [0x6a61686e@gmail.com]</Author>
+  <Category>Networking</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/44098-new-tool-request-a-web-server-library-for-use-with-renoise</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://twitter.com/need12648430</Homepage>
+</RenoiseScriptingTool>
