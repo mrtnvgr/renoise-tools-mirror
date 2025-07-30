@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>AS.Beatslaughter.ClearSelection</Id>
+  <Name>Clear Selection</Name>
+  <Version>1.1</Version>
+  <Description>Adds a shortcut to clear the pattern selection.</Description>
+  <Author>Alexander Stoica | Beatslaughter (info@beatslaughter.de)</Author>
+  <Category>Workflow,Pattern</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.beatslaughter.de</Homepage>
+</RenoiseScriptingTool>
