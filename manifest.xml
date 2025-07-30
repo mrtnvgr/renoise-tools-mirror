@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.vvoois.RenderSlicesToNewInstrument</Id>
+  <Name>Render slices to new instrument</Name>
+  <Version>1.11</Version>
+  <Description>Renders slices from an autosliced instrument to new instrument(s).
+(Slices become processable)
+</Description>
+  <Author>v.voois</Author>
+  <Category>Rendering,Slicing,Instrument</Category>
+  <ApiVersion>2</ApiVersion>
+  <Homepage>https://forum.renoise.com/u/vvoois</Homepage>
+</RenoiseScriptingTool>
