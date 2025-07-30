@@ -1,0 +1,1269 @@
+--[[===============================================================================================
+-- Duplex.Application.Matrix
+===============================================================================================]]--
+
+--[[--
+
+Take control of the pattern matrix in Renoise 
+
+#
+
+[View the README.md](https://github.com/renoise/xrnx/blob/master/Tools/com.renoise.Duplex.xrnx/Docs/Applications/Matrix.md) (github)
+
+--]]
+
+--=================================================================================================
+
+-- constants
+
+local PLAY_MODE_PLAY = 1
+local PLAY_MODE_TOGGLE = 2
+local PLAY_MODE_RETRIG = 3
+local PLAY_MODE_SCHEDULE = 4
+local SWITCH_MODE_STOP = 1
+local SWITCH_MODE_SWITCH = 2
+local SWITCH_MODE_TRIG = 3
+local SWITCH_MODE_SCHEDULE = 4
+local BOUNDS_MODE_STOP = 1
+local BOUNDS_MODE_IGNORE = 2
+local FOLLOW_TRACK_ON = 1
+local FOLLOW_TRACK_OFF = 2
+local TRACK_PAGE_AUTO = 1
+local SEQUENCE_MODE_NORMAL = 1
+local SEQUENCE_MODE_INDEX = 2
+
+
+--=================================================================================================
+
+class 'Matrix' (Application)
+
+Matrix.default_options = {
+  play_mode = {
+    label = "Playback start",
+    description = "What to do when playback is started (or re-started)",
+    items = {
+      "Play/continue",
+      "Toggle start & stop",
+      "Retrigger pattern",
+      "Schedule pattern"
+    },
+    value = 1,
+  },
+  switch_mode = {
+    label = "Switch pattern",
+    description = "What to do when switching from one pattern to another",
+    items = {
+      "Stop playback",
+      "Switch instantly",
+      "Trigger pattern",
+      "Schedule pattern"
+    },
+    value = 2,
+  },
+  bounds_mode = {
+    label = "Out of bounds",
+    description = "What to do when a position outside the song is triggered",
+    items = {
+      "Stop playback",
+      "Do nothing"
+    },
+    value = 2,
+  },
+  follow_track = {
+    label = "Follow track",
+    description = "Align with the selected track in Renoise",
+    on_change = function(inst)
+      inst:_follow_track()
+    end,
+    items = {
+      "Follow track enabled",
+      "Follow track disabled"
+    },
+    value = 1,
+  },
+  --[[
+  set_track = {
+    label = "Set track",
+    description = ""
+  }
+  ]]
+  page_size = {
+    label = "Page size",
+    description = "Specify the step size when using paged navigation",
+    on_change = function(inst)
+      inst:_update_track_navigation()
+    end,
+    items = {
+      "Automatic: use available width",
+      "1","2","3","4",
+      "5","6","7","8",
+      "9","10","11","12",
+      "13","14","15","16",
+    },
+    value = 1,
+  },
+  sequence_mode = {
+    label = "Pattern-trigger",
+    description = "Determines how pattern triggers work: "
+                .."\nSelect 'Position only' for controllers that does not" 
+                .."\nsupport the release event. Select 'Position & Loop'"
+                .."\nif your controller supports the release event, and you" 
+                .."\nwant to be able to control the looped range",
+    on_change = function(inst)
+      inst:_set_trigger_mode()
+    end,
+    items = {"Position + PatternLoop","Position only"},
+    value = 1,
+  }
+
+}
+
+
+Matrix.available_mappings = {
+  matrix = {
+    description = "Matrix: Press to toggle muted state"
+                .."\nHold to focus this track/pattern"
+                .."\nControl value: ",
+  },
+  triggers = {
+    description = "Matrix: Pattern-sequence triggers"
+                .."\nPress and release to trigger pattern"
+                .."\nPress multiple buttons to define loop"
+                .."\nPress and hold to toggle loop"
+                .."\nControl value: ",
+    orientation = ORIENTATION.VERTICAL,
+  },
+  trigger_labels = {
+    description = "Matrix: Pattern-sequence labels (pattern names)",
+    orientation = ORIENTATION.VERTICAL,
+  },
+  next_seq_page = {
+    description = "Matrix: display next sequence page"
+  },
+  prev_seq_page = {
+    description = "Matrix: display previous sequence page"
+  },
+  next_track_page = {
+    description = "Matrix: display next track page"
+  },
+  prev_track_page = {
+    description = "Matrix: display previous track page"
+  },
+  --[[
+  track = {
+    description = "Matrix: Flip though tracks"
+                .."\nControl value: ",
+    orientation = ORIENTATION.HORIZONTAL,
+    index = 3,
+  },
+  ]]
+}
+
+Matrix.default_palette = {
+  -- pattern matrix
+  out_of_bounds       = { color={0x40,0x40,0x00}, text="·", val=false },
+  slot_empty          = { color={0x00,0x00,0x00}, text="·", val=false },
+  slot_empty_muted    = { color={0x40,0x00,0x00}, text="·", val=false },
+  slot_filled         = { color={0xff,0xff,0x00}, text="▪", val=true  },
+  slot_filled_muted   = { color={0xff,0x40,0x00}, text="▫", val=false },
+  slot_master_filled  = { color={0x00,0xff,0x00}, text="▪", val=true  },
+  slot_master_empty   = { color={0x00,0x40,0x00}, text="·", val=false },
+  -- pattern sequence (buttonstrip)
+  trigger_active      = { color={0xff,0xff,0xff}},
+  trigger_loop        = { color={0x40,0x40,0xff}},
+  trigger_back        = { color={0x00,0x00,0x00}},
+  -- pattern sequence navigation (prev/next)
+  prev_seq_on = {     color = {0xFF,0xFF,0xFF}, text = "▲", val=true },
+  prev_seq_off = {    color = {0x00,0x00,0x00}, text = "▲", val=false },
+  next_seq_on = {     color = {0xFF,0xFF,0xFF}, text = "▼", val=true },
+  next_seq_off = {    color = {0x00,0x00,0x00}, text = "▼", val=false },
+  -- track navigation (prev/next)
+  prev_track_on = {     color = {0xFF,0xFF,0xFF}, text = "◄", val=true },
+  prev_track_off = {    color = {0x00,0x00,0x00}, text = "◄", val=false },
+  next_track_on = {     color = {0xFF,0xFF,0xFF}, text = "►", val=true },
+  next_track_off = {    color = {0x00,0x00,0x00}, text = "►", val=false },
+
+}
+
+---------------------------------------------------------------------------------------------------
+
+--- Constructor method
+-- @param (VarArg)
+-- @see Duplex.Application
+
+function Matrix:__init(...)
+
+  --- (table) keep references to UI controls here
+  self._controls = table.create()
+
+  --- (int) width of the matrix grid 
+  self._width = nil
+
+  --- (int) height of the matrix grid 
+  self._height = nil
+
+  --- (bool) true if currently playing
+  self._playing = nil
+
+  --- (int) the currently playing page
+  self._play_page = nil  
+
+  --- (int) current edit page (pattern sequence)
+  self._edit_page = nil  
+
+  --- (int) the total number of sequence pages
+  self._seq_page_count = nil
+
+  --- (int) the total number of track pages
+  self._track_page_count = nil
+
+  --- (int) the current track offset
+  self._track_offset = 0  
+
+  --- (int) the current track page
+  self._track_page = nil
+
+  --- (table) the loop sequence range
+  -- @field 1 (int) begin
+  -- @field 2 (int) end
+  -- @table _loop_sequence_range
+  self._loop_sequence_range = {0,0}
+
+  --- (int) scheduled sequence index
+  self._scheduled_pattern = nil
+
+  --- (renoise.SongPos) current playback pos
+  self._playback_pos = nil
+
+  --- idle flags
+  self._update_slots_requested = false
+  self._update_tracks_requested = false
+  self._mute_notifier_disabled = false
+  self._update_labels_requested = false
+
+  --- (table) currently attached notifiers 
+  self._pattern_name_notifiers = {}
+
+  Application.__init(self,...)
+  --self:list_mappings_and_options(Matrix)
+
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- update slots visual appeareance 
+
+function Matrix:_update_slots()
+  if (not self.active) then
+    return
+  end
+
+  if (not self.mappings.matrix.group_name) then
+    return
+  end
+
+  if self._update_slots_requested then
+    -- do lazy updates in idle...
+    return
+  end
+
+  local skip_event = true
+  local sequence = rns.sequencer.pattern_sequence
+  local tracks = rns.tracks
+  local seq_offset = self._edit_page*self._height
+  local master_idx = xTrack.get_master_track_index()
+  local patt_idx = nil
+  local button = nil
+  local slot_muted = nil
+  local slot_empty = nil
+  local palette = {}
+
+  -- loop through matrix & buttons
+  if (self._controls._buttons) then
+    for track_idx = (1+self._track_offset),(self._width+self._track_offset) do
+      for seq_index = (1+seq_offset),(self._height+seq_offset) do
+        local bt_x = track_idx-self._track_offset
+        local bt_y = seq_index-seq_offset
+        button = self._controls._buttons[bt_x][bt_y]
+
+        if((sequence[seq_index]) and (rns.tracks[track_idx]))then
+
+          -- gain information about the slot
+          patt_idx = sequence[seq_index]
+          slot_muted = rns.sequencer:track_sequence_slot_is_muted(
+            track_idx, seq_index)
+          slot_empty = rns.patterns[patt_idx].tracks[track_idx].is_empty
+
+          if (not slot_empty) then
+            if (track_idx==master_idx)then -- master track
+              button:set(self.palette.slot_master_filled)
+            else
+              if slot_muted then
+                button:set(self.palette.slot_filled_muted)
+              else
+                button:set(self.palette.slot_filled)
+              end
+            end
+          else
+            -- empty slot 
+            if (track_idx==master_idx)then
+              button:set(self.palette.slot_master_empty)
+            else
+              if slot_muted then
+                button:set(self.palette.slot_empty_muted)
+              else
+                button:set(self.palette.slot_empty)
+              end
+            end
+          end
+
+        elseif button then
+          -- out-of-bounds space (below/next to song)
+          button:set(self.palette.out_of_bounds)
+        end
+
+      end
+    end
+  end
+end
+
+
+---------------------------------------------------------------------------------------------------
+
+--- inherited from Application
+-- @see Duplex.Application.start_app
+-- @return bool or nil
+
+function Matrix:start_app()
+
+  if not Application.start_app(self) then
+    return
+  end
+
+  self:_attach_to_song(rns)
+
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+-- @see Duplex.Application.on_idle
+
+function Matrix:on_idle()
+--TRACE("Matrix:idle_app()",self._update_slots_requested)
+
+  if not self.active or not self._height then 
+    return 
+  end
+
+  -- updated tracks/slots?
+  if self._update_tracks_requested then
+    -- note: _update_slots_requested is true as well
+    self._update_tracks_requested = false
+    self:_update_track_page_count()
+    --self:_update_track_navigation()
+  end
+
+  if self._update_slots_requested then
+    self._update_slots_requested = false
+    self:_update_slots()
+    self:_update_seq_page_count()
+  end
+
+  if self._update_labels_requested then 
+    self._update_labels_requested = false
+    self:_update_labels()
+  end 
+
+  -- update range?
+  local rng = rns.transport.loop_sequence_range
+  if (rng[1]~=self._loop_sequence_range[1]) or
+    (rng[2]~=self._loop_sequence_range[2]) 
+  then
+    self:_update_range()
+  end
+
+  if rns.transport.playing then
+
+    local pos = rns.transport.playback_pos
+
+    -- ??? playback_pos might briefly contain the wrong value
+    if (pos.sequence ~= self._playback_pos.sequence)then
+
+      -- changed pattern
+      self._playback_pos = pos
+
+      if (self._controls._trigger) then
+        self._controls._trigger:stop_blink()
+      end
+      -- entered a new play-page
+      local play_page = self:_get_play_page()
+      if (play_page~=self._play_page) then
+        self:_check_page_change()
+      end
+      self:_update_position(pos.sequence)
+
+    elseif (not self._playing) then
+      -- playback resumed
+      self:_update_position()
+    elseif (self._controls._trigger) and 
+      (self._controls._trigger:get_index() == 0) and 
+      (self._play_page==self._edit_page) 
+    then
+      -- position now in play-range
+      self:_update_position()      
+    end
+
+    self._playing = true
+
+  else
+    -- if we stopped playing, turn off position
+    if(self._playing) then
+      self:_update_position(0)
+      self._playing = false
+      if (self._controls._trigger) then
+        self._controls._trigger:stop_blink()
+      end
+    end
+
+  end
+end
+
+---------------------------------------------------------------------------------------------------
+-- @see Duplex.Application.on_new_document
+
+function Matrix:on_new_document()
+
+  rns = renoise.song()
+
+  self:_attach_to_song()
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- check if we need to change page, but update only when following play-pos
+-- called when page changes and when "follow_player" is enabled
+
+function Matrix:_check_page_change() 
+
+  self._play_page = self:_get_play_page()
+  if(rns.transport.follow_player)then
+    if(self._play_page~=self._edit_page)then
+      self._edit_page = self._play_page
+      self:_update_seq_navigation()      
+      self:_update_range()
+      self:_update_slots()
+    end
+  end
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- Update track navigator,
+-- on new song, and when tracks have been changed
+
+function Matrix:_update_track_navigation() 
+
+  if self._controls._next_track_page then
+    if self:_has_next_track_page() then
+      self._controls._next_track_page:set(self.palette.next_track_on)
+    else
+      self._controls._next_track_page:set(self.palette.next_track_off)
+    end
+  end
+
+  if self._controls._prev_track_page then
+    if self:_has_prev_track_page() then
+      self._controls._prev_track_page:set(self.palette.prev_track_on)
+    else
+      self._controls._prev_track_page:set(self.palette.prev_track_off)
+    end
+  end
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- Invoked when the visible part of the sequence has changed 
+-- * update sequence navigation (prev/next)
+-- * attach to patterns (track changes to names)
+-- * display pattern names 
+
+function Matrix:_update_seq_navigation()
+
+  -- we can go backwards?
+  if self._controls._prev_seq_page then
+    if self:_has_prev_seq_page() then
+      self._controls._prev_seq_page:set(self.palette.prev_seq_on)
+    else
+      self._controls._prev_seq_page:set(self.palette.prev_seq_off)
+    end
+  end
+
+  -- we can go forward?
+  if self._controls._prev_seq_page then
+    if self:_has_next_seq_page() then
+      self._controls._next_seq_page:set(self.palette.next_seq_on)
+    else
+      self._controls._next_seq_page:set(self.palette.next_seq_off)
+    end
+  end
+
+  self:_attach_to_patterns()
+  self._update_labels_requested = true
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- has_next_seq_page
+-- @return bool
+
+function Matrix:_has_next_seq_page()
+  local has_next = (self._edit_page < self._seq_page_count) 
+  return has_next
+end
+
+---------------------------------------------------------------------------------------------------
+-- has_prev_seq_page
+-- @return bool
+
+function Matrix:_has_prev_seq_page()
+  local has_prev = (self._edit_page > 0)
+  return has_prev
+end
+
+---------------------------------------------------------------------------------------------------
+-- has_next_track_page
+-- @return bool
+
+function Matrix:_has_next_track_page()
+  local has_next = (self._track_page < self._track_page_count) 
+  return has_next
+end
+
+---------------------------------------------------------------------------------------------------
+-- has_prev_track_page
+-- @return bool
+
+function Matrix:_has_prev_track_page()
+  local has_prev = (self._track_page > 0)
+  return has_prev
+end
+
+---------------------------------------------------------------------------------------------------
+-- update_seq_page_count
+
+function Matrix:_update_seq_page_count()
+
+  local seq_len = #rns.sequencer.pattern_sequence
+  self._seq_page_count = math.floor((seq_len-1)/self._height)
+  self:_update_seq_navigation()
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- update_track_page_count
+
+function Matrix:_update_track_page_count()
+
+  local page_width = self:_get_track_page_width()
+  self._track_page_count = math.floor((#rns.tracks-1)/page_width)
+  self:_update_track_navigation()
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- Update range in sequence trigger
+
+function Matrix:_update_range()
+
+  if self._controls._trigger then
+
+    --local rng = self._controls._trigger:get_range()
+    local rng = rns.transport.loop_sequence_range
+    self._loop_sequence_range = rng
+
+    -- set the range
+    local start = (self._height*(self._edit_page+1))-(self._height-1)
+    if not ((start+self._height-1)<rng[1]) and 
+      not (start>rng[2]) then
+
+      local index_start = self._loop_sequence_range[1]%self._height
+      index_start = (index_start==0) and self._height or index_start
+      if(start>rng[1]) then
+       index_start = 1
+      end
+
+      local index_end = self._loop_sequence_range[2]%self._height
+      index_end = (index_end==0) and self._height or index_end
+      if((start+self._height-1)<self._loop_sequence_range[2]) then
+        index_end = self._height
+      end
+
+      self._controls._trigger:set_range(index_start,index_end,true)
+
+    else
+      self._controls._trigger:set_range(0,0,true)
+    end
+    self._controls._trigger:invalidate()
+  end
+end
+
+---------------------------------------------------------------------------------------------------
+-- Update trigger labels 
+
+function Matrix:_update_labels()
+
+  if not self._controls.trigger_labels then return end
+  local seq_idx = self._edit_page*self._height
+  for k = 1,self._height do
+    local label = self._controls.trigger_labels[k]    
+    local seq_idx = k+seq_idx
+    if (seq_idx > #rns.sequencer.pattern_sequence)then
+      label:set_text("N/A")
+    else 
+      local patt_idx = rns.sequencer:pattern(seq_idx)
+      local patt_name = rns.patterns[patt_idx].name
+      label:set_text(patt_name)
+    end
+
+  end
+
+end
+
+---------------------------------------------------------------------------------------------------
+-- Update index in sequence trigger + labels with pattern-names
+-- called when starting/stopping playback, changing page
+-- @param idx (integer) the index, 0 - song-end (use current position if undefined)
+
+function Matrix:_update_position(idx)
+
+  if not idx then
+    idx = self._playback_pos.sequence
+  end
+
+  local pos_idx = nil
+  if(self._playing)then
+    local play_page = self:_get_play_page()
+    -- we are at a visible page?
+    if (self._edit_page == play_page) then
+      pos_idx = idx-(self._play_page*self._height)
+    else
+      pos_idx = 0 -- no, hide sequence index 
+    end
+  else
+    pos_idx = 0 -- stopped, hide sequence index 
+  end
+
+  if (self._controls._trigger) then
+    self._controls._trigger:set_index(pos_idx,true)
+
+    -- control trigger blinking
+    if (self._scheduled_pattern) then
+      local schedule_page = math.floor(self._scheduled_pattern/self._height)
+      if (schedule_page==self._edit_page) then
+        self._controls._trigger:start_blink(self._controls._trigger._blink_idx)
+      else
+        self._controls._trigger:pause_blink()
+      end
+    end
+
+    self._controls._trigger:invalidate()
+  end
+
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- retrigger the current pattern
+
+function Matrix:_retrigger_pattern()
+
+  local play_pos = self._playback_pos.sequence
+  if rns.sequencer.pattern_sequence[play_pos] then
+    rns.transport:trigger_sequence(play_pos)
+    self:_update_position(play_pos)
+  end
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- set the current trigger mode, depending on options
+
+function Matrix:_set_trigger_mode()
+
+  if (self._controls._trigger) then
+    local is_normal = 
+      (self.options.sequence_mode.value == SEQUENCE_MODE_NORMAL)
+    self._controls._trigger.mode = is_normal and 
+      self._controls._trigger.MODE_NORMAL or self._controls._trigger.MODE_INDEX 
+  end
+
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- get the currently playing page
+-- @return int
+
+function Matrix:_get_play_page()
+
+  if not self._height then
+    return
+  end 
+
+  local play_pos = rns.transport.playback_pos
+  return math.floor((play_pos.sequence-1)/self._height)
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+
+--- get the currently edited page
+-- @return int
+
+function Matrix:_get_edit_page()
+
+  if not self._height then
+    return
+  end 
+
+  local edit_pos = rns.transport.edit_pos
+  return math.floor((edit_pos.sequence-1)/self._height)
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+
+--- when following the active track in Renoise, we call this method
+-- it will check if we are inside the current page, and update if not
+
+function Matrix:_follow_track()
+
+  if (self.options.follow_track.value == FOLLOW_TRACK_OFF) then
+    return
+  end
+
+  local track_idx = rns.selected_track_index
+  local page = self:_get_track_page(track_idx)
+  local page_width = self:_get_track_page_width()
+  if (page~=self._track_page) then
+    self._track_page = page
+    self._track_offset = page*page_width
+    self._update_tracks_requested = true
+    self._update_slots_requested = true
+    --self:_update_slots()
+    --self:_update_track_navigation()
+  end
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+
+--- figure out the active "track page" based on the supplied track index
+-- @param track_idx, renoise track number
+-- return integer (0-number of pages)
+
+function Matrix:_get_track_page(track_idx)
+
+  local page_width = self:_get_track_page_width()
+  return math.floor((track_idx-1)/page_width)
+
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- get track page width
+-- @return int
+
+function Matrix:_get_track_page_width()
+
+  return (self.options.page_size.value == TRACK_PAGE_AUTO)
+    and self._width or self.options.page_size.value-1
+
+end
+
+---------------------------------------------------------------------------------------------------
+
+--- inherited from Application
+-- @see Duplex.Application._build_app
+-- @return bool
+
+function Matrix:_build_app()
+
+  local control_map = self.display.device.control_map
+
+  -- determine matrix size by looking at the control-map
+  if (self.mappings.matrix.group_name) then
+    self._width = control_map:count_columns(self.mappings.matrix.group_name)
+    self._height = control_map:count_rows(self.mappings.matrix.group_name)
+  elseif (self.mappings.triggers.group_name) then
+    self._width = control_map:count_columns(self.mappings.triggers.group_name)
+    self._height = control_map:count_rows(self.mappings.triggers.group_name)
+  end
+
+  -- embed the trigger-group in the matrix?
+  local embed_triggers = (self.mappings.triggers.group_name==self.mappings.matrix.group_name)
+  if(embed_triggers)then
+    self._width = self._width-1
+  end
+
+  local observable = nil
+
+  -- next sequence page
+  local map = self.mappings.next_seq_page
+  if map.group_name then
+    local c = UIButton(self)
+    c.group_name = map.group_name
+    c.tooltip = map.description
+    c:set_pos(map.index or 1)
+    c.on_press = function()
+      if self:_has_next_seq_page() then
+        self._edit_page = self._edit_page + 1
+        self:_update_slots()
+        self:_update_range()
+        self:_update_seq_navigation()
+
+        if(self._edit_page~=self._play_page) then
+          self:_update_position()
+        end
+      end
+    end
+    self._controls._next_seq_page = c
+  end
+
+  -- previous sequence page
+  local map = self.mappings.prev_seq_page
+  if map.group_name then
+    local c = UIButton(self)
+    c.group_name = map.group_name
+    c.tooltip = map.description
+    c:set_pos(map.index or 1)
+    c.on_press = function()
+      if self:_has_prev_seq_page() then
+        self._edit_page = self._edit_page - 1
+        self:_update_slots()
+        self:_update_range()
+        self:_update_seq_navigation()
+        
+        if(self._edit_page~=self._play_page) then
+          self:_update_position()
+        end
+      end
+    end
+    self._controls._prev_seq_page = c
+  end
+
+  -- next track page
+  local map = self.mappings.next_track_page
+  if map.group_name then
+    local c = UIButton(self)
+    c.group_name = map.group_name
+    c.tooltip = map.description
+    c:set_pos(map.index or 1)
+    c.on_press = function()
+      if self:_has_next_track_page() then
+        local page_width = self:_get_track_page_width()
+        self._track_page = self._track_page +1
+        self._track_offset = self._track_page*page_width
+        self:_update_track_navigation() 
+        self:_update_slots()
+      end
+    end
+    self._controls._next_track_page = c
+  end
+
+  -- previous track page
+  local map = self.mappings.prev_track_page
+  if map.group_name then
+    local c = UIButton(self)
+    c.group_name = map.group_name
+    c.tooltip = map.description
+    c:set_pos(map.index or 1)
+    c.on_press = function()
+      if self:_has_prev_track_page() then
+        local page_width = self:_get_track_page_width()
+        self._track_page = self._track_page-1
+        self._track_offset = self._track_page*page_width
+        self:_update_track_navigation() 
+        self:_update_slots()
+      end
+    end
+    self._controls._prev_track_page = c
+  end
+
+
+  -- play-position (navigator)
+  if (self.mappings.triggers.group_name) then
+
+    local x_pos = 1
+    if(embed_triggers)then
+      x_pos = self._width+1
+    end
+
+    local c = UIButtonStrip(self)
+    -- note: the mode is set via the sequence_mode option, and needs to be 
+    -- specified via device configurations if the controller has "togglebutton"
+    -- as it's input method (for an example, see the TouchOSC configuration)
+    c.group_name = self.mappings.triggers.group_name
+    c.tooltip = self.mappings.triggers.description
+    c.toggleable = true
+    c.monochrome = is_monochrome(self.display.device.colorspace)
+    c.flipped = true
+    c:set_pos(x_pos)
+    c:set_size(self._height)
+    c:set_palette({
+      index = self.palette.trigger_active,
+      range = self.palette.trigger_loop,
+      background = self.palette.trigger_back,
+    })
+    c:set_orientation(self.mappings.triggers.orientation)
+
+    c.on_index_change = function(obj)
+
+      local obj_index = obj:get_index()
+      local seq_index = obj_index + (self._height*self._edit_page)
+      local seq_offset = self._playback_pos.sequence%self._height
+
+      if obj_index==0 then
+
+        if (self.options.play_mode.value == PLAY_MODE_RETRIG) then
+          self:_retrigger_pattern()
+        elseif (self.options.play_mode.value == PLAY_MODE_PLAY) then
+          return false
+        elseif (self.options.play_mode.value == PLAY_MODE_TOGGLE) then
+          rns.transport:stop()
+        elseif (self.options.play_mode.value == PLAY_MODE_SCHEDULE) then
+          seq_index = self._playback_pos.sequence + 
+            (self._height*self._edit_page)
+          if rns.sequencer.pattern_sequence[seq_index] then
+            rns.transport:set_scheduled_sequence(seq_index)
+          end
+        end
+
+      elseif not rns.sequencer.pattern_sequence[seq_index] then
+
+        if (self.options.bounds_mode.value == BOUNDS_MODE_STOP) then
+          rns.transport:stop()
+        end
+        obj._cached_index = 0 -- hackish  
+        return false
+
+      elseif(self._playback_pos.sequence==seq_index)then
+
+        if (self.options.play_mode.value == PLAY_MODE_RETRIG) then
+          self:_retrigger_pattern()
+        elseif (self.options.play_mode.value == PLAY_MODE_PLAY) then
+          if (not rns.transport.playing) then
+            if rns.sequencer.pattern_sequence[seq_index] then
+              rns.transport:trigger_sequence(seq_index)
+            end
+          end
+        elseif (self.options.play_mode.value == PLAY_MODE_SCHEDULE) then
+          if rns.sequencer.pattern_sequence[seq_index] then
+            rns.transport:set_scheduled_sequence(seq_index)
+          end
+        elseif (self.options.play_mode.value == PLAY_MODE_TOGGLE) then
+          if (not rns.transport.playing) then
+            if rns.sequencer.pattern_sequence[seq_index] then
+              rns.transport:trigger_sequence(seq_index)
+              -- TODO : set index (for slightly faster update)
+              return false
+            end
+          end
+        end
+
+      else
+
+        if (not rns.transport.playing) then
+          -- start playback if stopped
+          if rns.sequencer.pattern_sequence[seq_index] then
+            rns.transport:trigger_sequence(seq_index)
+            return false
+          end
+        else
+          if(self.options.switch_mode.value == SWITCH_MODE_SCHEDULE) then
+            if rns.sequencer.pattern_sequence[seq_index] then
+              -- schedule, but do not update display
+              rns.transport:set_scheduled_sequence(seq_index)
+              self._scheduled_pattern = seq_index
+              obj:start_blink(obj_index)
+              return false
+            end
+          elseif(self.options.switch_mode.value == SWITCH_MODE_SWITCH) then
+            -- instantly switch position:
+            local new_pos = rns.transport.playback_pos
+            new_pos.sequence = seq_index
+            xPatternSequencer.switch_to_sequence(new_pos)
+          elseif(self.options.switch_mode.value == SWITCH_MODE_STOP) then
+            rns.transport:stop()
+          elseif(self.options.switch_mode.value == SWITCH_MODE_TRIG) then
+            if rns.sequencer.pattern_sequence[seq_index] then
+              self._playback_pos.sequence = seq_index
+              self:_retrigger_pattern()
+            end
+          end
+        end
+      end
+    end
+    c.on_range_change = function(obj)
+
+      local rng = obj:get_range()
+
+      -- check if the range is empty (0,0)
+      if (rng[1]==0) and (rng[2]==0) then
+        rns.transport.loop_sequence_range = {0,0}
+        return
+      end
+
+      -- TODO: support range selection across "pages"
+
+      local start_index = rng[1] + (self._height*self._edit_page)
+      local end_index = rng[2] + (self._height*self._edit_page)
+
+      -- check if the range is out-of-bounds
+      if not rns.sequencer.pattern_sequence[start_index] then
+        -- completely out-of-bounds, ignore
+        return false
+      elseif not rns.sequencer.pattern_sequence[end_index] then
+        -- partially out-of-bounds, correct
+        local sequence_length = #rns.sequencer.pattern_sequence
+        rns.transport.loop_sequence_range = {start_index,sequence_length}
+        return false
+      else
+        -- range is within current page
+        self._loop_sequence_range = {start_index,end_index}
+        rns.transport.loop_sequence_range = self._loop_sequence_range
+      end
+    end
+
+    self._controls._trigger = c
+
+  end
+
+  -- pattern-sequence labels 
+  if (self.mappings.trigger_labels.group_name) then
+
+    local map = self.mappings.trigger_labels
+    local num_labels = #control_map.groups[map.group_name]
+    
+    if (num_labels ~= self._height) then 
+      local msg = "Could not start Matrix application:"
+                .."'trigger_labels' needs to have same size as 'matrix'"
+      renoise.app():show_warning(msg)
+      return false
+    end 
+
+    self._controls.trigger_labels = {}
+
+    for k = 1,num_labels do 
+      local c = UILabel(self)
+      c.group_name = map.group_name
+      --c.tooltip = map.description
+      c:set_pos(k)
+      self._controls.trigger_labels[k] = c
+    end 
+
+  end
+
+  -- grid buttons
+  if (self.mappings.matrix.group_name) then
+    self._controls._buttons = {}
+    for x=1,self._width do
+      self._controls._buttons[x] = {}
+      for y=1,self._height do
+        local c = UIButton(self)
+        c.group_name = self.mappings.matrix.group_name
+        c.tooltip = self.mappings.matrix.description
+        c:set_pos(x,y)
+        c.on_hold = function() 
+          -- bring focus to pattern/track
+
+          local x_pos = x + self._track_offset
+          local y_pos = y + (self._height*self._edit_page)
+          --obj:toggle()
+          if (#rns.tracks>=x_pos) then
+            rns.selected_track_index = x_pos
+          end
+          if rns.sequencer.pattern_sequence[y_pos] then
+            rns.selected_sequence_index = y_pos
+          end
+        end
+        c.on_press = function() 
+          local seq = rns.sequencer
+          local patt_seq = rns.sequencer.pattern_sequence
+          local master_idx = xTrack.get_master_track_index()
+          local seq_offset = self._edit_page*self._height
+          --local sequence = rns.sequencer.pattern_sequence
+          local track_idx = x+self._track_offset
+          local seq_idx = y+seq_offset
+          local patt_idx = patt_seq[y+seq_offset]
+          local patt = rns.patterns[patt_idx]
+          if track_idx == master_idx then
+            -- master track is not toggle-able
+            return 
+          elseif not rns.tracks[track_idx] then
+            -- outside track bounds
+            return 
+          elseif not patt_seq[y+seq_offset] then
+            -- outside sequence bounds
+            return 
+          else
+            -- toggle matrix slot state
+            local is_muted = seq:track_sequence_slot_is_muted(track_idx,seq_idx)
+            rns.sequencer:set_track_sequence_slot_is_muted(
+              (track_idx),(y+seq_offset),(not is_muted))
+          end
+
+        end
+        self._controls._buttons[x][y] = c
+      end  
+    end
+  end
+
+  Application._build_app(self)
+  return true
+
+end
+
+
+---------------------------------------------------------------------------------------------------
+-- Schedule update when pattern name has changed 
+
+function Matrix:_pattern_name_notifier()
+  self._update_labels_requested = true
+end
+
+---------------------------------------------------------------------------------------------------
+-- Attach to visible patterns 
+
+function Matrix:_attach_to_patterns()
+
+  for k,v in ipairs(self._pattern_name_notifiers) do
+    cObservable.detach(v,self,self._pattern_name_notifier)
+  end
+
+  self._pattern_name_notifiers = {}
+
+  local seq_idx = self._edit_page*self._height
+  for k = 1,self._height do
+    local seq_idx = k+seq_idx
+    if (seq_idx < #rns.sequencer.pattern_sequence) then
+      local patt_idx = rns.sequencer:pattern(seq_idx)
+      local patt = rns.patterns[patt_idx]
+      local obs = patt.name_observable
+      cObservable.attach(obs,self,self._pattern_name_notifier)
+      table.insert(self._pattern_name_notifiers,obs)
+    end
+  end 
+
+end 
+
+---------------------------------------------------------------------------------------------------
+-- Add notifiers to relevant parts of the song
+
+function Matrix:_attach_to_song()
+
+  if not self._height then
+    LOG("*** Can't attach to song - required property (height) not set")
+    return
+  end
+
+  local track_idx = rns.selected_track_index
+  self._playing = rns.transport.playing
+  self._playback_pos = rns.transport.playback_pos
+  self._play_page = self:_get_play_page()
+  self._edit_page = self:_get_edit_page()
+  self._track_page = self:_get_track_page(track_idx)
+  self:_set_trigger_mode()
+  self:_update_track_page_count()
+  self:_update_seq_page_count()
+  self:_update_position()
+  self:_update_range()
+  self:_update_slots()
+  self:_follow_track()
+
+  rns.sequencer.pattern_assignments_observable:add_notifier(
+    function()
+      self._update_slots_requested = true
+    end
+  )
+  
+  rns.sequencer.pattern_sequence_observable:add_notifier(
+    function(e)
+      self._update_slots_requested = true
+    end
+  )
+
+  rns.sequencer.pattern_slot_mutes_observable:add_notifier(
+    function()
+      -- TODO skip this when setting mute state from controller
+      if not self._mute_notifier_disabled then
+        self._update_slots_requested = true
+      else
+        self._mute_notifier_disabled = false
+      end
+    end
+  )
+
+  rns.transport.follow_player_observable:add_notifier(
+    function()
+      if(self._play_page~=self._edit_page)then
+        self:_check_page_change()
+      end
+    end
+  )
+
+  -- slot notifiers
+  
+  local function slot_changed()
+    self._update_slots_requested = true
+  end
+
+  local function attach_slot_notifiers()
+    local patterns = rns.patterns
+    for _,pattern in pairs(patterns) do
+      local pattern_tracks = pattern.tracks
+      for _,pattern_track in pairs(pattern_tracks) do
+        local observable = pattern_track.is_empty_observable
+        if (not observable:has_notifier(slot_changed)) then
+          observable:add_notifier(slot_changed)
+        end
+      end
+    end
+  end
+
+  -- attach to the initial slot set
+  attach_slot_notifiers()
+  
+  -- and to new slots  
+  rns.tracks_observable:add_notifier(
+    function()
+      self._update_slots_requested = true
+      self._update_tracks_requested = true
+      attach_slot_notifiers()
+    end
+  )
+
+  rns.patterns_observable:add_notifier(
+    function()
+      self._update_slots_requested = true
+      attach_slot_notifiers()
+    end
+  )
+
+  -- follow active track in Renoise
+  rns.selected_track_index_observable:add_notifier(
+    function()
+      if not self.active then 
+        return false 
+      end
+      self:_follow_track()
+    end
+  )
+
+
+end
+

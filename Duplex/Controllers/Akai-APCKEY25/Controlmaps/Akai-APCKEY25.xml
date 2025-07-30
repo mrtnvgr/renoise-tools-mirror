@@ -1,0 +1,30 @@
+<Device>
+  <Name>Akai-APCKEY25</Name>
+  <Author>nelsen</Author>
+  <Description>Controlmap for Akai APC Key 25</Description>
+  <Parameters>
+    <Page>
+      <Column>
+        <Group name="Encoders_1" orientation="horizontal">
+            <Param value="CC#30|Ch1" type="dial" name="Encoder #1"  maximum="127" minimum="0"/>
+            <Param value="CC#31|Ch1" type="dial" name="Encoder #2"  maximum="127" minimum="0"/>
+            <Param value="CC#32|Ch1" type="dial" name="Encoder #3"  maximum="127" minimum="0"/>
+            <Param value="CC#33|Ch1" type="dial" name="Encoder #4"  maximum="127" minimum="0"/>
+        </Group>
+
+        <Group name="Encoders_2" orientation="horizontal">
+            <Param value="CC#34|Ch1" type="dial" name="Encoder #5"  maximum="127" minimum="0"/>
+            <Param value="CC#35|Ch1" type="dial" name="Encoder #6"  maximum="127" minimum="0"/>
+            <Param value="CC#36|Ch1" type="dial" name="Encoder #7"  maximum="127" minimum="0"/>
+            <Param value="CC#37|Ch1" type="dial" name="Encoder #8"  maximum="127" minimum="0"/>
+        </Group>
+
+        <Group name="Transport" orientation="horizontal">
+          <Param value="A-5" type="button" name="Control Button #3"  maximum="127" minimum="0"/>
+          <Param value="G-6" type="button" name="Control Button #4"  maximum="127" minimum="0"/>
+          <Param value="A-6" type="button" name="Control Button #5"  maximum="127" minimum="0"/>
+        </Group>
+      </Column>
+    </Page>
+  </Parameters>
+</Device>

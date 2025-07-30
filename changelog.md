@@ -1,0 +1,893 @@
+# Duplex Changelog
+
+## 1.05 
+- Fixed: error when interpreting XYPad arguments #101
+- Tweak: Navigator - improved carry-over-loop implementation
+- Added: Matrix - new mapping, 'trigger_labels', to show pattern names in sequence
+- Added: Matrix demo config, demonstrating all features
+
+## 1.04
+- Added: StepSequencer - allow transposing while playing / holding down button
+- Added: StepSequencer - cycle layout mapping (implemented in Launchpad config)
+- Added: StepSequencer - more finegrained control of track/line follow behavior
+- Added: Keyboard - grid display options : key/sample highlighting + note labelling
+- Added: Launchpad configuration - "Drumpads" (four instances of Keyboard app.)
+- Added: Matrix - on-the-fly pattern switching tries to 'keeps the beat'
+- Fixed: StepSequencer - could throw error when navigating to non-selected pattern
+- Fixed: StepSequencer - force-remove all observables, some performance tweaks 
+- Fixed: Keyboard - HarmonicWrapped layout + scales no longer shows duplicate notes
+- Fixed: Navigator - more stable when switching between non-/selected patterns
+- Changed: don't run OSC server test by default. Can still be run from options
+- Updated Mlrx configuration for Launchpad (now includes all mappings)
+- Deprecated UIKeyPressure, UIPitchBend (using UISlider instead)
+
+## 1.03
+- Core: Improve performance by using table-based lookups where possible
+- Added: MMC transport control is now optional, can be enabled/disabled via options
+- Added: pitch-bend as an additional input method for the UISlider component
+  (this also fixes issue with Mackie Control: https://github.com/renoise/xrnx/issues/50)
+- Fixed: StepSequencer: error when pressing button in out-of-bounds area
+
+## 1.02
+
+- Core: replace OscClient with xOscClient
+- Added: Detect Renoise OSC server on startup
+- Added: Tool options dialog + clean up menu
+- StepSequencer: Changed default options (always write, enable preview and note names)
+- Updated documentation
+
+## 1.01
+
+- Core: Several classes have been replaced with their cLib/xLib counterparts. 
+- Core/Display: retain size of viewbuilder buttons when setting long text string
+- Documentation: switched to a new format, github-flavored markdown. 
+- Added: Eran Dax Lonkers StepSequencer contributions + other features  
+- Added: Keyboard - HarmonicWrapped layout, tweaked configurations
+- Added: High-res automation recording for Mixer, Effect, XYPad, Mlrx and Repeater apps.
+- Fixed: Issue w/N.O.W.: Allow unmapped phrases (API5)
+- Fixed: Issue w/N.O.W. (https://github.com/renoise/xrnx/issues/66)
+- Fixed: Issue w/N.O.W. (https://github.com/renoise/xrnx/issues/56)
+- Fixed: Issue w/TrackSelector (https://github.com/renoise/xrnx/issues/83)
+- Fixed: Issue w/XYPad (https://github.com/renoise/xrnx/issues/55)
+
+## 0.99.5
+
+Core/MidiDevice
+- 14-bit CC + NRPN support (absolute/relative modes)
+- Input throttling (ignore input when above a certain threshold)
+
+Core/OscVoiceMgr
+- Method for stopping all active voices
+
+Core/Controlmap
+- <Param @throttle> (new), enable/disable (MIDI) message throttling
+- More thorough parsing of XML (additional error messages)
+
+Core/Message
+- Ability to hold multiple MIDI messages (midi_msg -> midi_msgs)
+
+Core/Display
+- Ability to send multibyte CC/NRPN messages to device
+
+Core/UISlider
+- 14-bit CC + NRPN support (absolute/relative modes)
+- Encoder acceleration (amount specified in Duplex prefs)
+
+Core/UIComponent
+- More thorough "is changed" check when updating palette
+
+Core/StateController
+- Dedicated method for updating trigger button
+
+Application/Keyboard
+- New mapping: All notes off
+- Broadcast ModWheel as CC#1 (according to MIDI standard)
+- Added keyboard cycle icons to palette
+- GridLayout: add note info (text) to buttons
+
+Controllers: BCF/BCR-2000
+- Now defaults to bi-directional communication
+- Added NRPN controlmap/configurations
+
+Controllers: Launchpad
+- Keyboard config: added "all notes off", "cycle layout" mappings, using States
+
+Controllers: MIDI Keyboard
+- Controlmap/configuration: added ModWheel mapping
+
+---
+## 0.99.4 
+
+Core/Browser
+- Decorate open device dialogs when hardware is hot-swapped
+- Prevent notifier feedback in browser dialog
+
+Core/MessageStream
+- Better handling of "soft_echo", respond only to programmatic events
+
+Core/OscVoiceMgr
+- Support for trigger options (hold/mono modes)
+- Register_callback(), makes apps able to receive notifications
+
+Core/Device
+- Changed the interpretation of "colorspace" a little: monochrome devices
+  are now specified as {1} instead of {1,1,1}
+
+Applications/Keyboard
+- Support harmonic scales (scale and key)
+- Custom grid layouts (harmonic, isomorphic layout and piano emulation)
+- Support for trigger options (hold/mono modes)
+
+Applications/Instrument (new)
+- Control basic instrument options
+
+Documentation
+- More links and descriptions 
+
+---
+## 0.99.3 
+
+Core/StateController
+* New class, StateController (toggle parts of control-map in realtime)
+* See also ControlMap.lua and MessageStream for details
+
+Core/MidiDevice
+* Support for MMC (Midi Machine Control) messages over sysex
+* Support for 14-bit MIDI pitch bend messages 
+* Ability to pass unmatched (not just unhandled) messages to Renoise 
+
+Core/OscDevice
+* Ability to dump OSC message to console (just like MIDI messages)
+* Feedback prevention: optionally block messages that appear to be echoed back
+
+Core/ControlMap
+* <Param @match> (new), match a specific (CC) value 
+* <Param @match_from, @match_to> (new), match a (CC) value-range 
+* <Param @mode> (new), explicitly state the value resolution (e.g. 7 or 14 bit)
+* <Param @class> (new), interpret parameter in the context of a specific device class
+
+Core/MessageStream
+* Ability to cache multiple matched ui-components (implemented as queue)
+* Integration with StateController
+
+Core/UIComponents (all)
+* Refactored force_refresh method into base-class
+* UIComponent:test() now include test for active state and group-name
+
+Core/WidgetHooks
+* Improved validation methods
+
+Core/Applications
+* Removed some print statements that were overlooked
+
+Core/Controllers
+* All device classes should now be using output_number/boolean/text methods
+
+Applications/PatternCursor
+* New application, take control of the pattern cursor (preview release)
+
+Controllers/Oxygen88
+* Control-map / configuration for the M-Audio Oxygen88 controller
+
+---
+## 0.99.2 
+
+Duplex Core
+* Native viewbuilder widgets are now defined in a single place: WidgetHooks.lua
+  (this change has reduced complexity of the Display class in particular)
+* WidgetKeyboard is a "custom widget implemention", refactored from UIKey
+
+Core/ControlMap
+* Faster, more flexible parameter matching 
+  - all messages are processed on startup, cached/memoized where possible
+  - OSC patterns now support "captures", see get_osc_params() for more info
+  - get_osc_params(): when using wildcards, returns table of regexp-matches
+* <Param @invert> (new), allows inverting the value (flip min/max)
+* <Param @soft_echo> (new) update device only when changed via virtual UI
+* <Param @font> (new), specify the font type - relevant for @type=labels only
+* <Param @velocity_enabled> attribute has been retired
+* <Param @is_virtual> attribute has been retired, just enter a blank @value
+* <Param @type="key"> widget type has been retired (use @type="button")
+* <SubParam> new node type for combining several parameters into one
+  (finally, we can have a "proper" xypad control for MIDI devices)
+* <Group @visible> (new), set to false to hide the entire group 
+
+Core/Device
+* output_to_value now split into submethods (output_number/boolean/text)
+  (including ability to produce completely custom output to device)
+
+Core/OscDevice
+* strip non-ascii character from text before sending
+* "pattern captures" - reconstruct when sending outgoing OSC message
+
+Core/Message
+* "param" is renamed to "xarg"
+* removed properties derived from parameter: min,max,row,column etc.
+* "input_method" is gone, use "xarg.type" instead
+
+Core/UIComponent
+* floor and ceiling for numeric values (UISlider, UIPad etc.)
+* supply "map" argument when creating instance (saves typing)
+
+Core/UIPad
+* value now independant of control-map minimum/maximum value)
+* support for @soft_echo attribute (see ControlMap.lua)
+
+Core/UISlider
+* "dimmed" property/method has been retired (use set_palette)
+* "button_mode" is now auto-detected (when position is set)
+* support for @soft_echo attribute (see ControlMap.lua)
+ 
+Applications/XYPad
+* New option: broadcast MIDI CC from X/Y sliders
+
+Applications/Keyboard
+* Adapted to UIKey changes 
+* New mapping: mod_wheel
+
+---
+## 0.99.1 
+
+Duplex Core
+* Some classes split into separate files (MessageStream, BrowserProcess etc.)
+* Updated documentation (/Docs), now including application classes
+* Global enumerators now stored in tables instead of separate variables
+ (ORIENTATION.VERTICAL instead of ORIENTATION_VERTICAL)
+
+Core/MessageStream 
+* FIXME Caching can break multiple UIComponents listening to the same signal,
+  as reported here: 
+
+Core/Application
+* FEATURE Specify "midi_mapping" property (string) when creating a UIComponent 
+  instance (will make it highlight when Renoise MIDI mapping dialog is open)
+* FEATURE Hooks for when Renoise gain/loose focus:
+ on_window_became_active/on_window_resigned_active
+
+Core/Automation
+* FIXME make it possible to record from any track, any pattern (follow_pos)
+* FEATURE specify preferred playmode (points/linear/cubic)
+
+Core/Controlmap
+* TWEAK No more need to explicitly state "is_virtual" for parameters that only
+  exist in the virtual UI - just leave the value attribute blank
+
+Core/Browser
+* FEATURE Button to show/hide virtual control surface (access with TAB key)
+
+Core/ProcessSlicer
+* Implementation of lua coroutines (see Mlrx_track.lua for example)
+
+Applications/MidiActions
+* FIXME Problem on Windows when looking for user-specified  GlobalMidiActions
+
+Applications/Mlrx 
+* FEATURE Phrase recording
+
+Controllers/MPD32
+* New configuration: PerformancePads
+
+Controllers/BCD-3000
+* New controller template, no configurations yet...
+
+---
+## 0.98.32 
+
+> including versions 0.98.30-0.98.31
+
+Duplex Core
+* Preliminary support for Renoise 3 (applications that needed upgrade)
+* Ability to specify persistent option values as string as well as integer
+ (used by MidiActions to memorize options and make them more readable)
+
+Applications/Mlrx 
+* Mlrx (new application, preview release)
+
+Applications/Grid Pie
+* FEATURE Support for blinking LEDs on monochrome devices
+
+Application/Keyboard
+* TWEAK: velocity now is set to an explicit value, or synced to Renoise keyboard 
+ velocity will output a fixed velocity (previously it was relative to messages)
+
+---
+## 0.98.29 
+
+Applications/Navigator
+* FIXME When jumping back in pattern, and briefly going to the previous pattern,
+ the navigator would break if the previous pattern hadn’t same number of lines
+
+Applications/Grid Pie
+* FIXME Ignore pattern switching, when arriving in the last line of pattern
+ (this avoids that using the Navigator will cause the pattern to switch)
+
+---
+## 0.98.28 
+
+Duplex Core
+* FIXME MIDI pass-on got ignored when message was not handled by any controls
+* FIXME: UISlider / value at “turnaround point” was ignored
+* INTERNAL remove print() statements in favor of LOG()
+* FEATURE Duplex now support Program Change as standard MIDI-message type
+
+Duplex Browser
+* FEATURE Expanded set of key/MIDI mappings
+  - [Next] / [Previous] configuration for the selected device
+  - [Set] the active configuration for the selected device
+  - [Show] / [Hide] the Duplex browser dialog
+
+Applications/Recorder
+* FIXME issue with “autostart” option (broke the recording workflow)
+
+Applications/Matrix
+* FIXME trigger in schedule mode could schedule a pattern on the wrong page
+
+Applications/TrackSelector
+* New mappings: “next_track”,”prev_track” (UIButtons, replaces UISpinner)
+* New mappings: “next_page”,”prev_page” (UIButtons, replaces UISpinner)
+* FEATURE: Hold prev/next track to select first/last track
+* New mappings: “next_line”,”prev_line” (UIButtons)
+* New mappings: “line”(UISlider, replaces UISpinner)
+
+---
+## 0.98.27 
+
+> including versions 0.98.24-0.98.26
+
+Duplex Core
+* New control-map attribute, relevant for parameters with a @type=’xypad’
+  swap_axes=“true” (replace X with Y and vice versa)
+* OscDevice: support text values
+* UILabel: for displaying text values (used in iPad config)
+* UIComponents in general: reference application instead of display
+* UIComponents in general: constants are made class members
+* MessageStream - better performance when many controls are present
+
+Applications/Mixer
+* New mappings: “prev_page”, “next_page” (replace UISpinner @page)
+* options.track_offset has been removed
+
+Applications/Effect
+* New mapping: “device_name” (UILabel)
+* New mappings: “param_names”,”param_values” (UILabels for parameters)
+* New mappings: “param_next”,”param_next” (UIButtons, replaces UISpinner)
+
+Applications/Navigator
+* rewritten, should be more solid and support off-pattern updates
+* New mappings: “prev_block”,”next_block”
+
+Applications/Transport
+* New mapping: “songpos_display” (UILabel)
+* New mapping: “bpm_display” (UILabel)
+* New mappings: “bpm_increase”,”bpm_decrease”
+
+Applications/Hydra
+* new mapping: value_string (UILabel), FIXME Attach to newly inserted device
+(update controller)
+
+Applications/Matrix
+* Mappings sequence/track (UISpinner) have been removed
+* Changed default retrigger method to “play/continue”
+* New mappings: next_track_page/prev_track_page (UIButtons)
+* New mappings: “prev_seq_page/next_seq_page” (UIButtons)
+
+Device-configs
+* TouchOSC_iPad
+* APC20/40 XYPad+repeater
+* monome128_performance
+
+---
+## 0.98.23 
+
+MidiActions
+* New application: MidiActions.lua (designed to piggy-back on GlobalMidiActions)
+
+Duplex Core
+* Feature: optional MIDI quantize (MIDI controllers, when using UISlider)
+* Applications now receive __init arguments via vararg (easier to expand)
+* Application mappings, palette now defined as static tables
+* Device config: allow “literal” option values (supply string value)
+* Application options: sort entries alphabetically
+* Application options: “break” into columns for every xx entries
+
+Grid Pie
+* FIXME (Recording) better handling of patt. cloning near boundaries
+* TWEAK “Keep the beat” changed to modify playback-pos less often
+* FIXME Sess-rec.: “Stuttering” after short pattern (incremental_update)
+* FIXME Assign to slot: use patt-idx, not seq-idx (doh!)
+* FIXME Do not block “trigger gestures” in separate tracks
+* FEATURE Record: when triggering a pattern, use incremental updates
+* FEATURE Shorten pattern instead of modifying playback-pos (when possible)
+* FEATURE skip group tracks when temp-muting
+* FEATURE When muting track, delay note-off (to keep existing instr.)
+* FIXME Incremental updates should use the master slot range only
+* FIXME Don’t signal “dun goofed” when not started
+* USABILITY Restore matrix state when GP pattern is “dun goofed”
+
+Device-configs
+* Remote-SL-MKII/MixerEffectsTransport: swapped Mixer(mutes) with TrackSelector
+* Custombuilt MidiActions_Demo (demonstrates an 8-track mixer and transport)
+* Remote SLMKII MidiActionsTest (demo of button-slider and fixed BPM buttons)
+* Launchpad MuteGrid (as an example of "control-map hacking")
+
+---
+## 0.98.22 
+
+Grid Pie
+* Overview of new features:
+ - Realtime recording (including session recording)
+ - Multitouch gestures (assign/resolve aliases, save combination, etc.)
+ - Visualization of aliased slots, current track + pattern etc.
+ - Configurable initialization and shutdown process (options)
+ - Many smaller bug fixes, cleaner code ...
+* Feature: assign an alias by pressing and holding a slot button (source), and
+  then pressing another button in the same track. The procedure will only
+  work when the source slot is already aliased or empty (to avoid accidents)
+* Feature: to complement the assignment gesture just mentioned, you can hold
+  the button pressed to “force-assign” slots that are empty, or unique
+* Feature: resolve any aliased slots in the gridpie pattern to it’s master slot
+  by pressing a slot in the gridpie pattern (the last pattern). Conceptually
+  similar to the pattern-editor (arrow in the lower part of an aliased track)
+* Feature: quickly store “homeless” content (a track in the gridpie pattern with
+  no master slot), either by creating a new pattern to hold the data or by
+  assigning the content to an existing slot
+* Feature: hold a gridpie button to save the combination as a new pattern
+* Feature: make an alias unique (un-alias) by holding it, then it’s gridpie slot
+* Tweak: highlight the selected alias master slot (if any exists)
+* Tweak: better visualization of the current track/sequence position
+* New option: “highlight”, toggles track/sequence highlighting on/off
+* New option: auto-start has been expanded into “initialization”
+* New option: “shutdown”, use it to control the shutdown procedure
+* Fixed: de-activating a group track will not send the brief mute (avoid click)
+* Fixed: properly update mute state when gridpie is cloned
+* Fixed: line notifiers could get lost when scrolling through the song
+* Fixed: UI integration with Renoise pattern-matrix is gone (buggy)
+* Restructured code, simplified things...
+
+---
+## 0.98.21 
+
+TrackSelector
+* Fixed: application was updating display when stopped/paused
+
+StepSequencer
+* Support line_notifier when slots are aliased (also when created and/or removed)
+* Workflow: when navigating from a long pattern into a shorter one, start from 
+  the top (IOW, always restrict to the actual pattern length)
+* Fixed: update the volume-level display when base volume is changed
+* Fixed: selecting a group track could cause an error
+
+Navigator
+* Fixed: issue when loading a new song while Navigator was displaying nothing
+ (playback happening in a different pattern)
+
+GridPie
+* Fixed: retain mute state when toggling a pattern off (hold x2)
+* Fixed: track navigation could show wrong track on startup
+* Feature: turbocharged mode (using a pattern cache along with aliased slots)
+* Feature/workflow: (even) closer integration into Renoise
+ - detect changes to mute states in the Renoise matrix (mouse+alt-click)
+ - detect when a pattern has been scheduled in Renoise
+ - disable pattern loop to allow song to play, pattern-by-pattern (1)
+* Feature/workflow: ability to clone gridpie pattern while playing
+
+  (1) This, and pattern scheduling via Renoise can be considered experimental as 
+  we can’t reliably detect a scheduled pattern. As a result, the first few 
+  note(s) might be skipped!
+
+Duplex Core
+* Fixed: bug when handling MIDI ports that are added/removed while running
+* Streamlined documentation with lua-doc friendly code formatting
+
+---
+## 0.98.20 
+
+GridPie
+* Edit-sync: automatic background-synchronization of pattern data
+* Edit-sync: detect changes to the pattern length (source tracks)
+* Update grid display as content is created or removed in the matrix
+* Visualize the currently selected pattern (when the controller is able to)
+* Attempt to maintain pattern matrix slot mute states at all times (1)
+* Ability to clone the __GRID PIE__ pattern without stopping the application
+* New option: Beat-measures (related to the improved ‘keep the beat’ feature)
+* Fixed: removed display-glitch in the virtual UI (on startup)
+* Fixed: remove all notifiers when app is stopped
+
+PatternSequence
+* New application: simple sequence navigation (first/next/previous/last)
+
+StepSequencer
+* Fixed: focus bug when holding button
+
+(1) GridPie will attempt to retain as much information about the mute state of 
+the song as possible, as this is restored when we exit GridPie. Note however 
+that using drag-and-drop within the pattern sequence will cause the mute state 
+to become lost for the rearranged patterns. Simple insert/clone and delete 
+actions should not cause this to happen.
+
+---
+## 0.98.19 
+
+Duplex core API
+* Display: removed some checks before updating hardware display
+
+Effect application
+* Fixed: device-navigator now works after switching song/document
+
+Monome XYPad control-map
+* Fixed, corrected tilt-sensors to use floating-point values - was incorrectly 
+  labelled as integers
+
+Monome XYPad config
+* Fixed incorrect placement of “focus button”, improved layout
+
+Launchpad Effect config
+* TrackSelector now using full width (8) as the default page-size
+
+XYPad application
+* Simplified setup: use unique, automatically-generated names to identify 
+  “managed” XYPads (no more need for manually specified id’s)
+
+---
+## 0.98.18 
+
+Duplex core API
+* Applications: all palettes standardized
+* For devices with mixed colorspaces (APC20/40), prefer “tinting” over “theming”
+* Fixed error when using #CC buttons on a virtual display as keyboard keys (the 
+  issue affected AKAI LPD8)
+* OSC buffering: all but float-based arguments are now buffered
+
+StepSequencer
+* Mappings track, level, line, transpose are now optional. This should fix an 
+  issue with the nano2K config that didn’t specify ‘track’
+* Fixed: under certain conditions, could throw error on startup
+
+Grid Pie
+* Disable of “follow_player” now only enforced outside the grid-pie pattern
+
+Recorder
+* Fixed: under certain conditions, could throw error on startup
+
+Launchpad/Matrix config
+* Made “control loop+position” the default option
+
+---
+## 0.98.17 
+
+* Fixme: Metronome: wrong placement on launchpad? #5 lights up #7 ??
+* Refactor: UIButton (replaces UIPushButton, UIToggleButton, UIStepSeqButton)
+* UIComponent event handlers should always return “false” when actively 
+  rejecting an event (such as when the application is sleeping/inactive), 
+  allowing the MIDI message to be passed on to Renoise
+* Virtual control surface able to display text & color simultaneously
+* Theming support: specify the default button color (default is white). No UI is 
+  provided for changing the value, so in order to match Duplex with your own 
+  theme color, modify the value in Globals.lua (search for “theme”) and delete 
+  your preferences before restarting.
+* SwitchConfiguration: Light up arrow only if next/previous config is available
+* Transport: Stop scheduled blinking when current pattern is re-scheduled
+* Mixer: remove “invert” option in favor of customizable palette
+* GridPie: fixed a bug in the “running start” feature (when switching away from Grid 
+  without having run the application)
+
+---
+## 0.98.16 
+
+* Duplex core 
+  * Fixme: stuck notes when transposing into unhandled range
+  * Fixme: stuck notes when transposing into handled range
+    Solution: make the voice-manager support passed messages (differentiating 
+    between handled OSC notes and unhandled MIDI notes - detecting the active 
+    track & instruments for MIDI notes the moment they’re triggered)
+  * Fixme: UIPushButton double-fires press in virtual control surface
+* Keyboard: Display message on how to enable OSC server (first time only)
+* Grid Pie: Feature “Keep the beat” and “running start”
+* Config: APC - Add sato’s extended configurations
+
+---
+## 0.98.15 
+
+-- Duplex core API --
+* MIDI pass-on: allow native MIDI mapping for unhandled parameters
+* MIDI pass-on: virtual control surface able to generate MIDI
+* MIDI pass-on: all UIComponents can “actively reject” an event
+* Control-map: MIDI channel support for keyboards (specific/any channel)
+* Control-map: pitch-bend mappings receive + send
+* New class: OscVoiceMgr, provides voice-management features
+* Device-config: hide specific application options (hidden_options)
+* Fixed: choosing “cancel” when shutting down devices would throw an error
+* Fixed: proper access to document nodes (.value)
+-- Applications/XYPad.lua --
+* Fixed: No longer looses focus when navigating to a new track
+-- Applications/Keyboard.lua --
+* New option: “Keyboard Mode”, choose which notes (if any) to trigger
+
+---
+## 0.98.14 
+
+* Message now sent directly to the UIComponentm, more reliable
+* Application.on_release_document method (to complement on_new_document)
+* OscDevice: optional message bundling
+ o No more lost messages on wireless devices?
+ o Set per-device (for example, see the TouchOSC device class)
+* ControlMap: cache parameters
+ o Faster retrieval of MIDI parameters (put in cache once requested)
+* NRPN support (experimental, see http://goo.gl/xOAvf for details)
+ o Feature is disabled per default, enable in Duplex menu)
+* Restructured device folders, auto-include configs when Duplex is started
+* Customizable palette for each application configuration
+ o Will import specified values on top of default palette
+ o See e.g. Launchpad XYPad configuration for an example
+* Automation class, for recording movements into automation envelopes
+ o Touch and latch recording (latch is considered experimental)
+* New class: OscClient, a shared connection for sending internally routed 
+  messages (simple interface, accessible to all applications)
+* New class: OscVoiceMgr, for keeping the currently triggered notes in order 
+  (avoid stuck notes, problems with release). Requires OscClient.
+* New class: UIKey, a UIComponent designed to receive and represent note 
+  information (pitch & velocity). UIKeys can either be linked to individual 
+  keys, or process all incoming note messages from a keyboard (see Keyboard).
+* New class: UIKeyPressure (UISlider), for receiving a continuous stream of 
+  velocity information from a keyboard
+* New class: UIPitchBend (UISlider), will enable an application to receive 
+  pitch-bend information from a keyboard
+* New class: UIPad (UIComponent), implemented as paired axes (for OSC) or 
+  independent X/Y axis (for MIDI devices)
+* ControlMap: New input method “xypad”, for creating XYPad controls in the 
+  virtual control surface (paired-value support, however only OSC devices can 
+  define this input method)
+* Control-map, new input method: “key” - for accepting note-input from 
+  individual buttons/pads
+* Control-map/virtual control surface: “keyboard” - a new input method for 
+  representing a keyboard (the control surface will draw a series of keys)
+ o In the control-map, you can specify it’s range (number of keys)
+* Control-map/XML parsing:
+ o Attribute names can now contain underscore
+* Control-map/note value syntax: octave wildcard - you can now put an asterisk 
+  in place of the octave to make mapping respond to the note only (e.g. “C-*”). 
+  Used in the Midi-keyboard Grid Pie configuration to make navigation buttons 
+  appear across all the black keys
+
+Duplex browser/menu
+* Tool menu: devices organized into sub-menu’s
+* Tool menu: display on startup (only when active config)
+* Tool menu: release all devices (useful shortcut)
+* Tool menu: enable NRPN support
+
+---
+## 0.98
+
+* API
+  o Automation class: generic automation support (used in Effect and Mixer)
+  o Device-config: thumbnails specified in same path syntax as a controlmap
+  o Removed semantic entries “greedy” and “ui_component” from applications
+* Controllers
+  o APC40 (fixed controlmap)
+  o nanoKONTROL2 (new device, configurations)
+  o LPD8 (new device, configurations)
+  o BCR2000 (new configurations)
+  o Restructured controller config/controlmap files
+* Mixer
+  o Automation recording support (volume, panning)
+  o Soft takeover / parameter pickup
+* Navigator
+  o Reset on new song
+  o Listen for changes to block-loop size
+  o Follow block loop enable
+* Effect
+  o Mapping for selecting current device via knob/slider
+  o Mapping for selecting next/previous device 
+  o Mapping for selecting active device preset 
+* Matrix
+  o pattern_assignments_observable is deprecated in Renoise 2.8 
+* Recorder
+  o First-run message explaining how to set up a recording
+  o Detect v3 API and use alternate FX commands
+* NotesOnWheels
+  o When learning while writing, extend search by writeahead
+* Transport
+  o New mapping: "toggle_metronome"
+
+---
+## 0.97
+
+* Changes for Renoise 2.7
+  o API version updated to 2.0
+  o Use of rack:resize() has been depricated
+* All applications
+  o Options: renamed "track_increment" to more fitting "page_size" 
+* TrackSelector (new application)
+  o Allows to set focus to track by index, previous or next track
+  o Supports paged navigation features (previous/next, page size)
+  o Allows direct access to sequencer-track #1, master or send-track #1
+* Recorder
+  o Any number of tracks supported, option to follow current track
+  o Supports paged navigation features (previous/next, page size)
+  o Detect when tracks are inserted/removed/swapped, maintain references
+* Effect
+  o UI updates in idle loop
+  o Option to include parameters based on criteria:
+    ALL/MIXER/AUTOMATED_PARAMETERS
+* Mixer
+  o New option: "sync_pre_post" (Renoise 2.7+)
+  o Implement new multi-solo mode (affects how UISlider's are dimmed)
+  o Removed "hold to solo" action for normal mute buttons
+  o UI updates in idle loop 
+* Other minor changes 
+  o Cleaner app initialization (less code)
+
+---
+## 0.96
+
+* Duplex Browser
+  o Interactively change options while applications are running
+    - Application:_apply_options() and optional on_activate() has been removed
+  o Fixed: hot-plugging devices caused an error (bug was introduced in 0.95)
+  o More MIDI-mapping options: set,select previous/next configuration
+* Control-map
+  o New attribute: "aspect", control height of button (0.5 for 50% height)
+* APC20/40 support
+* Ohm64 support
+  o Improved control-map/configuration files
+* Transport
+  o Fixed: Option "pattern_switch" didn't switch instantly
+* Navigator
+  o Fixed: holding button while playback is stopped cause error 
+* Matrix,Mixer,StepSequencer
+  o Option: "follow_track", set to align to selected track in Renoise
+  o Option: "track_increment", specify custom step size for track-switching
+* StepSequencer
+  o Option: "increment" renamed to "line_increment"
+* Mixer
+  o Option: "track offset", set to offset mixer tracks by specified amount
+* All applications
+  o "Orientation" support for every applicable UI component (UISpinner, etc.)
+    - specify in device-config mappings using the "orientation" property
+  o Obsolete method: set_default_options() removed
+  o Options now specified statically, as "default_options"
+* Message/Stream
+  o New Message property: is_note_off - distinguish between note-on/note-off 
+
+---
+## 0.95
+
+* New devices/control-maps: Monome64 + AKAI LPD8/MPD24/MPD24
+* Recorder (looping recorder)
+  o Beta version, still need a way to start recording immediately (09xx)
+* Navigator (position control)
+  o Interactively control the blockloop position and size
+* Controlmap
+  o New button type: pushbutton (like togglebutton, has internal state control)
+    - UISlider, UIToggleButton made compatible with pushbutton (special case)
+    - We can now emulate sliders on the TouchOSC template (page 2)
+    - Nocturn and Remote will now be able to support hold/release events
+  o "name" attribute now optional (excluded from validation)
+  o "size" attribute now also applied to dials (see MPD24/32)
+  o Streamlined methods for detecting group size, grid mode
+* Updated automap configurations for Novation Remote/Nocturn
+  o Updated to make use of "pushbutton" (release & hold events for buttons)
+* StepSequencer
+  o Option: switch orientation (vertical or horizontal)
+  o Option: use variable "increment" value instead of being fixed to #lines
+    - this works better with "strange" number of steps like 15
+  o Monitor changes to pattern (the part being displayed), keep grid in sync
+    - uses the new line notifiers added in RC2
+  o Display "out-of-bounds" space in the same way as the Matrix 
+  o Enabling Renoise's follow mode will cause instant catch-up
+  o Output status messages when basenote/volume is modified
+  o Better performance (idle lag patch)
+* Effect
+  o Now supports grid controllers
+    - Limit meta-device routings to 7-bit (avoid skipping every 2nd value)
+    - Updated configurations for Launchpad, monome
+  o Seperated device-navigator group size from parameter group size
+  o Use standard (customizable) palette instead of hard-coded values
+  o Set focus to TrackVolPan device when no device is selected
+  o Applied feedback fix, additional check for invalid meta-device values
+* Mixer
+  o Hold mute button to toggle solo state for the given track
+  o Applied feedback fix (cascading mutes when solo'ing)
+* Browser/Device: 
+  o Refactoring: moved the "settings" dialog into the Browser class, as the
+    dialog will eventually contain application settings etc. The device now 
+    only contains the device-specific UI code, and not the dialog itself
+* UIComponent/Canvas
+  o When a UIComponent is resized, invalidate it
+  o When a UIComponent is resized to a smaller size, remove canvas-points by
+    using an additional "clear" buffer from the Canvas class. The "clear" buffer 
+    is then applied during the next Display refresh
+* UISlider
+  o set_orientation(): generic method for getting/setting orientation
+  o "steps" property (properly quantize a dial/fader, instead of using size)
+* UIButtonStrip
+  o Set point values when drawing control (forgot this in 0.93)
+  o Added "steps" property (control a range less than the control's size)
+* Application 
+  o More safe-guards when launching application (start_app)
+    - check if application mappings exist in control-map
+    - application build_app() methods can halt execution if criteria isn't met
+* Globals/etc.
+  o is_monochrome() will now also work with devices that have no colorspace 
+  o Double underscored property names (__) replaced with single underscore (_)
+    to avoid accidental clashes with lua's internal meta-method names
+
+---
+## 0.93
+
+* UIButtonStrip, for controlling/displaying a sequence
+  o Can control position and range simultaneously (Matrix sequence triggers)
+  o Optimized for monochrome devices
+* UISpinner improvements (better togglebutton support)
+  o TouchOSC and other controllers using togglebutton input should now 
+    display the UISpinner correctly at all times...
+* Browser: 
+  o Switch between device presets/configurations using function keys
+  o Forward keypresses to Renoise (except those we use for switching)
+* Application: 
+  o Application.options[].on_activate(): specify a method to be executed 
+    immediately before the application is started - for example, to provide a
+    UIComponent with values *after* it has been constructed
+* Matrix:
+  o Updated to support interactive pattern looping (via UIButtonStrip)
+  o Utilize "blinking" feature to display a scheduled pattern
+  o "follow_player" mode in Renoise will now update the matrix immediately
+* StepSequencer:
+  o Display playposition and volume simultaneously (via UIButtonStrip)
+  o Better support for other/monochrome devices (Monome)
+
+---
+## 0.92
+
+* Transport
+  o New option: "stop playback" when pressing play while playing
+  o Re-arranged Launchpad configuration (uses the new option)
+* UITriggerButton
+  o Added release event, and "wait_for_release" mode (a.k.a. sustain)
+* UIBasicButton + StepSequencer
+  o Added Daxton's code to the distribution (with some small modifications)
+* Assign tooltips to the control surface that describe the *actual* purpose 
+  o This could largely replace the need for app documentation?
+* Make tooltip descriptions for all applications 
+  o Effect has contextual tooltip support: show name of DSP parameter
+  o The remaining apps have "basic" tooltip support
+* Replace the mapping property "required" (not used) with "greedy"
+* Add "ui_component" to mappings, to describe the type of UIComponent
+  o for the planned visual mapping dialog, this will be needed
+  o also helpful when browsing application class code
+
+
+---
+## 0.91
+
+* Fixed: Transport: always turn off "start" when hitting "stop"
+* Matrix: all mappings are now without dependancies (no more "required" groups)
+* Application:add_component() automatically unregister components when exiting 
+  o Existing apps updated to support the new method, destroy_app() removed.
+* Fixed: Effect: check if "no device" is selected (initial state)
+* Specify color-space as <Group> attribute in the control-map 
+  o Support for devices like APC, where not all buttons are the same
+  o Colorspace is still specified via the device class, but a colorspace defined 
+    in the control-map will override the device colorspace
+* Specify MIDI channel mapping as an extension to the <Param> value attribute
+  o Simple syntax : "CC#23|2" to match channel #2
+  o Optional: if undefined, simply match all channels
+  o Affects all messages that support channels (CC,Notes,etc.)
+* Seperate notifiers for press/release on the virtual control surface 
+  o Now, it's possible to support "held" buttons events
+
+
+---
+## 0.9
+
+* OSC device / protocol support
+* Monome128 support (monome-specific class)
+* TouchOSC support (as generic OSC device)
+* Variable-sized controls (not all buttons are born equal)
+* XML comments is now supported
+* Fixed: Broken colums issue 
+* UIComponent:set_pos() - supply just one value to set the index
+* Transport: follow player option
+* Device-specific release() methods for monome, Launchpad
+* Matrix - removed "BUTTON_HELD" (broken with hardware toggle-buttons)
+
