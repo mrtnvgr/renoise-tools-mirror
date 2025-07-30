@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.SlicesToMidi</Id>
+  <Name>Slices to Midi</Name>
+  <Version>0.21</Version>
+  <Description>Generate midi notes from slices and write them to the pattern</Description>
+  <Author>afta8 | fathand@gmail.com</Author>
+  <Category>Pattern,Slicing,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/37430-new-tool-28-slices-to-midi-notes/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
