@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.vvoois.Convert_stereo_to_mono</Id>
+  <Name>Batch convert stereo to mono</Name>
+  <Version>1.06</Version>
+  <Description>Batch-convert stereo samples to mono:
+Either left, right or mixdown both channels or split both channels to separate instruments at once.
+Works for sliced and multizoned samples. (V1.06 updated to work with Renoise 3.0)</Description>
+  <Author>v.voois</Author>
+  <Category>Sample,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/30576-new-tool-27-batch-convert-stereo-to-mono</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>https://forum.renoise.com/u/vvoois</Homepage>
+</RenoiseScriptingTool>
