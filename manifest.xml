@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.ToggleReferenceTrack</Id>
+  <Name>Toggle Reference Track</Name>
+  <Version>1.36</Version>
+  <Description>Creates a prepared track with a  gainer device that will toggle solo`d and muted relative to all other tracks.  This allows quick AB`ing of mixes to the current song.  Menu Entry `Create Reference Track` in the instrument box and a `Toggle Reference Track `shortcut are provided.</Description>
+  <Author>scripts</Author>
+  <Category>Mixing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/38747-new-tool-toggle-reference-track/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
