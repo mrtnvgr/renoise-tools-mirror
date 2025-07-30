@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.vvoois.NoteEditor</Id>
+  <Name>Note Editor</Name>
+  <Version>1</Version>
+  <Description>Allow literal text input of note column content on the current cursor position. Dialog does nothing, except catching the keys and routing them to the pattern editor. The tool also supports fast navigation options.</Description>
+  <Author>v.voois</Author>
+  <Category>Pattern,Editing</Category>
+  <ApiVersion>2</ApiVersion>
+  <Homepage>https://forum.renoise.com/u/vvoois</Homepage>
+</RenoiseScriptingTool>
