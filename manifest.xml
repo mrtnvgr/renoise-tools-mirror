@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.MixBalancer</Id>
+  <Name>Mix Balancer</Name>
+  <Version>1.1</Version>
+  <Description>Move one fader up and all others down at the same time, or fine tune current post fader</Description>
+  <Author>scripts</Author>
+  <Category>Mixing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-0-mix-balancer/44382</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
