@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.dlt.SpeedBar</Id>
+  <Name>SpeedBar</Name>
+  <Version>1.1</Version>
+  <Description>Speed bar for quickly searching keybindings using fuzzy matching.</Description>
+  <Author>dltfm | dave.tichy@gmail.com</Author>
+  <Category>Workflow</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-keybindings-speed-bar/60533</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
