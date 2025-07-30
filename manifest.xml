@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.neurogami.TrackPatternComments</Id>
+  <Name>Track-pattern Comments</Name>
+  <Version>0.2</Version>
+  <Description>This tool allows you to associate a comment with a track pattern. All data is stored in the global song comments.</Description>
+  <Author>James Britt / Neurogam (james@neurogami.com)</Author>
+  <Category>Pattern,Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/50556-new-tool-31-track-pattern-comments/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://neurogami.com/code</Homepage>
+</RenoiseScriptingTool>
