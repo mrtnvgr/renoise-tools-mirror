@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.FreezeTrack</Id>
+  <Name>Freeze Track</Name>
+  <Version>1.3</Version>
+  <Description>Allows the user to freeze a track to either reduce CPU usage or for use when VSTs are not available.  The tool works by rendering each pattern to a sample and loading them all into a &apos;frozen track&apos; instrument.  Frozen tracks will be muted and replaced by a track that plays the frozen patterns.  Autoseek is enabled for frozen pattern samples to enable playback from any location in the song.</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/30880-new-tool-27-track-freezing</Discussion>
+  <ApiVersion>3</ApiVersion>
+</RenoiseScriptingTool>
