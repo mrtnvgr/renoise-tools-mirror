@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.Laffik.Pathfinder</Id>
+  <Name>Pathfinder</Name>
+  <Version>0.8</Version>
+  <Description>Script finds way between given cadences with intervals of selected quality and tones in given scale.</Description>
+  <Author>Laffik</Author>
+  <Category>Pattern,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/49707-new-tool-31-pathfinder/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
