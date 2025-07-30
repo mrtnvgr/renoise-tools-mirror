@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mxb.BatchRender</Id>
+  <Name>Batch Render</Name>
+  <Version>1.11</Version>
+  <Description>Loads and renders a selection of Renoise songs to a specified destination.</Description>
+  <Author>Martin Bealby | mxb (mbealby@gmail.com)</Author>
+  <Category>Rendering</Category>
+  <ApiVersion>2</ApiVersion>
+</RenoiseScriptingTool>
