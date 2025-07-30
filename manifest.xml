@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.nisanmol.GrooveTool</Id>
+  <Name>GrooveTool</Name>
+  <Version>0.91</Version>
+  <Description>A tool for manipulating timing data in order to create &apos;groove&apos; or &apos;swing&apos; patterns. Moving each slider will move the note(s) on the corresponding line back or forward in time. &apos;Cycle length&apos; controls the number of lines after which the groove pattern repeats itself, which equals the number of sliders. &apos;Range&apos; controls the maximum amount (in lines) that a note will be moved.</Description>
+  <Author>Nisan Mol [nisanmol@gmail.com]</Author>
+  <Category>Workflow,Pattern</Category>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
