@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.NudgeTrackDelay</Id>
+  <Name>Nudge Track Delay</Name>
+  <Version>0.51</Version>
+  <Description>Nudges Track Delay Values Of Individual Tracks Or Tracks In A Group</Description>
+  <Author>My Name</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-nudge-track-delay-inc-group-tracks-july-2019/57681</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
