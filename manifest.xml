@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.FindAndReplace</Id>
+  <Name>PatternEditor Find And Replace</Name>
+  <Version>1.1</Version>
+  <Description>A tool for finding &amp; replacing raw pattern data (notes, instruments, fx, ...). Has simple wildcard support and the ability to batch replace all occurrences. Shows up as &apos;Find And Replace...&apos; in the Pattern Editor&apos;s context menu.</Description>
+  <Author>taktik [taktik@renoise.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34461-find-and-replace-in-pattern</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>
