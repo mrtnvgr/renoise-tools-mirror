@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.vvoois.Exportallsamples</Id>
+  <Name>ExportAllSamples</Name>
+  <Version>1.42</Version>
+  <Description>Export all samples from all instruments (using the sample name).
+You can choose to save flac or wav.
+V1.42:
+Fixed issue where samples were always saved as flac.
+V1.4:
+Fixed error with VST/midi instruments containing no samples.
+
+Changes 1.3:
+Fixed renaming scheme.
+Add instrument numbers to folders.
+When instrument only contains one sample, only save sample and use instrument name as filename.
+Save all samples to one target folder.</Description>
+  <Author>v.voois</Author>
+  <Category>Export,Sample</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37113-export-all-samples-from-all-instruments</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>https://forum.renoise.com/u/vvoois</Homepage>
+</RenoiseScriptingTool>
