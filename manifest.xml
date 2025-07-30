@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.fladd.CollapseExpandAllTracksInGroup</Id>
+  <Name>Collapse/Expand All Tracks in Group</Name>
+  <Version>0.2</Version>
+  <Description>This tool implements the missing collapse/expand toggle for all tracks in a group, to be assigned to a keyboard shortcut.
+  </Description>
+  <Author>Florian Krause (fladd) [siebenhundertzehn@gmail.com]</Author>
+  <Category>Pattern,Workflow</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/43657-collapseexpand-all-tracks-in-group/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
