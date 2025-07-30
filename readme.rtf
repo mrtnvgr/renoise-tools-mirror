@@ -1,0 +1,160 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;\red220\green161\blue13;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;\cssrgb\c89412\c68627\c3922;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\b\fs34 \cf2 Unified Value Shift And Transpose\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 by J. Raben (a.k.a. ffx)\
+\
+This tool provides you with an universal value shift and transpose functionality. It can shift/transpose note values, instrument numbers, panning, volume and it even can shift/move notes by delay values. \
+\
+Simply move the cursor on the type of column that should be affected. There is a pair of shortcuts for +1 / -1 and another pair for +80h / -80h. \
+\
+For example, if you invoke two times the +128 shortcut while the cursor is on the delay column, the selection will be moved by one whole note.\
+\
+You can either target the note under the cursor (if the selection is disabled), or make a selection. You also can affect every n-th note only, by invoking the 
+\i\b \'93w/ step width\'94
+\i0\b0  shortcut variants and setting the edit step accordingly. E.g. for adding a shuffle on every n-th note.\
+\
+Here is a list of the provided shortcuts including a short description:\
+\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs26 \cf2 UNIVERSAL TRANSPOSE / VALUE SHIFT / NOTE MOVEMENT
+\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 "Pattern Editor:Tools:Increase value under cursor by 1"
+\b0 \
+
+\b "Pattern Editor:Tools:Decrease value under cursor by 1"
+\b0 \
+
+\b "Pattern Editor:Tools:Increase value under cursor by 128"
+\b0 \
+
+\b "Pattern Editor:Tools:Decrease value under cursor by 128"
+\b0 \
+Two shortcuts for easy increasing / decreasing the value under the current cursor position, including note, instrument number, vol, pan, delay and fx value. Also moves the note, if delay value exceeds border.\
+\
+It supports either the target under cursor, IF SELECTION IS DISABLED.\
+\
+It supports all targets within a selection, if a selection was made on the target track and target note column. You can also select multiple note columns or tracks. Also make sure your cursor is moved to the fx column that should be affected.\
+\
+Midi fx and sample fx should be moved along with notes now, if the note column contains a midi command or there is fx data. Unsure here. So if the note column containing midi commands was not selected, midi commands won't be moved. Always put midi commands into the last note column without any notes.\
+\
+
+\b Usage\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 Transpose: 
+\b0 Select some notes over different columns and tracks. Now move the cursor to the note column of some track. Hit shortcut. All notes of selection will be transposed +1 or -1.\
+\
+
+\b Change instrument number: 
+\b0 Select some notes over different columns and tracks. Now move the cursor to the instrument number column of some track. Hit shortcut. All notes' numbers of selection will be changed by +1 or -1.\
+\
+
+\b Move note by 1 tick / delay:
+\b0  Select some notes over different columns and tracks. Now move the cursor to the delay column of some track. Hit shortcut. All notes of selection will be moved by one tick +1 or -1. Also the notes will be moved, if delay gets < 0 or > FF. Selection will be fixed, too!\
+\
+
+\b Increase/decrease volume: 
+\b0 Select some notes over different columns and tracks. Now move the cursor to the volume column of some track. Hit shortcut. All notes of selection will get increased / decreased volume by 1. Same for panning.\
+ \
+ \
+
+\b "Pattern Editor:Tools:Toggle Only Note-Off"
+\b0 \
+Will switch on/off option for only moving note-offs. E.g. useful if you want to shorten notes of a selection.\
+\
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs26 \cf2 EASY SHUFFLE/GROOVE / UNIVERSAL VALUE SHIFT W/ STEP WIDTH
+\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 "Pattern Editor:Tools:Increase value under cursor by 1 w/ shuffle"
+\b0 \
+
+\b "Pattern Editor:Tools:Decrease value under cursor by 1 w/ shuffle"
+\b0 \
+Read UNIVERSAL TRANSPOSE section above first. This does the same, except 
+\b it takes care of current edit step
+\b0 . So you can setup quickly precise and easy shuffle (There is the {\field{\*\fldinst{HYPERLINK "http://forum.renoise.com/index.php/topic/26692-new-tools-iterative-quantize-and-groove-tool/?p=350260"}}{\fldrslt \cf3 \ul \ulc3 groove tool}}, which is great). Using this, you can quickly setup a shuffle, relative to your current values. \
+\
+
+\b Usage\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0 \cf2 \
+Example song uses pattern length 128, LPB 8. You have a hi hat on every two lines (16th notes). Now you move the cursor to pattern line 02, press option-y (flexible mark below line shortcut) to select everything starting with this line. You place your cursor to the delay column. You setup a edit step of 4. Multiple press the shortcut +1. Now you have a classic shuffle.\
+ \
+ \
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs26 \cf2 TRANSPOSE BY INVERSION
+\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 "Pattern Editor:Tools:Transpose up by inversion"
+\b0 \
+
+\b "Pattern Editor:Tools:Transpose down by inversion"
+\b0 \
+Two shortcuts for easy increasing/decreasing the lowest/highest note in a chord by one octave. Only works on a single line, over multiple or a single track.\
+ \
+\
+\pard\pardeftab560\sa40\partightenfactor0
+
+\b\fs26 \cf2 NOTE OCCURRENCE OPERATIONS (SEARCH & REPLACE NOTES)
+\fs28 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 \
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 "Pattern Editor:Tools:Transpose Note Occurrences +1"
+\b0 \
+
+\b "Pattern Editor:Tools:Transpose Note Occurrences -1"
+\b0 \
+
+\b "Pattern Editor:Tools:Delete Note Occurrences"
+\b0 \
+
+\b "Pattern Editor:Tools:Set Note Occurrences to OFF"
+\b0 \
+Affects all occurrences of the note under the cursor (and its octaves) either in the selection or in the track (if selection is disabled). You can transpose -1/+1, delete or set-to-off the occurrences.\
+\
+It's to transpose just one note in a sequence, but also every repetition of this note plus its octaves. Like searching and replacing a note, only much more simple to use.\
+ \
+
+\b Usage\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0 \cf2 \
+You have a track with an arp note sequence. You changed the bass' note and now quickly want to fix one or more multiple occurring notes in the arp. Select the whole track, move cursor over the note that should be transposed and use shortcut.\
+\
+\
+}
