@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.SamRender</Id>
+  <Name>SamRender</Name>
+  <Version>2.0</Version>
+  <Description>SamRender is one of the best sample rendering tools for Renoise. Select any part of your song and quickly convert it to a sample. Ideal for converting tracks and entire groups or pieces of them or patterns into samples within the same instrument or in several instruments.
+
+Use SamRender as a &quot;bridge tool&quot; between Renoise and other DAWs to transfer waves. Or use SamRender to convert the entire song into a sample and study the resulting sound wave.</Description>
+  <Author>ulneiz</Author>
+  <Category>Rendering, Sample</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-3-samrender-v2-0-build-015-november-2023/49294</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
