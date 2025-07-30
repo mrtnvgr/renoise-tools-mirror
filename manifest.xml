@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.KangarooX120</Id>
+  <Name>KangarooX120</Name>
+  <Version>1.1</Version>
+  <Description>MIDI In controller tool with pad and piano to routing notes and much more...</Description>
+  <Author>ulneiz</Author>
+  <Category>MIDI,OSC,Pattern,Control,Hardware</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-1-kangaroox120-v1-1-build-030/</Discussion>
+  <ApiVersion>5</ApiVersion>
+</RenoiseScriptingTool>

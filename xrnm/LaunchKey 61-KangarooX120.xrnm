@@ -1,0 +1,3799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MidiActionMappingSet doc_version="0">
+  <ActionMappings>
+    <ActionMapping>
+      <Action>Navigation:Tracks:Select Previous Track [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>112</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Navigation:Tracks:Select Next Track [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>113</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Navigation:Sequencer:Select Previous Sequence Pos [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>104</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Navigation:Sequencer:Select Next Sequence Pos [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>105</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Transport:Playback:Start Playing [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>115</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Transport:Playback:Stop Playing [Trigger]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>114</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Transport:Edit:Edit Mode [Toggle]</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>117</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Show Pads Panel</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>51</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Change Pad Area</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>52</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Show Piano Panel</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>53</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Show Velocity Knobs</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>54</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Continuous Pad Selector</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>55</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Show Banks Panel</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>56</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pad Instrument Mode</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>57</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pad Track Mode</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>58</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Velocity MIDI In Mode for Pads Panel</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>59</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Jump Lines Step Length</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>116</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Velocity Knob</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>1</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Select Track</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>41</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Select Instrument</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>42</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Transpose Notes Pad</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>43</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Select Number Pad</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>44</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Select Color Pad</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>45</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 002</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>22</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 003</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>23</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 004</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>24</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 005</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>25</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 006</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>26</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 007</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>27</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 008</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>28</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Velocity Knob 001</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Controllers</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>21</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 001</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>36</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 002</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>37</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 003</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>38</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 004</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>39</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 005</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>44</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 006</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>45</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 007</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>46</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 008</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>47</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 009</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>40</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 010</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>41</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 011</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>42</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 012</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>43</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 013</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>48</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 014</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>49</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 015</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>50</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 016</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>9</Channel>
+          <CCNumberOrNote>51</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 000  (C-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>0</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 001  (C#0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>1</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 002  (D-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>2</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 003  (D#0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>3</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 004  (E-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>4</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 005  (F-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>5</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 006  (F#0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>6</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 007  (G-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>7</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 008  (G#0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>8</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 009  (A-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>9</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 010  (A#0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>10</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 011  (B-0)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>11</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 012  (C-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>12</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 013  (C#1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>13</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 014  (D-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>14</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 015  (D#1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>15</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 016  (E-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>16</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 017  (F-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>17</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 018  (F#1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>18</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 019  (G-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>19</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 020  (G#1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>20</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 021  (A-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>21</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 022  (A#1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>22</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 023  (B-1)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>23</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 024  (C-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>24</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 025  (C#2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>25</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 026  (D-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>26</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 027  (D#2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>27</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 028  (E-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>28</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 029  (F-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>29</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 030  (F#2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>30</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 031  (G-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>31</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 032  (G#2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>32</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 033  (A-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>33</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 034  (A#2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>34</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 035  (B-2)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>35</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 036  (C-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>36</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 037  (C#3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>37</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 038  (D-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>38</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 039  (D#3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>39</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 040  (E-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>40</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 041  (F-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>41</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 042  (F#3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>42</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 043  (G-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>43</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 044  (G#3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>44</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 045  (A-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>45</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 046  (A#3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>46</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 047  (B-3)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>47</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 048  (C-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>48</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 049  (C#4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>49</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 050  (D-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>50</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 051  (D#4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>51</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 052  (E-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>52</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 053  (F-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>53</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 054  (F#4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>54</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 055  (G-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>55</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 056  (G#4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>56</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 057  (A-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>57</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 058  (A#4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>58</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 059  (B-4)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>59</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 060  (C-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>60</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 061  (C#5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>61</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 062  (D-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>62</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 063  (D#5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>63</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 064  (E-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>64</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 065  (F-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>65</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 066  (F#5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>66</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 067  (G-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>67</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 068  (G#5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>68</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 069  (A-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>69</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 070  (A#5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>70</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 071  (B-5)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>71</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 072  (C-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>72</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 073  (C#6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>73</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 074  (D-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>74</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 075  (D#6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>75</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 076  (E-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>76</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 077  (F-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>77</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 078  (F#6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>78</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 079  (G-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>79</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 080  (G#6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>80</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 081  (A-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>81</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 082  (A#6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>82</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 083  (B-6)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>83</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 084  (C-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>84</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 085  (C#7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>85</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 086  (D-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>86</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 087  (D#7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>87</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 088  (E-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>88</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 089  (F-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>89</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 090  (F#7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>90</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 091  (G-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>91</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 092  (G#7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>92</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 093  (A-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>93</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 094  (A#7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>94</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 095  (B-7)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>95</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 096  (C-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>96</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 097  (C#8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>97</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 098  (D-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>98</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 099  (D#8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>99</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 100  (E-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>100</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 101  (F-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>101</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 102  (F#8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>102</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 103  (G-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>103</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 104  (G#8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>104</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 105  (A-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>105</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 106  (A#8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>106</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 107  (B-8)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>107</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 108  (C-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>108</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 109  (C#9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>109</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 110  (D-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>110</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 111  (D#9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>111</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 112  (E-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>112</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 113  (F-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>113</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 114  (F#9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>114</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 115  (G-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>115</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 116  (G#9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>116</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 117  (A-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>117</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 118  (A#9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>118</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Piano Keys:Key 119  (B-9)</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>0</Channel>
+          <CCNumberOrNote>119</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 017</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>16</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 018</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>17</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 019</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>18</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 020</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>19</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 021</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>20</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 022</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>21</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 023</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>22</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 024</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>23</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 025</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>24</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 026</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>25</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 027</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>26</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 028</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>27</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 029</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>28</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 030</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>29</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 031</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>30</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 032</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>31</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 033</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>32</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 034</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>33</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 035</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>34</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 036</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>35</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 037</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>36</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 038</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>37</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 039</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>38</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 040</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>39</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 041</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>40</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 042</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>41</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 043</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>42</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 044</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>43</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 045</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>44</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 046</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>45</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 047</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>46</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 048</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>47</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 049</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>48</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 050</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>49</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 051</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>50</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 052</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>51</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 053</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>52</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 054</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>53</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 055</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>54</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 056</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>55</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 057</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>56</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 058</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>57</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 059</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>58</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 060</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>59</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 061</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>60</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 062</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>61</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 063</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>62</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 064</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>63</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 065</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>64</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 066</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>65</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 067</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>66</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 068</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>67</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 069</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>68</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 070</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>69</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 071</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>70</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 072</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>71</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 073</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>72</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 074</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>73</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 075</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>74</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 076</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>75</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 077</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>76</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 078</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>77</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 079</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>78</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 080</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>79</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 081</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>80</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 082</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>81</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 083</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>82</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 084</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>83</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 085</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>84</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 086</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>85</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 087</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>86</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 088</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>87</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 089</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>88</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 090</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>89</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 091</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>90</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 092</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>91</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 093</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>92</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 094</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>93</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 095</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>94</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 096</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>95</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 097</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>96</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 098</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>97</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 099</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>98</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 100</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>99</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 101</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>100</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 102</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>101</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 103</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>102</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 104</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>103</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 105</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>104</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 106</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>105</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 107</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>106</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 108</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>107</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 109</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>108</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 110</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>109</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 111</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>110</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 112</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>111</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 113</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>112</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 114</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>113</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 115</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>114</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 116</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>115</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 117</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>116</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 118</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>117</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 119</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>118</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+    <ActionMapping>
+      <Action>Tools:KangarooX120:Pads:Pad 120</Action>
+      <MidiMappings>
+        <MidiMapping>
+          <MappingMode>Notes</MappingMode>
+          <ControllerMode>Absolute 7 bit</ControllerMode>
+          <NoteMode>Trigger</NoteMode>
+          <Channel>1</Channel>
+          <CCNumberOrNote>119</CCNumberOrNote>
+          <Min>0.0</Min>
+          <Max>1.0</Max>
+        </MidiMapping>
+      </MidiMappings>
+    </ActionMapping>
+  </ActionMappings>
+</MidiActionMappingSet>

@@ -1,0 +1,152 @@
+************************************************
+ABOUT KANGAROOX120
+************************************************
+KangarooX120 is a massive notes routing tool, compatible with MIDI Input and OSC. It is specially designed to play and record live percussion sections and pianos, with routing of different notes, instruments and tracks. Your GUI is designed for HD screens (1920x1080 px.) or larger monitors, although it can work in more compact screens...
+
+It has a pads panel of 120 notes in 8x8 + 7x8 configuration, with different color options. It includes a virtual piano of 120 notes, also routable (instrument, track) to write notes from the mouse and mappable using MIDI In. Through the piano, it is possible to route the entire pads panel, note by note.
+
+In addition, you can save and load up to 96 banks according to the specific settings/routings of the pads panel. You can read each bank through MIDI in for instant use. Touch and change the banks quickly!
+
+** Tool name: KangarooX120
+** Version: 1.1 build 030
+** Compatibility: Renoise v3.1.1
+** Tested with: S.O. Windows 10 64 bit. USB keyboard: Corsair Strafe RGB Silent (anti-ghosting). MIDI devices: Novation Launchkey 61 & Akai MPD218 (both velocity sensitive)
+** Licence: GNU General Public Licence. Prohibited any use of commercial ambit.
+** Development date: June to July 2018
+** Published: July 2018
+** Locate: Spain
+** Programmer: ulneiz
+
+
+
+************************************************
+REFERENCE MIDI DEVICES
+************************************************
+  - The ideal MIDI device to use this tool is a MIDI pad controler of 64 velocity sensitive pads. Reference device: "Novation Launchpad Pro" or Akai MPD226.
+  - For expanded use, it is possible to use 2 MIDI pad controlers of 64 velocity sensitive pads. Reference devices: 2 x "Novation Launchpad Pro".
+  - For a more everyday use, it is possible to use a MIDI keyboard with 49/61 keys and 16 velocity sensitive pads. Reference device: "M-Audio Code 61".
+  - For a basic use, it is possible to use a MIDI keyboard with 25/49 keys and 16 velocity sensitive pads. Reference device: "Novation Launchkey 49".
+  - Also, for a basic use, it is possible to use a MIDI pad controller of 16 velocity sensitive pads. Reference device: "Akai MPD218".
+  
+  - It is not recommended any MIDI pad controller not velocity sensitive!!!
+
+
+
+************************************************
+GENERAL CHARACTERISTICS
+************************************************
+  - Control and record different instruments/notes directly and at the same time. Specially dessigned for percussion sets and piano/synthesizer. 
+  - Compatible with MIDI In (include velocity for pads) and OSC (to sound and write the notes).
+  - For live recording, live play and editing.
+  - GUI with different views of size and compact mode.
+  - Pads panel with 120 pads with velocity sensitive. Play with MIDI In or from the mouse.
+  - Each pad include a velocity knob (with MIDI In) and checkbox selector.
+  - Each pad is routable individually: note, instrument & track.
+  - Transposition of notes to the pads panel. Transpose all the pads panel to the fly, in configuration 3x4 or 8+4 or white keys (special for percussion).
+  - Pads panel with 15 color options to distribution.
+  - 96 banks with name for configuration of the pads panel.
+  - Each bank include the routing of note, instrument, track and velocity of all the pads, and color distribution.
+  - The "banks" folder can serve to make backup copies of the banks or to share them with other users, even to accompany a song. This folder is inside the root folder of the tool.
+  - Virtual piano with 120 notes with the octaves and notes indicated (except black keys), and a general velocity knob. Play with MIDI In or from the mouse.
+  - Virtual piano routable on the whole: instrument & track.
+  - The keys of the virtual piano also serve to route the notes of the pads.
+  - Virtual piano to write the notes with the mouse inside the pattern editor.
+  - Split virtual piano to write/distribute the notes of the same intrument into two [ Tr1 | Tr2* ] or three consecutive tracks [ Tr1 | Tr2* | Tr3 ]. *Select the intermediate track Tr2 to start.  
+  - Three modes of touch to pads panel and virtual piano: press an release (default), hold, and hold with chain.
+  - Panic button for pads panel and panic button for virtual piano.
+  - Knobs and valueboxes MIDI Input mappable with "Absolute 7 bit" Map Mode and work with takeover. Hardware knobs of 270 or 360 degrees (range 0 to 127).
+  - Separate reproduction and recording between the pads panel and the virtual piano. Both can play sound at the same time without crossing.
+  - Play several instruments at the same time with a MIDI device and the mouse.
+  - Specific keyboard commands (more of 40) for navigation and edition from KangarooX120 (the window must be in the foreground).
+  
+  - (Renoise CTRL+M) MIDI Input route to MIDI Mapping: "Global Mappings/Tools/KangarooX120/.."
+  - Keybinding for invoke the tool: "Renoise: Preferences/Keys/Global/Tools/KangarooX120/.." Use "K" for current assignement. Also use "K" key to close the tool.
+  - Access to invoke the tool: "Renoise: Tools Menu/~KangarooX120..." or Renoise: Pattern Editor(right click mouse)/~KangarooX120...".
+
+  - All the keyboard commands are configured inside the file "..lua/keyhandler.lua".
+  - All MIDI Input mappings are configured inside the file "..lua/midi_input.lua".
+
+
+
+************************************************
+KANGAROOX120 WINDOW SCHEME
+************************************************
+The KangarooX120 window is divided into 6 areas. It has different display modes (folding areas), expanded or compact for larger or smaller resolution screens...
+
+      KangarooX120
+      **********************************
+      **    PADS PANEL (120 pads)     **
+      **********************************
+      **           CONTROLS           **
+      **********************************
+      **       BANKS (96 banks)       **
+      **********************************
+      **   VIRTUAL PIANO (120 keys)   **
+      **********************************
+      **     ADVANCED OPERATIONS      **
+      **********************************
+      **         PREFERENCES          **
+      **********************************
+
+
+************************************************
+STEPS TO BASIC USE
+************************************************
+1.- INSTRUMENTS & TRACKS. In Renoise, load your desired instruments and the tracks that will form your song. Make sure you order them consistently. For example, you can use a group that contains tracks to route percussion instruments...
+
+2.- OSC & PREFERENCES. Enable OSC in "Renoise: Preferences/OSC/..". Invoke the KangarooX120 tool. Then, show the preferences panel with the preferences button of the tool ((KangarooX120: press "RETURN") and follow the instructions to set the configuration.
+
+3.- MIDI MAPPING DEVICES. Connect your MIDI keyboard or your MIDI pad controller or both and configure (Renoise: press CTRL+M) the MIDI Mapping of the pads panel (top panel) and the virtual piano (bottom panel), as well as the rest of controls of the KangarooX120 tool that you need. Take advantage of the different MIDI channels of your device for greater flexibility. KangarooX120 window is divided into 5 areas, from top to bottom: Pads Panel, Controls, Banks, Virtual Piano & Preferences. Each area is MIDI mappable. When you finish the mapping, save your XRNM mapping file/files.
+
+4.- ROUTING PADS THROUGH PIANO. Show the velocity knobs of each pad using the specific button (KangarooX120: press F6). Now you can select each pad (lower right checkbox) to route it through the piano. Use the NTE, INS and TRK valueboxes to specify each value. The selected pad will change its name, showing the notes, instrument and track routed. Use the automatic pad selection button to streamline the routing process. (KangarooX120: press F7).
+
+5.- TOUCH PADS PANEL & VIRTUAL PIANO. Now you can play the pads panel routed in a specific way. The pads panel and virtual piano includes different trigger modes: press and release, hold, and hold in chain (KangarooX120: press "BACK" key or "<" key to more information). You can play the pads panel and the virtual piano at the same time.
+
+6.- KEYBOARD COMMANDS CONTROL. KangarooX120 has common keyboard commands (more of 40) to move between the different instruments, patterns, tracks, and lines, enough commands to be able to edit the patterns from the tool. Press the F1 to F12 buttons, for different options. You can also press SHIFT+UP, SHIFT+DOWN, SHIFT+LEFT, SHIFT+RIGHT to swap the note selected in the cursor inside the pattern editor (with edit mode enabled), among other commands...
+
+7.- LEARN WITH TOOLTIPS. KangarooX120 has more controls for more flexibility. Read the tooltips of each control for more information about how to control them.
+
+8.- KEEP YOUR BANKS! Save your banks for later sessions. You can make a backup manually of the "banks" folder before uninstalling the KangarooX120 tool to keep the banks. You just have to replace the folder with the saved banks after installing the tool again. Share your banks with other users, even along with your song. The banks are XML files of about 14KB.
+
+
+
+KangarooX120 jump and hit very hard!!! ...enjoy it!
+
+
+
+************************************************
+UPDATE HISTORY
+************************************************
+KangarooX120 v1.1.030
+ - Releases the initial boot of Renoise. Renoise will charge faster! The tool will only load the first time it is invoked. It will remain in the memory throughout the Renoise session.
+ - Small corrections in the routing function of the MIDI In device to control the velocity.
+ - Code revision.
+
+KangarooX120 v1.1.029
+ - New advanced operations panel: include new controls to specific operations: auto-sequence and clone sequence, clone pattern-track/track, clone note column, transpose notes, moddify instrument value, moddify values (volume, panning and delay) and a creator of automation slopes for multiple sequence. Press [R.CTRL] to access it.
+ - Initial recognition of the color to mark the buttons according to the skin. In this way, the appearance is more faithful to the skin used by the user. Tested with Windows, ready for Linux. Not tested with Macintosh.
+ - Code revision.
+
+KangarooX120 v1.0.021
+ - Preferences: deep revision. Selection of the velocity of two devices separately, one for the pads panel and another for the piano.
+ - Code revision, especially related to the selection of MIDI devices for velocity values.
+
+KangarooX120 v1.0.020
+ - Pads panel & banks: correction of the hexadecimal notation to correctly indicate the value of the instrument inside each pad.
+ - Banks: added keyboard commands: CTRL + F1 to CTRL + F12 to load the first 12 banks.
+ - Popups & valueboxes: also compatible with infinitely rotatory 360 degrees knobs for MIDI Input [range 0 to 127].
+ - Valueboxes INS & TRK: added compatibility for MIDI Input: Relative Map Mode (any), for rotatory 360 degrees knobs (return ±1); valid for unlimited ranges (above the value of 127).
+ - Preferences: added direct access to the "banks" folder.
+ - Info documentation: added the Update History.
+ - Code revision.
+
+KangarooX120 v1.0.017
+ - Pads panel & virtual piano: extended compatibility for velocity sensitive devices for up to 16 MIDI channels (Note On range: 90 to 9F; MIDI channel 1 to MIDI channel 16).
+ - Code revision.
+
+KangarooX120 v1.0.016
+ - Preferences: added direct access to the XRNM folder.
+ - Code revision.
+
+KangarooX120 v1.0.015
+ - Initial Release (July 10, 2018).
