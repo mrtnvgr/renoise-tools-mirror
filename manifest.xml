@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.TunedShortcuts</Id>
+  <Name>Tuned Shortcuts</Name>
+  <Version>1.0</Version>
+  <Description>Adds various shortcuts to improve editing/recording experience.</Description>
+  <Author>jurekraben@googlemail.com</Author>
+  <Category>Pattern,Editing,Recording,Workflow</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.virtualcreations.de</Homepage>
+</RenoiseScriptingTool>
