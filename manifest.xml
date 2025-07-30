@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.RandomPlug</Id>
+  <Name>Random Plug</Name>
+  <Version>0.59</Version>
+  <Description>Shows a Random Plugin Inst. and FX Suggestion To Load</Description>
+  <Author>scripts</Author>
+  <Category>Workflow,Plugin</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-random-plug-feb-2019/56575</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
