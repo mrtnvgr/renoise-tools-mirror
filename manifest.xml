@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>org.drakmaniso.Morphsynth</Id>
+  <Name>MorphSynth</Name>
+  <Version>0.5</Version>
+  <Description>Morphing waveforms generator</Description>
+  <Author>drakmaniso | moussault.laurent@gmail.com</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/36351-new-tool-28-morphsynth/</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
