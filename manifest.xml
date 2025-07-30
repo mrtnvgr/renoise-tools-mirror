@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.ModFXRender</Id>
+  <Name>ModFXRender</Name>
+  <Version>2.0</Version>
+  <Description>ModFXRender is a massive sample rendering tool. It can take advantage of sample modulation sets, sample effect sets, phrases or track DSP effects to return rendered samples with these features. It also allows working with the initial and final silences of each sample, normalize/extend samples and compress peaks.</Description>
+  <Author>ulneiz [go to https://forum.renoise.com/ and contact him there]</Author>
+  <Category>Sample, Rendering, Editing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-4-3-modfxrender-v2-0-build-037-november-2023/60043</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
