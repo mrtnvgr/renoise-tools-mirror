@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.cornbeast.Guru</Id>
+  <Name>Guru</Name>
+  <Version>1.6</Version>
+  <Description>Generic midi synth mapper</Description>
+  <Author>Cornbeast [cornbeast@cornbeast.com]</Author>
+  <Category>MIDI,Hardware</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34760-new-tool-28-guru/</Discussion>
+  <ApiVersion>3.0</ApiVersion>
+</RenoiseScriptingTool>
