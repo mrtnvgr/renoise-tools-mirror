@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.airmann.GrandeAnalyzer</Id>
+  <Name>Grande Utopia Analyzer</Name>
+  <Version>1.0</Version>
+  <Description>A funky signal analyzer</Description>
+  <Author>Matthias Ehrmann [airmann_pub@online.de]</Author>
+  <Category>Workflow, Analysis</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/43212-new-tool-301-grande-utopia-signal-analyzer/</Discussion>
+  <ApiVersion>4.0</ApiVersion>
+  <Homepage>http://www.airmann.de</Homepage>
+</RenoiseScriptingTool>

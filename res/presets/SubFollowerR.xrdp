@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FilterDevicePreset doc_version="10">
+  <DeviceSlot type="SignalFollowerDevice">
+    <IsMaximized>true</IsMaximized>
+    <DestMin>
+      <Value>0.0</Value>
+    </DestMin>
+    <DestMax>
+      <Value>1.0</Value>
+    </DestMax>
+    <DestOffset>
+      <Value>0.5</Value>
+    </DestOffset>
+    <Attack>
+      <Value>9.99999975e-005</Value>
+    </Attack>
+    <Release>
+      <Value>9.99999975e-005</Value>
+    </Release>
+    <Sensitivity>
+      <Value>0.600000143</Value>
+    </Sensitivity>
+    <DestScaling>Linear</DestScaling>
+    <LpFreq>
+      <Value>4.43275452</Value>
+    </LpFreq>
+    <HpFreq>
+      <Value>0.0</Value>
+    </HpFreq>
+    <InputMode>R</InputMode>
+    <LookAhead>0.0</LookAhead>
+    <ListenToInput>false</ListenToInput>
+  </DeviceSlot>
+</FilterDevicePreset>
