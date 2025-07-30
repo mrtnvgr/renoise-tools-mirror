@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>de.cie-online.DjTools-Crossfader</Id>
+  <Name>DJ Tools - Crossfader</Name>
+  <Version>1.3</Version>
+  <Description>A crossfader with real volume crossfading</Description>
+  <Author>Cie | cie@cie-online.de</Author>
+  <Category>Mixing,Live</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34850-new-tool-28-dj-tools-crossfader/page__pid__272233</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://www.stepsequencer.net</Homepage>
+</RenoiseScriptingTool>
