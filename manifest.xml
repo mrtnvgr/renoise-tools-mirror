@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.scl_to_xrni</Id>
+  <Name>scl to xrni</Name>
+  <Version>1.6</Version>
+  <Description>Import Scala (scl) files and apply the tunings to Renoise instruments (xrni).</Description>
+  <Author>afta8 | fathand@gmail.com </Author>
+  <Category>Tuning</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/37219-new-tool-28-scl-to-xrni/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
