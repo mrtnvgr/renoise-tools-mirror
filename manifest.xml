@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.Printmychords</Id>
+  <Name>Print My Chords</Name>
+  <Version>1.01</Version>
+  <Description>Shows &quot;Roman Numeral&quot; chord analysis of the current Pattern-Track.  Also with an export feature for the whole track or slelection in sequencer.  The resulting text file is best viewed in wordpad or similar as it contains formatting data</Description>
+  <Author>scripts</Author>
+  <Category>Pattern,Analysis</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/33327-new-tool-28-print-my-chords</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
