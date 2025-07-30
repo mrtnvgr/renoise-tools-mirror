@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>it.xrns2xmod.Xrns2xmod</Id>
+  <Name>Xrns2XMod</Name>
+  <Version>3.70</Version>
+  <Description>Xrns2XMod is a tool that convert a Renoise song file (.XRNS) to MOD or XM format</Description>
+  <Author>Starred MediaSoft [fabrizio.stellato@gmail.com]</Author>
+  <Category>Export</Category>
+  <Repository>https://github.com/fstarred/xrns2xmod</Repository>
+  <Discussion>http://forum.renoise.com/index.php?/topic/34215-new-tool-mod-xm-converter</Discussion>
+  <Documentation>https://github.com/fstarred/xrns2xmod/wiki</Documentation>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>https://github.com/fstarred/xrns2xmod/</Homepage>
+</RenoiseScriptingTool>
