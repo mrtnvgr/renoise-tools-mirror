@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.AutomationSingleSlider</Id>
+  <Name>Automation Single Slider</Name>
+  <Version>0.87</Version>
+  <Description>Gives a slider that always points to the selected automation lane parameter</Description>
+  <Author>scripts</Author>
+  <Category>Automation,Editing</Category>
+  <Discussion>http://forum.renoise.com/index.php/topic/45863-new-tool-31-automation-single-slider/</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
