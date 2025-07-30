@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.dlt.SessionTimeTracker</Id>
+  <Name>Session Time Tracker</Name>
+  <Version>1.4</Version>
+  <Description>Automatic time tracker for monitoring time spent on each song. Classifies time spent based on activity, for insight into which tasks take the most time.</Description>
+  <Author>dltfm | dave.tichy@gmail.com</Author>
+  <Category>Workflow</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-session-time-tracker/60728</Discussion>
+  <ApiVersion>6</ApiVersion>
+  <Homepage>http://dlt.fm</Homepage>
+</RenoiseScriptingTool>
