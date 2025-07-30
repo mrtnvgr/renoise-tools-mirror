@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>uk.fathand.ScaleMapper</Id>
+  <Name>Scale Mapper</Name>
+  <Version>2.2</Version>
+  <Description>Allows for remapping of existing instrument keyzones to a scale as defined by the user or chosen from a preset. An optional Chord note can be added which is also scaled. Perfect for locking instruments to a scale or to completely change the tuning of XRNI&apos;s.</Description>
+  <Author>fathand  | fathand@gmail.com</Author>
+  <Category>Instrument</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/35016-new-tool-28-scale-mapper/</Discussion>
+  <ApiVersion>3</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
