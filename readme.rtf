@@ -1,0 +1,154 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
+{\colortbl;\red255\green255\blue255;\red53\green53\blue53;}
+{\*\expandedcolortbl;;\cssrgb\c27059\c27059\c27059;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww15280\viewh8460\viewkind0
+\deftab560
+\pard\pardeftab560\partightenfactor0
+
+\f0\b\fs34 \cf2 GUI Automation Recorder\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b0\fs24 \cf2 by J. Raben (a.k.a. ffx)\
+\
+This tool adds the ability to record mouse movements on controls of VST / AudioUnit plugins (instruments and fx) directly from the plugins\'92 GUIs. Configure this tool via the tools menu.\
+Usually a DAW provides this feature o.o.t.b., Renoise not, strangely.\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b\fs26 \cf2 CHANGELOG
+\b0\fs24 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 Version 1.17
+\b0 \
+Bugfixes in instrument slot observation. Prepared usage of instr. comment storage (seems to be buggy?)\
+
+\b Version 1.15
+\b0 \
+This version adds instrument slots watching, "take over auto device", "find auto device in tracks" and lot of optimizations, bugfixes\
+
+\b Version 1.13
+\b0 \
+This version adds a configuration menu under tools and some minor bugfixes. Removed max. parameter limit!\
+
+\b Version 1.12
+\b0 \
+Added switch addContextMenus, for optimal performance on macOS.\
+
+\b Version 1.11
+\b0 \
+This version adds lot of optimizations and a better the-one-and-only-mode. It can now record multiple parameters, e.g. meta controls\
+
+\b Version 1.1
+\b0 \
+This version adds the-one-and-only-mode. \
+\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b\fs26 \cf2 NOTES
+\b0\fs24 \
+\
+First 
+\i\b you should manually disable the song options feature \'93Automation Following\'94
+\i0\b0 , since it causes a buggy behaviour while writing automation, and also cannot be disabled by script.\
+\
+If the tool does not properly recognize your automation from an older tool version, do a take-over first!\
+\
+It seems to work fine now even with 20+ parameters at once. Still the disclaimer: It could lead into performance issues, due limitations of the LUA API. Let\'92s hope Taktik some day will add this natively to Renoise, which of course would work better. \
+\
+Also I requested some LUA API features, which would improve this tool.\
+Read here: http://forum.renoise.com/index.php/topic/26329-the-api-wishlist-thread/page-10#entry365529\
+\
+Please uninstall old versions of the \'93tuned shortcuts\'94 tool first.\
+\pard\pardeftab560\partightenfactor0
+
+\b \cf2 \
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\fs26 \cf2 HIRES AUTOMATION RECORDING FROM VST/AU GUI
+\b0\fs24 \
+\
+You start the control recording mode by invoking the shortcut 
+\i\b "DSP Chain:Tools:Record GUI controls"
+\i0\b0  or 
+\i\b "Instrument Box:Tools:Record GUI controls\'94
+\i0\b0 . Notice that you need to focus first on either the instrument list or the dsp chain. Also there is a context menu entry available on instrument slots and also on VST/AU dsp effects.\
+\
+The edit mode will be activated while parameter writing, and you also quit this mode simply by ending the edit mode. You can now navigate to specific areas in your song - without playing - and set single values thru the GUI controls. Or you record while playing.\
+\
+Notice that you do not have to setup the instrument automation device, this script will do this for you. Please also refer the section \'93Auto setup of automation device\'94.\
+\
+\pard\pardeftab560\slleading20\partightenfactor0
+
+\b \cf2 The one-and-only-mode
+\b0 \
+\
+Using this mode (activated by default), you will have to move a control first to make it activated for automation writing. You then need to invoke the shortcut again for recording another parameter. So in this mode, only one control per time can be recorded (but multiple parameters, e.g. from a macro control), which will prevent self overwriting of other already automated parameters. There are two config values: 
+\i\b theOneAndOnlyMode = true/false
+\i0\b0  and 
+\i\b requiredDeltaToActivate = 0\'851
+\i0\b0  , which sets the required delta value to activate the writing.\
+\
+Use this mode like this: Invoke record shortcut while playing stopped. Move the control or macro control you want to record. If automation already exists for the control, you will have to move the slider more heavily (higher than delta value). Now write the automation while playing or stopped. For next parameter,  hit the shortcut again to stop recording mode, then invoke it once again to record next parameter.\
+\
+ 
+\b\fs34 \
+\pard\pardeftab560\partightenfactor0
+
+\fs26 \cf2 TAKE-OVER AN EXISTING AUTOMATION DEVICE
+\fs28 \
+
+\b0\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 You can take-over an existing automation device, if you invoke the shortcut 
+\i\b "DSP Chain:Tools:Record GUI controls\'94
+\i0\b0  on an Instrument Automation Device. It will take over already automated parameters then. Follow the instructions in the popup.\
+\pard\pardeftab560\partightenfactor0
+
+\b\fs26 \cf2 \
+\
+AUTO SETUP OF AUTOMATION DEVICE
+\fs28 \
+
+\b0\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 You can auto-setup a instrument automation device by using the shortcut 
+\i\b \'93Global:Tools:Setup automation device"
+\i0\b0  or 
+\i\b "Instrument Box:Tools:Setup automation device\'94
+\i0\b0 . Also there is a context menu entry available on instrument slots.\
+\
+The plugin GUI will open, and now you can move the controls you want to use. Please notice that you should not use another instr. automation device then,
+\i\b  use only the instr. automation device created by this tool
+\i0\b0 .\
+\
+You have to move all wanted controls within the timeout, which is set to 5 seconds by default.\
+\
+\
+\pard\pardeftab560\partightenfactor0
+
+\b\fs26 \cf2 CONFIGURATION
+\fs28 \
+
+\b0\fs24 \
+\pard\pardeftab560\slleading20\partightenfactor0
+\cf2 You can customize this tool by changing the following configuration in the tools menu:\
+\
+findAutomDeviceInTracks	- true/false - Auto-selects track with existing automation device\
+autoEdit				- true/false - Auto-enables edit mode while invoking shortcut\
+autoAutomationView		- true/false - Auto-enables automation view for the specific parameter\
+theOneAndOnlyMode	- true/false - Recommended mode for recording only one parameter per time.\
+addContextMenus		- true/false - Can slowdown the GUI on macOS. Set to false, if you anyway use shortcuts.\
+\
+More technical parameters:\
+\
+timeoutListening		- number - Timeout for \'93setup automation device\'94. Default is 5.\
+maxParameters		- number - Maximum observed vst parameters. Set to 0 to disable limitation (default).\
+requiredDeltaToActivate	- number (0\'851) - Activation delta for theOneAndOnlyMode, if there already is automation.\
+doTempTPL1			- true/false - Workaround to improve recording precision.  Usually not required anymore. Default is false.\
+\
+}

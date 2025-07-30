@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ffx.tools.GUIAutomationRecorder</Id>
+  <Name>GUI Automation Recorder</Name>
+  <Version>1.18</Version>
+  <Description>Adds GUI automation recording capabilities for VST/AU instruments to Renoise. You can move any knob in a VSTi GUI and it will record these movements.</Description>
+  <Author>jurekraben@googlemail.com</Author>
+  <Category>Automation,Recording,Plugin</Category>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://www.virtualcreations.de</Homepage>
+</RenoiseScriptingTool>
