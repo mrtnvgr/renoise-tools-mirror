@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.MetaMate</Id>
+  <Name>MetaMate</Name>
+  <Version>1</Version>
+  <Description>Easy meta device assignment</Description>
+  <Author>afta8 | fathand@gmail.com  </Author>
+  <Category>Modulation,DSP</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/41770-new-tool-30-meta-mate/</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://afta8.tumblr.com</Homepage>
+</RenoiseScriptingTool>
