@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>mom.MOMarmalade.Reform</Id>
+  <Name>Reform</Name>
+  <Version>1.2</Version>
+  <Description>Transform selections of notes quickly and powerfully</Description>
+  <Author>MOMarmalade [xephyrpanda@yahoo.com]</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-1-reform/67295</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+  <Homepage>http://www.aqu.surf/reform</Homepage>
+</RenoiseScriptingTool>
