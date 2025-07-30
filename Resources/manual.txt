@@ -1,0 +1,34 @@
+Problems? Mail: info@beatslaughter.de                              * Version 1.2
+
+--[ @@Manual@@ ]--------------------------------------------------------------------
+
+This small tool allows one to set the track output delay in samples, instead of
+only milliseconds.
+
+Switch to the mixer view in Renoise, open the context menu and look for
+"Track ->" to find the new menu entry.
+
+The keybind can be found in the Renoise preferences under "Mixer -> Track".
+
+If you have found a bug or otherwise need help with this tool, then feel free to
+mail me at the address given above.
+
+--[ @@History@@ ]-------------------------------------------------------------------
+
+Version 1.2:
+
+- 192KHz added for Renoise 3.1
+
+Version 1.1:
+
+- compatibility for Renoise 2.7 and 2.8
+- included manual
+- other stuff i don't remember anymore
+
+Version 1.01:
+
+- compatibility fix for Renoise 2.6 Beta 7 and newer versions
+
+Version 1.0
+- initial release
+
