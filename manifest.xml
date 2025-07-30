@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <ApiVersion>6.1</ApiVersion>
+  <Id>com.vvoois.MidiManagementConsole</Id>
+  <Version>1.2</Version>
+  <Author>v.voois</Author>
+  <Name>Midi Management Console</Name>
+  <Category>Editing, Control, MIDI, Hardware</Category>
+  <Description>A richer edition of the instrument list.
+Allows you to select one or more instruments to be triggered by your midi device. (It sets your midi device to exclusive mode so when using this tool you can forget about the internal instruments list).
+Solo and chain checkboxes are midi mappable.
+It also has a feature to copy chained track content to other tracks that are chained so you only need to make changes to one track after having recorded to multiple tracks.
+</Description>
+  <Homepage>http://tinyurl.com/vvxrns</Homepage>
+</RenoiseScriptingTool>

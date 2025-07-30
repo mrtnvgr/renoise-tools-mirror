@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences doc_version="0">
+  <master_device>4</master_device>
+  <master_channel>0.0</master_channel>
+  <midi_in>true</midi_in>
+  <visible_range>10</visible_range>
+  <midi_out>false</midi_out>
+</preferences>
