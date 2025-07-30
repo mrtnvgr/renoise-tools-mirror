@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.afta8.SliceMyPitchUp</Id>
+  <Name>Slice My Pitch Up</Name>
+  <Version>0.6</Version>
+  <Description>A sample slicer, cyclic transposer and crossfade looper - Take slice processing to another level.</Description>
+  <Author>afta8  | fathand@gmail.com</Author>
+  <Category>Slicing</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/36180-new-tool-28-slice-my-pitch-up/</Discussion>
+  <ApiVersion>4</ApiVersion>
+</RenoiseScriptingTool>
