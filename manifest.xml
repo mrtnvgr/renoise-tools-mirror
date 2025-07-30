@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.ulneiz.StartRecordingOnNoteInput</Id>
+  <Name>Start Recording On Note Input</Name>
+  <Version>1.0</Version>
+  <Description>&quot;Start Recording On Note Input&quot; or &quot;STN&quot; starts recording notes from the first input note with follow the player&apos;s position in the pattern. It will start recording from the selected line.
+  - Go to &quot;Renoise/Options:~ Start Recording On Note Input&quot; to enable/disable it.
+  </Description>
+  <Author>ulneiz</Author>
+  <Category>Control,Recording</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-2-2-start-recording-on-note-input-v1-0-001-august-2020/61494</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
