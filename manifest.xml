@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.SplitMapManager</Id>
+  <Name>Splitmap Manager</Name>
+  <Version>1.21</Version>
+  <Description>Extended split-map manager (drumkit generator): Assigns samples to multiple keys, shifts existing sample mappings, starts drum kits from different basenotes than C-4 and more.
+Can be found in the instrument list&apos;s context menu (right-click on an instrument).
+</Description>
+  <Author>Vincent Voois [ http://tinyurl.com/vvrns ]</Author>
+  <Category>Instrument,Generator</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
