@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.mynameiskaneel.baguetter</Id>
+  <Name>Baguetter</Name>
+  <Version>1.03</Version>
+  <Description>
+    Device &quot;step by step (oh baby) simple sequencer&quot; (or swapper...) 
+    With both a live and a write mode.
+
+    HOWTO:
+    - select a track or the &quot;selected tracks&quot; option, insert devices.
+      
+    - set a timer, the tool is actually counting till &quot;timer value&quot; and then
+      it enables the next device, disa[b]$[/b]ling the previous one.
+      
+    - Live button: This is for swapping on playback..
+    
+    - The write button: This is for writing the commands on the pattern
+      Enabling &quot;Pattern selection&quot; will constrain the dump to a selection.
+      
+    - If you want the script to avoid &quot;touching&quot; some plugs, add &quot;MCHAMMER&quot;, 
+      &quot;mchammer&quot;, &quot;SAFE&quot; or &quot;safe&quot; to the name of the plug (yes, just rename 
+      to MCHAMMER, because he can&apos;t touch this... device).
+      
+    - Random options do what random options do what raopdomwhatranoptdo.
+  
+    Written by kaneel of TPOLM.
+    With love. 
+    
+    http://mynameiskaneel.com
+    http://tpolm.com
+  </Description>
+  <Author>kaneel | mynameiskaneel@gmail.com</Author>
+  <Category>Sequencer</Category>
+  <Discussion>http://forum.renoise.com/index.php?/topic/31849-new-tool-27-the-baguetter-a-simple-device-swap-machine</Discussion>
+  <ApiVersion>4</ApiVersion>
+  <Homepage>http://www.mynameiskaneel.com/blog/2011/09/23/the-baguetter-a-renoise-2-7-tool/</Homepage>
+</RenoiseScriptingTool>
