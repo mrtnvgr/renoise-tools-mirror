@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>cz.martblek.Rezonator</Id>
+  <Name>Rezonator</Name>
+  <Version>0.01</Version>
+  <Description>String instrument creator based on Karplus-Strong algorithm</Description>
+  <Author>martblek (martblek@gmail.com)</Author>
+  <Category>Sample,Generator</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-r3z0n4t0r/67301</Discussion>
+  <ApiVersion>6</ApiVersion>
+</RenoiseScriptingTool>
