@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.PreClick</Id>
+  <Name>PreClick</Name>
+  <Version>0.4</Version>
+  <Description>Allows to set a number of metronome clicks or beats before the recording of the pattern begins.</Description>
+  <Author>nimitz</Author>
+  <Category>Workflow</Category>
+  <ApiVersion>1.0</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
