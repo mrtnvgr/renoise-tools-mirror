@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>com.renoise.GridPie</Id>
+  <Name>Grid Pie</Name>
+  <Version>1.0</Version>
+  <Description>Renoise cut and pastry. Live sequence recombinator.</Description>
+  <Author>Dac Chartrand [dac@renoise.com]</Author>
+  <Category>Workflow,Sequencer,Live</Category>
+  <Discussion>https://forum.renoise.com/t/new-tool-3-0-grid-pie/30395</Discussion>
+  <ApiVersion>6.1</ApiVersion>
+</RenoiseScriptingTool>
