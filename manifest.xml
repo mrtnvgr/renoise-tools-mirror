@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RenoiseScriptingTool doc_version="0">
+  <Id>ledger.scripts.SetMetaValue</Id>
+  <Name>SetMetaValue</Name>
+  <Version>1.04</Version>
+  <Description>Sets the meta (vol/pan/dly) value in selected range for all notes.  Type in the value then press return and all notes will have their relevant meta values changed. To change the field effected type V (for vol) or P (for pan) or L (for delay)</Description>
+  <Author>scripts</Author>
+  <Category>Pattern,Editing</Category>
+  <Discussion>http://www.renoise.com/board/index.php?/topic/32073-new-tool-set-meta-values</Discussion>
+  <ApiVersion>5</ApiVersion>
+  <Homepage>http://tools.renoise.com</Homepage>
+</RenoiseScriptingTool>
