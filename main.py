@@ -19,8 +19,8 @@ def download(url, file):
             urlretrieve(url, file)
             break
         except ContentTooShortError:
-            print("Connection interrupted, retrying...")
             retry += 1
+            print(f"Connection interrupted, retrying... ({retry}/{MAX_RETRIES})")
 
 @dataclass
 class Tool:
