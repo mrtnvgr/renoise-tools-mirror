@@ -74,7 +74,12 @@ for tool in tools:
     print(f"> {tool_id} ({tool.version})...")
 
     if tool_id in repo.branches:
-        repo.heads[tool_id].checkout()
+        tool_head = repo.heads[tool_id]
+
+        if tool_head.commit.message == tool.version:
+            continue
+
+        tool_head.checkout()
     else:
         repo.git.switch(orphan=tool_id)
 
