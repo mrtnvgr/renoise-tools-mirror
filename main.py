@@ -65,7 +65,7 @@ for tool_page_url in tool_page_urls:
     tool_elem = tool_page_soup.find_all("a", href=TOOL_RE)[-1]
 
     tool_url = RENOISE_URL + tool_elem["href"]
-    tool_version = tool_elem.button.text.strip().split(" ")[0]
+    tool_version = tool_elem.find("span", "text-yellow").text.strip().split(" ")[0]
     tools.append(Tool(tool_url, tool_version))
 
 for tool in tools:
