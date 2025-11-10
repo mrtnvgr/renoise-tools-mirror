@@ -7,3 +7,5 @@ This is a mirror of all tools uploaded to the official Renoise website.
 Every day, an automatic Github Workflow:
 1. Downloads all tools
 2. Creates branches for new tools and updates existing ones
+
+Clone this repo with `--single-branch` option to avoid downloading all tools :)
