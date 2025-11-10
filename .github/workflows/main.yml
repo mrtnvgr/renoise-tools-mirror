@@ -1,5 +1,8 @@
 name: Update
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 0 * * *"
@@ -22,13 +25,10 @@ jobs:
       run: |
         pip install beautifulsoup4 requests gitpython
 
-    - name: Run mirror script
-      run: python main.py
-
-    - name: Commit and push changes
+    - name: Set a CI actor for git
       run: |
         git config --global user.name "GitHub Actions"
         git config --global user.email "actions@github.com"
-        git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-        git fetch origin
-        git push --all
+
+    - name: Run mirror script
+      run: python main.py
